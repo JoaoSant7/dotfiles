@@ -5,7 +5,7 @@ alias g="git"
 alias ext="exit"
 alias nv="nvim"
 alias yz="yazi"
-alias disx="distrobox"
+alias dib="distrobox"
 alias lsa="ls -A"
 
 source /home/linuxbrew/.linuxbrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
