@@ -4,7 +4,6 @@
 alias g="git"
 alias ext="exit"
 alias nv="nvim"
-alias yz="yazi"
 alias dib="distrobox"
 alias lsa="ls -A"
 
