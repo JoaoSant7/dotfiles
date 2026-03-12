@@ -1,5 +1,5 @@
 # Get editor completions based on the config schema
-"$schema" = 'https://starship.rs/config-schema.json'
+"$schema" = "https://starship.rs/config-schema.json"
 
 add_newline = true
 
@@ -7,21 +7,21 @@ add_newline = true
 disabled = false
 
 [username]
-style_user = 'blue bold'
-style_root = 'red bold'
-format = '[$user]($style)'
+style_user = "blue bold"
+style_root = "red bold"
+format = "[$user]($style)"
 disabled = false
 show_always = true
 
 [hostname]
 ssh_only = false
 ssh_symbol = " "
-format = '[$ssh_symbol](bold gray) at [$hostname](bold green) '
+format = "[$ssh_symbol](bold gray) at [$hostname](bold green) "
 disabled = false
 
 [character]
-success_symbol = '[➜](bold green) '
-error_symbol = '[✗](bold red) '
+success_symbol = "[➜](bold green) "
+error_symbol = "[✗](bold red) "
 
 [aws]
 symbol = "  "
@@ -46,7 +46,7 @@ symbol = " "
 
 [directory]
 read_only = " 󰌾"
-format = 'in [$path](bold yellow) '
+format = "in [$path](bold yellow) "
 
 [docker_context]
 symbol = " "
@@ -67,7 +67,7 @@ symbol = " "
 symbol = " "
 
 [git_commit]
-tag_symbol = '  '
+tag_symbol = "  "
 
 [golang]
 symbol = " "
