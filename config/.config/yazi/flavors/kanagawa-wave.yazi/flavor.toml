@@ -26,25 +26,21 @@
 
 [mgr]
 cwd = { fg = "#e6c384" }
+hovered = { fg = "#1f1f28", bg = "#7e9cd8" }
+border_symbol = "│"
+border_style = { fg = "#dcd7ba" }
 
-# Find
 find_keyword = { fg = "#ffa066", bg = "#1f1f28" }
 find_position = {}
 
-# Marker
 marker_copied = { fg = "#98bb6c", bg = "#98bb6c" }
 marker_cut = { fg = "#e46876", bg = "#e46876" }
 marker_marked = { fg = "#957fb8", bg = "#957fb8" }
 marker_selected = { fg = "#ffa066", bg = "#ffa066" }
 
-# Count
 count_copied = { fg = "#1f1f28", bg = "#98bb6c" }
 count_cut = { fg = "#1f1f28", bg = "#e46876" }
 count_selected = { fg = "#1f1f28", bg = "#ffa066" }
-
-# Border
-border_symbol = "│"
-border_style = { fg = "#dcd7ba" }
 
 # : }}}
 
@@ -74,11 +70,9 @@ sep_outer = { open = "", close = "" }
 normal_main = { fg = "#1f1f28", bg = "#7e9cd8" }
 normal_alt = { fg = "#7e9cd8", bg = "#2a2a37" }
 
-# Select mode
 select_main = { fg = "#1f1f28", bg = "#957fb8" }
 select_alt = { fg = "#957fb8", bg = "#2a2a37" }
 
-# Unset mode
 unset_main = { fg = "#1f1f28", bg = "#e6c384" }
 unset_alt = { fg = "#e6c384", bg = "#2a2a37" }
 
@@ -91,14 +85,12 @@ sep_left = { open = "", close = "" }
 sep_right = { open = "", close = "" }
 overall = { fg = "#c8c093", bg = "#16161d" }
 
-# Permissions
 perm_sep = { fg = "#957fb8" }
 perm_type = { fg = "#98bb6c" }
 perm_read = { fg = "#e6c384" }
 perm_write = { fg = "#ff5d62" }
 perm_exec = { fg = "#7aa89f" }
 
-# Progress
 progress_label = { fg = "#7e9cd8", bold = true }
 progress_normal = { fg = "#2a2a37", bg = "#1f1f28" }
 progress_error = { fg = "#2a2a37", bg = "#1f1f28" }
@@ -179,19 +171,12 @@ title_error = { fg = "#ff5d62" }
 
 [filetype]
 rules = [
-  # Image
   { mime = "image/*", fg = "#e6c384" },
-  # Media
   { mime = "{audio,video}/*", fg = "#957fb8" },
-  # Archive
-  { mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "#e46876" },
-  # Document
+  { mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "#dcd7ba" },
   { mime = "application/{pdf,doc,rtf,vnd.*}", fg = "#6a9589" },
-  # Broken links
   { url = "*", is = "orphan", fg = "#c34043" },
-  # Executables
   { url = "*", is = "exec", fg = "#76946a" },
-  # Fallback
   { url = "*", fg = "#dcd7ba" },
   { url = "*/", fg = "#7e9cd8" },
 ]
@@ -201,8 +186,8 @@ rules = [
 [icon]
 dirs = [
   { name = ".config", text = "", fg = "#957fb8" },
-  { name = ".git", text = "", fg = "#7aa89f" },
-  { name = ".github", text = "", fg = "#7e9cd8" },
+  { name = ".git", text = "", fg = "#DCA561" },
+  { name = ".github", text = "", fg = "#DCA561" },
   { name = ".npm", text = "", fg = "#7e9cd8" },
   { name = "Desktop", text = "", fg = "#7aa89f" },
   { name = "Development", text = "", fg = "#7aa89f" },

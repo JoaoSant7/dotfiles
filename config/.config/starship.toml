@@ -14,7 +14,7 @@ disabled = false
 show_always = true
 
 [hostname]
-ssh_only = false
+ssh_only = true
 ssh_symbol = " "
 format = "[$ssh_symbol](bold gray) at [$hostname](bold green) "
 disabled = false
@@ -46,7 +46,7 @@ symbol = " "
 
 [directory]
 read_only = " 󰌾"
-format = "in [$path](bold yellow) "
+format = " in [$path](bold yellow) "
 
 [docker_context]
 symbol = " "
