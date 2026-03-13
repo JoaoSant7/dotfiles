@@ -1,137 +1,224 @@
-## Color palette
-## Check https://github.com/rebelot/kanagawa.nvim for more details
-# sumiInk0      "#16161d" dark bg
-# sumiInk3      "#181616" bg
-# sumiInk4      "#0d0c0c"
-# sumiInk6      "#54546d"
-# fujiWhite     "#c5c9c5" fg
-# oldWhite      "#7fb4ca" dark fg
-# fujiGray      "#a6a69c"
-# peachRed      "#ff5d62"
-# autumnRed     "#c4746e"
-# crystalBlue   "#8ba4b0"
-# waveRed       "#e46876"
-# carpYellow    "#e6c384"
-# springGreen   "#8a9a7b"
-# autumnGreen   "#76946a"
-# oniViolet     "#a292a3"
-# waveAqua1     "#6a9589"
-# surimiOrange  "#e46876"
-# waveAqua2     "#7aa89f"
+# vim:fileencoding=utf-8:foldmethod=marker
+# Kanagawa Dragon — Yazi theme
+# Based on https://github.com/rebelot/kanagawa.nvim
+#
+# Palette reference:
+# dragonBlack0  "#0d0c0c"   darkest bg
+# dragonBlack1  "#12120f"
+# dragonBlack2  "#1D1C19"
+# dragonBlack3  "#181616"   bg
+# dragonBlack4  "#282727"
+# dragonBlack5  "#393836"
+# dragonBlack6  "#625e5a"
+# dragonWhite   "#c5c9c5"   fg
+# dragonGray    "#a6a69c"   dark fg
+# dragonGray2   "#9e9b93"
+# dragonGray3   "#7a8382"
+# dragonGreen   "#87a987"
+# dragonGreen2  "#8a9a7b"
+# dragonPink    "#a292a3"
+# dragonOrange  "#b6927b"
+# dragonOrange2 "#b98d7b"
+# dragonBlue2   "#8ba4b0"
+# dragonViolet  "#8992a7"
+# dragonRed     "#c4746e"
+# dragonAqua    "#8ea4a2"
+# dragonAsh     "#737c73"
+# dragonTeal    "#949fb5"
+# dragonYellow  "#c4b28a"
 
-[manager]
-marker_copied = { fg = "#8a9a7b", bg = "#8a9a7b" }
-marker_cut = { fg = "#e46876", bg = "#e46876" }
-marker_marked = { fg = "#a292a3", bg = "#a292a3" }
-marker_selected = { fg = "#e46876", bg = "#e46876" }
+# : Manager {{{
 
-cwd = { fg = "#e6c384" }
-hovered = { reversed = true }
-preview_hovered = { reversed = true }
-
-find_keyword = { fg = "#e46876", bg = "#181616" }
-find_position = {}
-
-tab_active = { reversed = true }
-tab_inactive = {}
-tab_width = 1
-
-count_copied = { fg = "#181616", bg = "#8a9a7b" }
-count_cut = { fg = "#181616", bg = "#e46876" }
-count_selected = { fg = "#181616", bg = "#e6c384" }
-
+[mgr]
+cwd = { fg = "#c4b28a" }
+hovered = { fg = "#0d0c0c", bg = "#8ba4b0" }
 border_symbol = "│"
 border_style = { fg = "#c5c9c5" }
 
+find_keyword = { fg = "#b6927b", bg = "#181616" }
+find_position = {}
+
+marker_copied = { fg = "#87a987", bg = "#87a987" }
+marker_cut = { fg = "#c4746e", bg = "#c4746e" }
+marker_marked = { fg = "#8992a7", bg = "#8992a7" }
+marker_selected = { fg = "#c4b28a", bg = "#c4b28a" }
+
+count_copied = { fg = "#181616", bg = "#87a987" }
+count_cut = { fg = "#181616", bg = "#c4746e" }
+count_selected = { fg = "#181616", bg = "#c4b28a" }
+
+# : }}}
+
+# : Indicator {{{
+
+[indicator]
+parent = { reversed = true }
+current = { reversed = true }
+preview = { reversed = true }
+
+# : }}}
+
+# : Tabs {{{
+
+[tabs]
+active = { fg = "#0d0c0c", bg = "#8ba4b0" }
+inactive = { fg = "#8ba4b0", bg = "#1D1C19" }
+
+sep_inner = { open = "", close = "" }
+sep_outer = { open = "", close = "" }
+
+# : }}}
+
+# : Mode {{{
 
 [mode]
-normal_main = { fg = "#181616", bg = "#8ba4b0" }
-normal_alt = { fg = "#8ba4b0", bg = "#0d0c0c" }
-select_main = { fg = "#181616", bg = "#a292a3" }
-select_alt = { fg = "#a292a3", bg = "#0d0c0c" }
-unset_main = { fg = "#181616", bg = "#e6c384" }
-unset_alt = { fg = "#e6c384", bg = "#0d0c0c" }
+normal_main = { fg = "#0d0c0c", bg = "#8ba4b0" }
+normal_alt = { fg = "#8ba4b0", bg = "#1D1C19" }
 
+select_main = { fg = "#0d0c0c", bg = "#8992a7" }
+select_alt = { fg = "#8992a7", bg = "#1D1C19" }
+
+unset_main = { fg = "#0d0c0c", bg = "#c4b28a" }
+unset_alt = { fg = "#c4b28a", bg = "#1D1C19" }
+
+# : }}}
+
+# : Status bar {{{
 
 [status]
 sep_left = { open = "", close = "" }
 sep_right = { open = "", close = "" }
-overall = { fg = "#7fb4ca", bg = "#16161d" }
+overall = { fg = "#a6a69c", bg = "#0d0c0c" }
 
-progress_label = { fg = "#8ba4b0", bg = "#0d0c0c", bold = true }
-progress_normal = { fg = "#0d0c0c", bg = "#181616" }
-progress_error = { fg = "#0d0c0c", bg = "#181616" }
+perm_sep = { fg = "#8992a7" }
+perm_type = { fg = "#87a987" }
+perm_read = { fg = "#c4b28a" }
+perm_write = { fg = "#c4746e" }
+perm_exec = { fg = "#8ea4a2" }
 
-perm_type = { fg = "#8a9a7b" }
-perm_read = { fg = "#e6c384" }
-perm_write = { fg = "#ff5d62" }
-perm_exec = { fg = "#7aa89f" }
-perm_sep = { fg = "#a292a3" }
+progress_label = { fg = "#8ba4b0", bold = true }
+progress_normal = { fg = "#282727", bg = "#181616" }
+progress_error = { fg = "#282727", bg = "#181616" }
 
+# : }}}
+
+# : Pick {{{
 
 [pick]
-border = { fg = "#8ea4a2" }
-active = { fg = "#a292a3", bold = true }
+border = { fg = "#8ba4b0" }
+active = { fg = "#8992a7", bold = true }
 inactive = {}
 
+# : }}}
+
+# : Input {{{
+
 [input]
-border = { fg = "#8ea4a2" }
+border = { fg = "#8ba4b0" }
 title = {}
 value = {}
 selected = { reversed = true }
 
+# : }}}
+
+# : Completion {{{
+
 [completion]
-border = { fg = "#8ea4a2" }
+border = { fg = "#8ba4b0" }
 active = { reversed = true }
 inactive = {}
 
+# : }}}
+
+# : Tasks {{{
+
 [tasks]
-border = { fg = "#8ea4a2" }
+border = { fg = "#8ba4b0" }
 title = {}
-hovered = { fg = "#a292a3" }
+hovered = { fg = "#8992a7" }
+
+# : }}}
+
+# : Which {{{
 
 [which]
 cols = 2
 separator = " - "
-separator_style = { fg = "#a6a69c" }
-mask = { bg = "#16161d" }
-rest = { fg = "#a6a69c" }
+separator_style = { fg = "#625e5a" }
+mask = { bg = "#0d0c0c" }
+rest = { fg = "#625e5a" }
 cand = { fg = "#8ba4b0" }
-desc = { fg = "#54546d" }
+desc = { fg = "#393836" }
+
+# : }}}
+
+# : Help {{{
 
 [help]
-on = { fg = "#7aa89f" }
-run = { fg = "#a292a3" }
+on = { fg = "#8ea4a2" }
+run = { fg = "#8992a7" }
 desc = {}
 hovered = { reversed = true, bold = true }
 footer = { fg = "#181616", bg = "#c5c9c5" }
 
+# : }}}
+
+# : Notification {{{
+
 [notify]
-title_info = { fg = "#8a9a7b" }
-title_warn = { fg = "#e6c384" }
-title_error = { fg = "#ff5d62" }
+title_info = { fg = "#87a987" }
+title_warn = { fg = "#c4b28a" }
+title_error = { fg = "#c4746e" }
+
+# : }}}
+
+# : File-specific styles {{{
 
 [filetype]
 rules = [
-    # images
-    { mime = "image/*", fg = "#e6c384" },
+  { mime = "image/*", fg = "#c4b28a" },
+  { mime = "{audio,video}/*", fg = "#8992a7" },
+  { mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "#c5c9c5" },
+  { mime = "application/{pdf,doc,rtf,vnd.*}", fg = "#8ea4a2" },
+  { url = "*", is = "orphan", fg = "#c4746e" },
+  { url = "*", is = "exec", fg = "#8a9a7b" },
+  { url = "*", fg = "#c5c9c5" },
+  { url = "*/", fg = "#8ba4b0" },
+]
 
-    # media
-    { mime = "{audio,video}/*", fg = "#a292a3" },
+# : }}}
 
-    # archives
-    { mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "#e46876" },
+[icon]
+dirs = [
+  { name = ".config", text = "", fg = "#8992a7" },
+  { name = ".git", text = "", fg = "#b6927b" },
+  { name = ".github", text = "", fg = "#b6927b" },
+  { name = ".npm", text = "", fg = "#8ba4b0" },
+  { name = "Desktop", text = "", fg = "#8ea4a2" },
+  { name = "Development", text = "", fg = "#8ea4a2" },
+  { name = "Documents", text = "", fg = "#8ea4a2" },
+  { name = "Downloads", text = "", fg = "#8ea4a2" },
+  { name = "Library", text = "", fg = "#8ea4a2" },
+  { name = "Movies", text = "", fg = "#8ea4a2" },
+  { name = "Music", text = "", fg = "#8ea4a2" },
+  { name = "Pictures", text = "", fg = "#8ea4a2" },
+  { name = "Public", text = "", fg = "#8ea4a2" },
+  { name = "Videos", text = "", fg = "#8ea4a2" },
+]
+conds = [
+  # Special files
+  { if = "orphan", text = "", fg = "#a6a69c" },
+  { if = "link", text = "", fg = "#625e5a" },
+  { if = "block", text = "", fg = "#b6927b" },
+  { if = "char", text = "", fg = "#b6927b" },
+  { if = "fifo", text = "", fg = "#b6927b" },
+  { if = "sock", text = "", fg = "#b6927b" },
+  { if = "sticky", text = "", fg = "#b6927b" },
+  { if = "dummy", text = "", fg = "#c4746e" },
 
-    # documents
-    { mime = "application/{pdf,doc,rtf,vnd.*}", fg = "#6a9589" },
-
-    # broken links
-    { name = "*", is = "orphan", fg = "#c4746e" },
-
-    # executables
-    { name = "*", is = "exec", fg = "#76946a" },
-
-    # fallback
-    { name = "*", fg = "#c5c9c5" },
-    { name = "*/", fg = "#8ba4b0" },
+  # Fallback
+  { if = "dir & hovered", text = "", fg = "#8ba4b0" },
+  { if = "dir", text = "", fg = "#8ba4b0" },
+  { if = "exec", text = "", fg = "#87a987" },
+  { if = "!dir", text = "", fg = "#a6a69c" },
 ]
