@@ -1,0 +1,78 @@
+# Definição dos servidores 
+
+[language-server.basedpyright]
+command = "basedpyright-langserver"
+args = ["--stdio"]
+
+[language-server.basedpyright.config.basedpyright.analysis]
+# Modo de checagem: "off" | "basic" | "standard" | "strict" | "all"
+typeCheckingMode = "standard"
+reportMissingTypeStubs = false
+analyzeUnannotatedFunctions = true
+
+[language-server.ruff]
+command = "ruff"
+args = ["server"]
+
+# Desativa hover do ruff 
+[language-server.ruff.config.settings]
+lineLength = 88
+
+# Python settings
+
+[[language]]
+name = "python"
+language-servers = [
+  # basedpyright: autocomplete, hover, go-to-definition, type checking
+  "basedpyright",
+  # ruff: linting + formatting (desativa hover para não duplicar)
+  { name = "ruff", except-features = ["hover"] },
+]
+
+# Ruff como formatter 
+formatter = { command = "ruff", args = ["format", "-"] }
+auto-format = true
+
+# Roots para detecção do projeto/venv
+roots = [
+  "pyproject.toml",
+  "setup.py",
+  "setup.cfg",
+  "poetry.lock",
+  ".git",
+  ".venv",
+]
+
+file-types = ["py", "ipynb", "pyw"]
+comment-token = "#"
+shebangs = ["python", "python3"]
+
+indent = { tab-width = 4, unit = "    " }
+
+# Markdown settings
+
+[[language]]
+name = "markdown"
+language-servers = ["markdown-oxide"]
+
+[language.soft-wrap]
+enable = true
+wrap-at-text-width = true
+
+[[language]]
+name = "toml"
+language-servers = ["taplo"]
+
+formatter = { command = "taplo", args = ["format", "-"] }
+auto-format = true
+
+# Java
+
+[language-server.jdtls]
+command = "jdtls"
+# args = ["-data", "/path/to/workspace"]  # optional: set a workspace dir
+
+[[language]]
+name = "java"
+language-servers = ["jdtls"]
+auto-format = true

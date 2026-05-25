@@ -1,0 +1,27 @@
+# helix theme
+theme = "kanagawa"
+
+# helix keybindings
+[keys.insert]
+j = { j = "normal_mode" }
+
+[editor]
+clipboard-provider = "x-clip"
+line-number = "absolute"
+cursorline = true
+mouse = true
+color-modes = true
+bufferline = "always"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.soft-wrap]
+enable = true
+max-wrap = 80
+
+# Do not render white spaces
+[editor.whitespace]
+render = "none"
