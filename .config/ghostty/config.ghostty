@@ -5,4 +5,4 @@ theme = Gruvbox Material Dark
 
 window-width = 140
 window-height = 40
-window-decoration = true
+window-decoration = false
