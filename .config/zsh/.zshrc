@@ -108,9 +108,6 @@ function y() {
 # Set up fzf key bindings and fuzzy completion
 eval "$(fzf --zsh)"
 
-# bat theme
-export BAT_THEME="base16-256"
-
 . "$HOME/.local/share/../bin/env"
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
