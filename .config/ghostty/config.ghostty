@@ -1,4 +1,8 @@
-font-size = 19
-theme = Kanagawa Wave
-
 command = /usr/bin/zsh
+
+font-size = 19
+theme = Gruvbox Material Dark
+
+window-width = 140
+window-height = 40
+window-decoration = true
