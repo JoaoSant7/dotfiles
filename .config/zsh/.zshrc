@@ -38,7 +38,6 @@ setopt NUMERIC_GLOB_SORT  # sort file10 after file9, not after file1
 # Initialize zoxide
 eval "$(zoxide init zsh)"
 
-
 # =========================================================
 # Completion
 # =========================================================
@@ -65,18 +64,21 @@ compdef _files nvim
 # =========================================================
 
 if [[ -f /usr/share/fzf/shell/key-bindings.zsh ]]; then
-  source /usr/share/fzf/shell/key-bindings.zsh
+  source /usr/share/fzf/shell/key-bindings.zsh 
 fi
 
 # =========================================================
 # Modular Config Files
 # =========================================================
 
+# fzf configuration
+source "$ZDOTDIR/fzf.zsh"
+
 # aliases
 source "$ZDOTDIR/aliases.zsh"
 
-# fzf configuration
-source "$ZDOTDIR/fzf.zsh"
+# Custom keybindings
+source "$ZDOTDIR/bindings.zsh"
 
 # Plugins and plugin manager
 source "$ZDOTDIR/plugins.zsh"
@@ -103,10 +105,6 @@ function y() {
 
     rm -f -- "$tmp"
 }
-
-
-# Set up fzf key bindings and fuzzy completion
-eval "$(fzf --zsh)"
 
 . "$HOME/.local/share/../bin/env"
 
