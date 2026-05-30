@@ -21,14 +21,14 @@ IntensityEffect=0
 [Colors:Button]
 BackgroundAlternate=40,39,39
 BackgroundNormal=40,39,39
-DecorationFocus=139,164,176
-DecorationHover=139,164,176
+DecorationFocus=45,79,103
+DecorationHover=45,79,103
 ForegroundActive=185,141,123
 ForegroundInactive=122,131,130
 ForegroundLink=139,164,176
 ForegroundNegative=196,116,110
 ForegroundNeutral=196,178,138
-ForegroundNormal=220,215,186
+ForegroundNormal=197,201,197
 ForegroundPositive=135,169,135
 ForegroundVisited=137,146,167
 
@@ -42,7 +42,7 @@ ForegroundInactive=122,131,130
 ForegroundLink=139,164,176
 ForegroundNegative=196,116,110
 ForegroundNeutral=196,178,138
-ForegroundNormal=220,215,186
+ForegroundNormal=197,201,197
 ForegroundPositive=135,169,135
 ForegroundVisited=137,146,167
 
@@ -56,69 +56,69 @@ ForegroundInactive=122,131,130
 ForegroundLink=139,164,176
 ForegroundNegative=196,116,110
 ForegroundNeutral=196,178,138
-ForegroundNormal=220,215,186
+ForegroundNormal=197,201,197
 ForegroundPositive=135,169,135
 ForegroundVisited=137,146,167
 
 [Colors:Selection]
 BackgroundAlternate=139,164,176
 BackgroundNormal=45,79,103
-DecorationFocus=139,164,176
-DecorationHover=139,164,176
+DecorationFocus=45,79,103
+DecorationHover=45,79,103
 ForegroundActive=185,141,123
 ForegroundInactive=122,131,130
 ForegroundLink=139,164,176
 ForegroundNegative=196,116,110
 ForegroundNeutral=196,178,138
-ForegroundNormal=220,215,186
+ForegroundNormal=197,201,197
 ForegroundPositive=135,169,135
 ForegroundVisited=137,146,167
 
 [Colors:Tooltip]
 BackgroundAlternate=29,28,25
 BackgroundNormal=18,18,15
-DecorationFocus=139,164,176
-DecorationHover=139,164,176
+DecorationFocus=45,79,103
+DecorationHover=45,79,103
 ForegroundActive=185,141,123
 ForegroundInactive=122,131,130
 ForegroundLink=139,164,176
 ForegroundNegative=196,116,110
 ForegroundNeutral=196,178,138
-ForegroundNormal=220,215,186
+ForegroundNormal=197,201,197
 ForegroundPositive=135,169,135
 ForegroundVisited=137,146,167
 
 [Colors:View]
 BackgroundAlternate=29,28,25
 BackgroundNormal=24,22,22
-DecorationFocus=139,164,176
-DecorationHover=139,164,176
+DecorationFocus=45,79,103
+DecorationHover=45,79,103
 ForegroundActive=185,141,123
 ForegroundInactive=122,131,130
 ForegroundLink=139,164,176
 ForegroundNegative=196,116,110
 ForegroundNeutral=196,178,138
-ForegroundNormal=220,215,186
+ForegroundNormal=197,201,197
 ForegroundPositive=135,169,135
 ForegroundVisited=137,146,167
 
 [Colors:Window]
 BackgroundAlternate=29,28,25
 BackgroundNormal=18,18,15
-DecorationFocus=139,164,176
-DecorationHover=139,164,176
+DecorationFocus=45,79,103
+DecorationHover=45,79,103
 ForegroundActive=185,141,123
 ForegroundInactive=122,131,130
 ForegroundLink=139,164,176
 ForegroundNegative=196,116,110
 ForegroundNeutral=196,178,138
-ForegroundNormal=220,215,186
+ForegroundNormal=197,201,197
 ForegroundPositive=135,169,135
 ForegroundVisited=137,146,167
 
 [General]
-ColorScheme=CatppuccinMochaSapphire
-Name=Kanagatest
+ColorScheme=KanagawaDragon
+Name=KanagawaDragonV2
 accentActiveTitlebar=false
 shadeSortColumn=true
 
@@ -131,4 +131,3 @@ activeBlend=197,201,197
 activeForeground=197,201,197
 inactiveBackground=18,18,15
 inactiveBlend=122,131,130
-inactiveForeground=122,131,130
