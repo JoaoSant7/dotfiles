@@ -1,0 +1,22 @@
+[display]
+use_pager = false
+compact = false
+show_title = false
+
+[style.description]
+foreground = "white"
+italic = true
+
+[style.command_name]
+foreground = "yellow"
+
+[style.example_text]
+foreground = "green"
+
+[style.example_code]
+foreground = "red"
+underline = false
+
+[style.example_variable]
+foreground = "cyan"
+
