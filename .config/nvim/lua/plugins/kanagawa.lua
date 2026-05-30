@@ -27,8 +27,40 @@ return {
           },
         },
       },
-      overrides = function(colors) -- add/modify highlights
-        return {}
+      overrides = function(colors)
+        local theme = colors.theme
+
+        local c = require("kanagawa.lib.color")
+        local makeDiagnosticColor = function(color)
+          return {
+            fg = color,
+            bg = c(color):blend(theme.ui.bg, 0.95):to_hex(),
+          }
+        end
+
+        return {
+          NormalFloat = { bg = "none" },
+          FloatBorder = { bg = "none" },
+          FloatTitle = { bg = "none" },
+
+          -- Save an hlgroup with dark background and dimmed foreground
+          NormalDark = { fg = theme.ui.fg_dim, bg = theme.ui.bg_m3 },
+
+          -- Popular plugins
+          LazyNormal = { bg = theme.ui.bg_m3, fg = theme.ui.fg_dim },
+          MasonNormal = { bg = theme.ui.bg_m3, fg = theme.ui.fg_dim },
+
+          Pmenu = { fg = theme.ui.shade0, bg = theme.ui.bg_p1 },
+          PmenuSel = { fg = "NONE", bg = theme.ui.bg_p2 },
+          PmenuSbar = { bg = theme.ui.bg_m1 },
+          PmenuThumb = { bg = theme.ui.bg_p2 },
+
+          -- Diagnostic virtual text
+          DiagnosticVirtualTextHint = makeDiagnosticColor(theme.diag.hint),
+          DiagnosticVirtualTextInfo = makeDiagnosticColor(theme.diag.info),
+          DiagnosticVirtualTextWarn = makeDiagnosticColor(theme.diag.warning),
+          DiagnosticVirtualTextError = makeDiagnosticColor(theme.diag.error),
+        }
       end,
       theme = "wave", -- Load "wave" theme
       background = { -- map the value of 'background' option to a theme
