@@ -14,7 +14,7 @@ foreground = "yellow"
 foreground = "green"
 
 [style.example_code]
-foreground = "red"
+foreground = "magenta"
 underline = false
 
 [style.example_variable]
