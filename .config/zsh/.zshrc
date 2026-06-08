@@ -113,3 +113,7 @@ function y() {
 
 # To customize prompt, run `p10k configure` or edit /var/home/johan/dotfiles/config/.config/zsh/.p10k.zsh.
 [[ ! -f /var/home/johan/dotfiles/config/.config/zsh/.p10k.zsh ]] || source /var/home/johan/dotfiles/config/.config/zsh/.p10k.zsh
+
+. "$HOME/.atuin/bin/env"
+
+eval "$(atuin init zsh)"
