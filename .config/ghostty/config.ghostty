@@ -14,7 +14,8 @@ window-show-tab-bar = auto
 
 custom-shader = shaders/cursor_warp.glsl
 
+quit-after-last-window-closed = false
+quit-after-last-window-closed-delay = 5m
+
 keybind = ctrl+shift+r=new_split:right
 keybind = ctrl+shift+d=new_split:down
-
-quit-after-last-window-closed = false
