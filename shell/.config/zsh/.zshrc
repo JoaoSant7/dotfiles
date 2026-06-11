@@ -118,4 +118,4 @@ function y() {
 # Atuin
 # =========================================================
 
-eval "$(atuin init zsh)"
+#eval "$(atuin init zsh)"
