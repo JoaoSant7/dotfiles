@@ -1,0 +1,16 @@
+[Keyboard]
+RepeatDelay=200
+RepeatRate=30
+
+[Libinput][1739][52865][VEN_06CB:00 06CB:CE81 Touchpad]
+PointerAccelerationProfile=2
+
+[Libinput][5426][178][Razer Razer DeathAdder V3]
+PointerAccelerationProfile=1
+
+[Libinput][9610][268][BY Tech Gaming Keyboard Mouse]
+PointerAccelerationProfile=1
+
+[Mouse]
+cursorSize=32
+cursorTheme=Posy_Cursor_Black

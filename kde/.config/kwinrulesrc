@@ -1,0 +1,16 @@
+[289d63d7-6965-41bd-8935-9f87520c6eb0]
+noborderrule=2
+
+[78384e1f-9d48-43aa-9553-c99b641399f9]
+Description=Window settings for org.wezfurlong.wezterm
+noborder=true
+noborderrule=3
+title=zsh
+types=1
+wmclass=wezterm-gui org.wezfurlong.wezterm
+wmclasscomplete=true
+wmclassmatch=1
+
+[General]
+count=1
+rules=78384e1f-9d48-43aa-9553-c99b641399f9

@@ -1,0 +1,6 @@
+[Daemon]
+Timeout=10
+
+[Greeter][Wallpaper][org.kde.image][General]
+Image=/home/johan/backgrounds/ecclesiae-images/pantokrator-palermo.jpeg
+PreviewImage=/home/johan/backgrounds/ecclesiae-images/pantokrator-palermo.jpeg

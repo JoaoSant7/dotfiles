@@ -1,0 +1,6 @@
+[Layout]
+LayoutList=us
+Options=compose:caps
+ResetOldOptions=true
+Use=true
+VariantList=altgr-intl
