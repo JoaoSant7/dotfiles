@@ -1,5 +1,5 @@
 [TabBox]
-LayoutName=org.kde.breeze.desktop
+LayoutName=thumbnail_grid
 
 [org.kde.kdecoration2]
 NoPlugin=false

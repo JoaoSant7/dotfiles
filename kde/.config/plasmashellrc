@@ -1,19 +1,19 @@
 [KFileDialog Settings]
 detailViewIconSize=64
 
-[PlasmaViews][Panel 32]
+[PlasmaViews][Panel 171]
 floating=1
-panelLengthMode=1
-panelOpacity=1
+panelLengthMode=0
+panelOpacity=0
 panelVisibility=0
 
-[PlasmaViews][Panel 32][Defaults]
+[PlasmaViews][Panel 171][Defaults]
 maxLength=1919
 minLength=1919
 offset=0
 thickness=32
 
-[PlasmaViews][Panel 32][Horizontal1920]
+[PlasmaViews][Panel 171][Horizontal1920]
 alignment=132
 
 [Updates]
