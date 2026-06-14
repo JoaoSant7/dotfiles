@@ -136,8 +136,8 @@ ForegroundVisited=137,146,167
 BrowserApplication=brave-origin.desktop
 ColorScheme=KanagawaDragon
 ColorSchemeHash=95e670dc31bdd74479e02f5891d2d12394af6388
-TerminalApplication=kitty
-TerminalService=kitty.desktop
+TerminalApplication=/usr/bin/ghostty --gtk-single-instance=true
+TerminalService=com.mitchellh.ghostty.desktop
 UseSystemBell=true
 XftAntialias=true
 XftHintStyle=hintslight

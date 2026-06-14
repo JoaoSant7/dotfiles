@@ -392,10 +392,10 @@ _launch=Meta+B
 
 [services][com.mitchellh.ghostty.desktop]
 _launch=none
-new-window=none
+new-window=Meta+Return
 
 [services][kitty.desktop]
-_launch=Meta+Return
+_launch=none
 
 [services][org.flameshot.Flameshot.desktop]
 Capture=Meta+S
