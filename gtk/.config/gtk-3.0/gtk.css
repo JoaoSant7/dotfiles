@@ -1,0 +1,7 @@
+@import 'colors.css';
+@import 'window_decorations.css';
+
+* {
+  * font-weight: 600;
+  * font-family: "SF Pro Text", sans-serif;
+  * }
