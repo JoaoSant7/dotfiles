@@ -406,3 +406,7 @@ _launch=
 [services][org.kde.krunner.desktop]
 RunClipboard=none
 _launch=Alt+Space
+
+[services][org.kde.spectacle.desktop]
+CurrentMonitorScreenShot=
+OpenWithoutScreenshot=

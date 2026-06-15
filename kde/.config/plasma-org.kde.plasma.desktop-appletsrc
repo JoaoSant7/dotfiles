@@ -6,6 +6,7 @@ RightButton;NoModifier=org.kde.contextmenu
 RightButton;NoModifier=org.kde.contextmenu
 
 [Containments][170]
+ItemGeometries-0x0=
 ItemGeometries-1536x864=
 ItemGeometries-1920x1080=
 ItemGeometriesHorizontal=
@@ -18,12 +19,11 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
 [Containments][170][ConfigDialog]
-DialogHeight=1012
-DialogWidth=1920
+DialogHeight=1010
+DialogWidth=1912
 
 [Containments][170][Wallpaper][org.kde.image][General]
-Image=file:///home/johan/dotfiles/backgrounds/ecclesiae-images/pantokrator-palermo.jpeg
-SlidePaths=/usr/share/wallpapers/
+Image=file:///home/petrvs/dotfiles/backgrounds/ecclesiae-images/pantokrator-palermo.jpeg
 
 [Containments][171]
 activityId=
@@ -39,7 +39,7 @@ immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][171][Applets][172][Configuration]
-popupHeight=545
+popupHeight=549
 popupWidth=723
 
 [Containments][171][Applets][172][Configuration][ConfigDialog]
@@ -71,7 +71,7 @@ DialogHeight=630
 DialogWidth=810
 
 [Containments][171][Applets][174][Configuration][General]
-launchers=applications:brave-origin.desktop,applications:obsidian.desktop,preferred://filemanager
+launchers=applications:brave-origin.desktop,preferred://filemanager
 
 [Containments][171][Applets][175]
 immutability=1

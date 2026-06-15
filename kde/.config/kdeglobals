@@ -145,15 +145,12 @@ XftSubPixel=rgb
 fixed=JetBrainsMono Nerd Font,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
 font=SF Pro Text,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
 menuFont=SF Pro Text,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
-smallestReadableFont=SF Pro Text,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
+smallestReadableFont=SF Pro Text,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
 toolBarFont=SF Pro Text,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
-
-[Icons]
-Theme=Chameleon-Symbolic-Dark-Icons
 
 [KDE]
 AnimationDurationFactor=1
-LookAndFeelPackage=New Kanagawa
+LookAndFeelPackage=org.kde.breezedark.desktop
 contrast=4
 frameContrast=0.2
 

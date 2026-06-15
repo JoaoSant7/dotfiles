@@ -27,7 +27,6 @@
                 "highDynamicRange": false,
                 "iccProfilePath": "",
                 "maxBitsPerColor": 0,
-                "maxPeakBrightnessOverride": 750,
                 "mode": {
                     "flags": 1,
                     "height": 1080,
@@ -37,11 +36,11 @@
                 "overscan": 0,
                 "rgbRange": "Automatic",
                 "scale": 1,
-                "sdrBrightness": 300,
+                "sdrBrightness": 301,
                 "sdrGamutWideness": 1,
                 "sharpness": 0,
                 "transform": "Normal",
-                "uuid": "1ae19e87-9329-4e6e-a6ee-d60a08574c89",
+                "uuid": "c91c251a-da1a-411c-9ce1-a63094a62b9e",
                 "vrrPolicy": "Never",
                 "wideColorGamut": false
             },
@@ -58,7 +57,7 @@
                 ],
                 "autoRotation": "InTabletMode",
                 "automaticBrightness": false,
-                "brightness": 0.8,
+                "brightness": 1,
                 "colorPowerTradeoff": "PreferEfficiency",
                 "colorProfileSource": "sRGB",
                 "connectorName": "eDP-1",
@@ -79,12 +78,12 @@
                 },
                 "overscan": 0,
                 "rgbRange": "Automatic",
-                "scale": 1.25,
+                "scale": 1,
                 "sdrBrightness": 200,
                 "sdrGamutWideness": 0,
                 "sharpness": 0,
                 "transform": "Normal",
-                "uuid": "623f91bf-3252-4563-bfed-f74f9be6a43e",
+                "uuid": "1d2cf96b-4598-4d0b-b30a-95d854b35281",
                 "vrrPolicy": "Never",
                 "wideColorGamut": false
             }
@@ -110,65 +109,10 @@
                         "enabled": false,
                         "outputIndex": 1,
                         "position": {
-                            "x": -1536,
-                            "y": 216
-                        },
-                        "priority": 2,
-                        "replicationSource": ""
-                    }
-                ]
-            },
-            {
-                "lidClosed": true,
-                "outputs": [
-                    {
-                        "enabled": true,
-                        "outputIndex": 0,
-                        "position": {
-                            "x": 0,
-                            "y": 0
-                        },
-                        "priority": 1,
-                        "replicationSource": ""
-                    },
-                    {
-                        "enabled": false,
-                        "outputIndex": 1,
-                        "position": {
                             "x": 1920,
                             "y": 0
                         },
                         "priority": 2,
-                        "replicationSource": ""
-                    }
-                ]
-            },
-            {
-                "lidClosed": false,
-                "outputs": [
-                    {
-                        "enabled": true,
-                        "outputIndex": 1,
-                        "position": {
-                            "x": 0,
-                            "y": 0
-                        },
-                        "priority": 1,
-                        "replicationSource": ""
-                    }
-                ]
-            },
-            {
-                "lidClosed": true,
-                "outputs": [
-                    {
-                        "enabled": true,
-                        "outputIndex": 1,
-                        "position": {
-                            "x": 0,
-                            "y": 0
-                        },
-                        "priority": 0,
                         "replicationSource": ""
                     }
                 ]

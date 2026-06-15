@@ -4,7 +4,7 @@ detailViewIconSize=64
 [PlasmaViews][Panel 171]
 floating=1
 panelLengthMode=0
-panelOpacity=0
+panelOpacity=1
 panelVisibility=0
 
 [PlasmaViews][Panel 171][Defaults]
