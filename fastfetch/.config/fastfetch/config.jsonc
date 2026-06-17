@@ -1,0 +1,93 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+
+  "logo": {
+    "type": "builtin",
+    "source": "fedora"
+  },
+
+  "display": {
+    "separator": " "
+  },
+
+  "modules": [
+    "break",
+    "break",
+    {
+      "type": "title",
+      "keyWidth": 12,
+      "color": "blue"
+    },
+    "break",
+    {
+      "type": "os",
+      "key": " ",
+      "keyColor": "blue",
+      "color": "blue",
+      "format": "Aurora"
+    },
+    {
+      "type": "host",
+      "key": "🖥 ",
+      "keyColor": "blue",
+      "color": "blue",
+      "format": "My PC"
+    },
+    {
+      "type": "shell",
+      "format": "zsh",
+      "key": ">_",
+      "keyColor": "blue",
+      "color": "blue"
+    },
+    {
+      "type": "terminal",
+      "key": " ",
+      "keyColor": "blue",
+      "color": "blue"
+    },
+    {
+      "type": "terminalfont",
+      "key": "",
+      "keyColor": "blue",
+      "color": "blue"
+    },
+    {
+      "type": "wm",
+      "format": "{} (wayland)",
+      "key": " ",
+      "keyColor": "blue",
+      "color": "blue"
+    },
+    {
+      "type": "cpu",
+      "key": "󰍛 ",
+      "keyColor": "blue",
+      "color": "blue",
+      "format": ""
+    },
+    {
+      "type": "gpu",
+      "key": "󰢮 ",
+      "keyColor": "blue",
+      "color": "blue",
+      "format": ""
+    },
+    {
+      "type": "memory",
+      "key": "🎟 ",
+      "keyColor": "blue",
+      "color": "blue",
+      "format": "{} {}"
+    },
+    {
+      "type": "uptime",
+      "key": " ",
+      "keyColor": "blue",
+      "color": "blue"
+    },
+    "break",
+    "break",
+    "break"
+  ]
+}
