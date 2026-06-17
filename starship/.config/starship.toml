@@ -1,0 +1,117 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = true
+
+[line_break]
+disabled = false
+
+[username]
+style_user = 'blue bold'
+style_root = 'red bold'
+format = '[$user]($style)'
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = false
+ssh_symbol = " "
+format = '[$ssh_symbol](bold gray) at [$hostname](bold green) '
+disabled = false
+
+[character]
+success_symbol = '[➜](bold green) '
+error_symbol = '[✗](bold red) '
+
+[aws]
+symbol = "  "
+
+[c]
+symbol = " "
+
+
+[directory]
+read_only = " 󰌾"
+format = 'in [$path](bold yellow) '
+
+[docker_context]
+symbol = " "
+
+[fossil_branch]
+symbol = " "
+
+[git_branch]
+symbol = " "
+
+[git_commit]
+tag_symbol = '  '
+
+[golang]
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[java]
+symbol = " "
+
+[lua]
+symbol = " "
+
+[memory_usage]
+symbol = "󰍛 "
+
+[nix_shell]
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[os.symbols]
+Alpine = " "
+AlmaLinux = " "
+Amazon = " "
+Android = " "
+Arch = " "
+CentOS = " "
+Debian = " "
+Fedora = " "
+Kali = " "
+Linux = " "
+NixOS = " "
+openSUSE = " "
+OracleLinux = "󰌷 "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+RockyLinux = " "
+Ubuntu = " "
+
+[package]
+symbol = "󰏗 "
+
+[pijul_channel]
+symbol = " "
+
+[python]
+symbol = " "
+
+[rlang]
+symbol = "󰟔 "
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = "󱘗 "
+
+[zig]
+symbol = " "
+
+[custom.update]
+when = "/usr/bin/rpm-ostree status --json | /usr/bin/jq -e \".deployments[0].booted == false\" > /dev/null;"
+command = 'echo "New deployment staged"'
+symbol = ""
+format = " $symbol [($output)]($style) "
+style = "italic green"
+
