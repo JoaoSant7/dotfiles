@@ -48,19 +48,8 @@ DialogWidth=1920
 
 [Containments][171][Applets][172][Configuration][General]
 favoritesPortedToKAstats=true
-icon=auroralogo-symbolic
+icon=start-here
 systemFavorites=suspend\\,hibernate\\,reboot\\,shutdown
-
-[Containments][171][Applets][173]
-immutability=1
-plugin=org.kde.plasma.pager
-
-[Containments][171][Applets][173][Configuration][ConfigDialog]
-DialogHeight=630
-DialogWidth=810
-
-[Containments][171][Applets][173][Configuration][General]
-displayedText=Number
 
 [Containments][171][Applets][174]
 immutability=1
@@ -91,10 +80,10 @@ boldText=true
 customDateFormat=dd MMM
 dateDisplayFormat=BesideTime
 dateFormat=custom
-fontFamily=JetBrainsMono Nerd Font
+fontFamily=SF Pro Text
 fontSize=12
 fontStyleName=Bold
-fontWeight=700
+fontWeight=600
 use24hFormat=2
 
 [Containments][171][Applets][176][Configuration][ConfigDialog]
@@ -148,10 +137,6 @@ plugin=org.kde.plasma.devicenotifier
 immutability=1
 plugin=org.kde.plasma.keyboardindicator
 
-[Containments][171][Applets][179][Applets][187]
-immutability=1
-plugin=org.kde.plasma.keyboardlayout
-
 [Containments][171][Applets][179][Applets][188]
 immutability=1
 plugin=org.kde.plasma.manage-inputmethod
@@ -159,6 +144,9 @@ plugin=org.kde.plasma.manage-inputmethod
 [Containments][171][Applets][179][Applets][189]
 immutability=1
 plugin=org.kde.plasma.networkmanagement
+
+[Containments][171][Applets][179][Applets][189][Configuration][General]
+currentDetailsTab=details
 
 [Containments][171][Applets][179][Applets][190]
 immutability=1
@@ -193,19 +181,24 @@ plugin=org.kde.plasma.bluetooth
 
 [Containments][171][Applets][179][Applets][197]
 immutability=1
-plugin=org.kde.plasma.mediacontroller
+plugin=org.kde.plasma.keyboardlayout
 
 [Containments][171][Applets][179][ConfigDialog]
 DialogHeight=630
 DialogWidth=810
 
 [Containments][171][Applets][179][General]
-extraItems=org.kde.kdeconnect,org.kde.plasma.vault,org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.volume,org.kde.plasma.weather
-hiddenItems=ibus-ui-gtk3,SyncThingy
+extraItems=org.kde.kdeconnect,org.kde.plasma.vault,org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.volume,org.kde.plasma.weather,org.kde.plasma.keyboardlayout,org.kde.plasma.networkmanagement
+hiddenItems=ibus-ui-gtk3,SyncThingy,org.kde.plasma.keyboardlayout
 knownItems=org.kde.kdeconnect,org.kde.plasma.vault,org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.volume,org.kde.plasma.weather
+shownItems=org.kde.plasma.networkmanagement
+
+[Containments][171][Applets][201]
+immutability=1
+plugin=org.kde.plasma.pager
 
 [Containments][171][General]
-AppletOrder=172;173;174;175;176;177;178;179
+AppletOrder=172;201;174;175;176;177;178;179
 
 [ScreenMapping]
 itemsOnDisabledScreens=

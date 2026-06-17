@@ -10,6 +10,9 @@ Seen=true
 [Applications][com.github.zocker_160.SyncThingy]
 Seen=true
 
+[Applications][org.fedoraproject.MediaWriter]
+Seen=true
+
 [Applications][org.flameshot.Flameshot]
 Seen=true
 

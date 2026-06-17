@@ -145,8 +145,11 @@ XftSubPixel=rgb
 fixed=JetBrainsMono Nerd Font,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
 font=SF Pro Text,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
 menuFont=SF Pro Text,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
-smallestReadableFont=SF Pro Text,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
+smallestReadableFont=SF Pro Text,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
 toolBarFont=SF Pro Text,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
+
+[Icons]
+Theme=Qogir-Dark
 
 [KDE]
 AnimationDurationFactor=1
@@ -170,6 +173,10 @@ Sort hidden files last=false
 Sort reversed=false
 Speedbar Width=165
 View Style=DetailTree
+
+[KScreen]
+ScreenScaleFactors=HDMI-A-1=1;eDP-1=1;
+XwaylandClientsScale=true
 
 [WM]
 activeBackground=13,12,12
