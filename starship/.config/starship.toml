@@ -29,7 +29,6 @@ symbol = "  "
 [c]
 symbol = " "
 
-
 [directory]
 read_only = " 󰌾"
 format = 'in [$path](bold yellow) '
