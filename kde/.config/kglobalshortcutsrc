@@ -58,13 +58,13 @@ Kill Window=Meta+Ctrl+Esc,Meta+Ctrl+Esc,Kill Window
 KrohnkiteBTreeLayout=,none,Krohnkite: BTree Layout
 KrohnkiteColumnsLayout=,none,Krohnkite: Columns Layout
 KrohnkiteDecrease=,none,Krohnkite: Decrease
-KrohnkiteFloatAll=Meta+Shift+F,none,Krohnkite: Toggle Float All
+KrohnkiteFloatAll=none,none,Krohnkite: Toggle Float All
 KrohnkiteFloatingLayout=,none,Krohnkite: Floating Layout
 KrohnkiteFocusDown=Meta+J,none,Krohnkite: Focus Down
-KrohnkiteFocusLeft=Meta+H,none,Krohnkite: Focus Left
+KrohnkiteFocusLeft=none,none,Krohnkite: Focus Left
 KrohnkiteFocusNext=,none,Krohnkite: Focus Next
 KrohnkiteFocusPrev=Meta+\\,,none,Krohnkite: Focus Previous
-KrohnkiteFocusRight=Meta+L,none,Krohnkite: Focus Right
+KrohnkiteFocusRight=none,none,Krohnkite: Focus Right
 KrohnkiteFocusUp=Meta+K,none,Krohnkite: Focus Up
 KrohnkiteGrowHeight=Meta+Ctrl+J,none,Krohnkite: Grow Height
 KrohnkiteIncrease=,none,Krohnkite: Increase
@@ -86,7 +86,7 @@ KrohnkiteSpreadLayout=,none,Krohnkite: Spread Layout
 KrohnkiteStackedLayout=,none,Krohnkite: Stacked Layout
 KrohnkiteStairLayout=,none,Krohnkite: Stair Layout
 KrohnkiteTileLayout=,none,Krohnkite: Tile Layout
-KrohnkiteToggleFloat=Meta+F,none,Krohnkite: Toggle Float
+KrohnkiteToggleFloat=none,none,Krohnkite: Toggle Float
 KrohnkiteTreeColumnLayout=,none,Krohnkite: Three Column Layout
 KrohnkitegrowWidth=Meta+Ctrl+L,none,Krohnkite: Grow Width
 KrohnkitetoggleDock=,none,Krohnkite: Toggle Dock
@@ -166,11 +166,11 @@ Window Custom Quick Tile Bottom=,,Custom Quick Tile Window to the Bottom
 Window Custom Quick Tile Left=,,Custom Quick Tile Window to the Left
 Window Custom Quick Tile Right=,,Custom Quick Tile Window to the Right
 Window Custom Quick Tile Top=,,Custom Quick Tile Window to the Top
-Window Fullscreen=,,Make Window Fullscreen
+Window Fullscreen=none,,Make Window Fullscreen
 Window Grow Horizontal=,,Expand Window Horizontally
 Window Grow Vertical=,,Expand Window Vertically
 Window Lower=,,Lower Window
-Window Maximize=Meta+PgUp,Meta+PgUp,Maximize Window
+Window Maximize=Meta+Shift+F,Meta+PgUp,Maximize Window
 Window Maximize Horizontal=,,Maximize Window Horizontally
 Window Maximize Vertical=,,Maximize Window Vertically
 Window Minimize=Meta+PgDown,Meta+PgDown,Minimize Window
@@ -296,10 +296,10 @@ karousel-focus-8=,none,Karousel: Move focus to column 8
 karousel-focus-9=,none,Karousel: Move focus to column 9
 karousel-focus-down=Meta+S,none,Karousel: Move focus down
 karousel-focus-end=Meta+End,none,Karousel: Move focus to end
-karousel-focus-left=,none,Karousel: Move focus left
+karousel-focus-left=Meta+H,none,Karousel: Move focus left
 karousel-focus-next=,none,Karousel: Move focus to the next window in grid
 karousel-focus-previous=,none,Karousel: Move focus to the previous window in grid
-karousel-focus-right=Meta+D,none,Karousel: Move focus right
+karousel-focus-right=Meta+L,none,Karousel: Move focus right
 karousel-focus-start=Meta+Home,none,Karousel: Move focus to start
 karousel-focus-up=,none,Karousel: Move focus up
 karousel-grid-scroll-end=Meta+Alt+End,none,Karousel: Scroll to end
@@ -438,12 +438,15 @@ _launch=none
 [services][org.flameshot.Flameshot.desktop]
 Capture=Meta+S
 
+[services][org.kde.dolphin.desktop]
+_launch=Meta+F
+
 [services][org.kde.konsole.desktop]
 _launch=
 
 [services][org.kde.krunner.desktop]
 RunClipboard=none
-_launch=Alt+Space
+_launch=Meta+D
 
 [services][org.kde.spectacle.desktop]
 CurrentMonitorScreenShot=

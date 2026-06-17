@@ -24,6 +24,7 @@ DialogWidth=1912
 
 [Containments][170][Wallpaper][org.kde.image][General]
 Image=file:///home/petrvs/dotfiles/backgrounds/ecclesiae-images/pantokrator-palermo.jpeg
+SlidePaths=/home/petrvs/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][171]
 activityId=
@@ -43,12 +44,12 @@ popupHeight=549
 popupWidth=723
 
 [Containments][171][Applets][172][Configuration][ConfigDialog]
-DialogHeight=1012
+DialogHeight=1014
 DialogWidth=1920
 
 [Containments][171][Applets][172][Configuration][General]
 favoritesPortedToKAstats=true
-icon=start-here
+icon=kde-symbolic
 systemFavorites=suspend\\,hibernate\\,reboot\\,shutdown
 
 [Containments][171][Applets][174]
@@ -182,6 +183,10 @@ plugin=org.kde.plasma.bluetooth
 [Containments][171][Applets][179][Applets][197]
 immutability=1
 plugin=org.kde.plasma.keyboardlayout
+
+[Containments][171][Applets][179][Applets][202]
+immutability=1
+plugin=org.kde.plasma.mediacontroller
 
 [Containments][171][Applets][179][ConfigDialog]
 DialogHeight=630
