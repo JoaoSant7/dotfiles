@@ -23,7 +23,7 @@ DialogHeight=1010
 DialogWidth=1912
 
 [Containments][170][Wallpaper][org.kde.image][General]
-Image=file:///home/petrvs/dotfiles/backgrounds/ecclesiae-images/pantokrator-palermo.jpeg
+Image=file:///home/petrvs/dotfiles/backgrounds/mountains/white-mountain.jpg
 SlidePaths=/home/petrvs/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][171]

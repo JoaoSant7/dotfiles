@@ -1,2 +1,5 @@
 [Keyboard]
 StickyKeysAutoOff=true
+
+[ScreenReader]
+Enabled=false
