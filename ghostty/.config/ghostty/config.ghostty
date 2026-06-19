@@ -2,7 +2,7 @@ command = /usr/bin/zsh
 
 font-family = JetBrainsMono Nerd Font
 font-size = 19
-theme = Kanagawa Dragon
+theme = Kanagawa Dragon 
 mouse-hide-while-typing = true
 
 cursor-style-blink = false
