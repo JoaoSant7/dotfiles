@@ -2,7 +2,7 @@
 require("config.lazy")
 
 -- colorscheme
-vim.cmd.colorscheme("jellybeans-warm")
+vim.cmd.colorscheme("kanagawa-dragon")
 
 -- line
 vim.opt.wrap = true
