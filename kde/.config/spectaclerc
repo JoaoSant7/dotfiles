@@ -1,6 +1,10 @@
+[General]
+autoSaveImage=true
+
 [ImageSave]
+imageSaveLocation=file:///home/petrvs/Pictures/spetacle-screenshots
 lastImageSaveAsLocation=file:///home/johan/Documents/atividade-cloud/nginx-rodando.png
-lastImageSaveLocation=file:///home/johan/Pictures/Screenshots/Screenshot_20260611_210749.png
+lastImageSaveLocation=file:///home/petrvs/Pictures/spetacle-screenshots/Screenshot_20260620_122547.png
 translatedScreenshotsFolder=Screenshots
 
 [VideoSave]
