@@ -450,3 +450,7 @@ _launch=none
 [services][org.kde.krunner.desktop]
 RunClipboard=none
 _launch=Meta+D
+
+[services][org.kde.spectacle.desktop]
+CurrentMonitorScreenShot=none
+OpenWithoutScreenshot=none

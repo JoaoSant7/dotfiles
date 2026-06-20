@@ -79,7 +79,3 @@ Reference=300
 
 [Xwayland]
 Scale=1
-
-[org.kde.kdecoration2]
-library=org.kde.breeze
-theme=Breeze

@@ -61,7 +61,7 @@ DialogHeight=630
 DialogWidth=810
 
 [Containments][171][Applets][174][Configuration][General]
-launchers=applications:brave-origin.desktop,preferred://filemanager
+launchers=preferred://filemanager
 
 [Containments][171][Applets][175]
 immutability=1
