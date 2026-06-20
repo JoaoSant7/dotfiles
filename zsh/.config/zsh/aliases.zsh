@@ -50,3 +50,9 @@ alias gpull="git pull"
 # =========================================================
 
 alias fastfetch='/usr/bin/fastfetch -c ~/.config/fastfetch/config.jsonc'
+
+# =========================================================
+# Distrobox
+# =========================================================
+
+alias distrobox='dib'
