@@ -452,5 +452,4 @@ RunClipboard=none
 _launch=Meta+D
 
 [services][org.kde.spectacle.desktop]
-CurrentMonitorScreenShot=none
-OpenWithoutScreenshot=none
+RecordRegion=Meta+R
