@@ -55,4 +55,4 @@ alias fastfetch='/usr/bin/fastfetch -c ~/.config/fastfetch/config.jsonc'
 # Distrobox
 # =========================================================
 
-alias distrobox='dib'
+alias dib="distrobox"
