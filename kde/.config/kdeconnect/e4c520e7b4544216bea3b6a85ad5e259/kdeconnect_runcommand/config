@@ -1,2 +1,2 @@
 [General]
-commands="@ByteArray({\"d43fc6aa_216b_446b_88a3_cfd69c5881f0\":{\"command\":\"shutdown -h now\",\"name\":\"shutdown\"}})"
+commands="@ByteArray({\"1876d3cc_913c_4c4d_a37b_05b495ea2ca9\":{\"command\":\"reboot [-f|--force]\",\"name\":\"force-reboot\"},\"1efceb93_5c1b_4151_93bb_d53de0d08bf5\":{\"command\":\"systemctl suspend\",\"name\":\"sleep\"},\"63af7a6c_032a_497a_bcac_db12c09eada7\":{\"command\":\"reboot\",\"name\":\"normal-reboot\"},\"d43fc6aa_216b_446b_88a3_cfd69c5881f0\":{\"command\":\"shutdown -h now\",\"name\":\"shutdown\"}})"
