@@ -117,3 +117,5 @@ function y() {
 # =========================================================
 
 eval "$(atuin init zsh)"
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"

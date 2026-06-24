@@ -193,9 +193,9 @@ DialogHeight=630
 DialogWidth=810
 
 [Containments][171][Applets][179][General]
-extraItems=org.kde.kdeconnect,org.kde.plasma.vault,org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.volume,org.kde.plasma.weather,org.kde.plasma.keyboardlayout,org.kde.plasma.networkmanagement
+extraItems=org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.volume,org.kde.plasma.keyboardlayout,org.kde.plasma.networkmanagement,org.kde.kdeconnect,org.kde.plasma.vault,org.kde.plasma.keyboardindicator,org.kde.plasma.printmanager,org.kde.plasma.weather
 hiddenItems=ibus-ui-gtk3,SyncThingy,org.kde.plasma.keyboardlayout
-knownItems=org.kde.kdeconnect,org.kde.plasma.vault,org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.volume,org.kde.plasma.weather
+knownItems=org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.volume,org.kde.kdeconnect,org.kde.plasma.vault,org.kde.plasma.keyboardindicator,org.kde.plasma.printmanager,org.kde.plasma.weather
 shownItems=org.kde.plasma.networkmanagement
 
 [Containments][171][Applets][201]
@@ -204,6 +204,23 @@ plugin=org.kde.plasma.pager
 
 [Containments][171][General]
 AppletOrder=172;201;174;175;176;177;178;179
+
+[Containments][203]
+activityId=a2508043-3251-41ad-a5e3-2e55144c9036
+formfactor=0
+immutability=1
+lastScreen=1
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=org.kde.image
+
+[Containments][203][ConfigDialog]
+DialogHeight=630
+DialogWidth=810
+
+[Containments][203][Wallpaper][org.kde.image][General]
+Image=file:///home/petrvs/dotfiles/backgrounds/mountains/white-mountain.jpg
+SlidePaths=/home/petrvs/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [ScreenMapping]
 itemsOnDisabledScreens=

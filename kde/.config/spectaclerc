@@ -5,7 +5,7 @@ autoSaveImage=true
 imageFilenameTemplate=screenshot-<dd>_<MM>_<yyyy>-<HH>_<mm>
 imageSaveLocation=file:///home/petrvs/Pictures/spetacle-screenshots
 lastImageSaveAsLocation=file:///home/johan/Documents/atividade-cloud/nginx-rodando.png
-lastImageSaveLocation=file:///home/petrvs/Pictures/spetacle-screenshots/20-06-2026.png
+lastImageSaveLocation=file:///home/petrvs/Pictures/spetacle-screenshots/screenshot-23_06_2026-18_48.png
 translatedScreenshotsFolder=Screenshots
 
 [VideoSave]
