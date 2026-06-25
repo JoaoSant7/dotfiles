@@ -3,7 +3,8 @@ RepeatDelay=200
 RepeatRate=30
 
 [Libinput][1739][52865][VEN_06CB:00 06CB:CE81 Touchpad]
-PointerAccelerationProfile=2
+ClickMethod=2
+PointerAccelerationProfile=1
 
 [Libinput][5426][178][Razer Razer DeathAdder V3]
 PointerAccelerationProfile=1

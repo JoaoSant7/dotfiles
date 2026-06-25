@@ -63,8 +63,8 @@ ForegroundPositive=135,169,135
 ForegroundVisited=137,146,167
 
 [Colors:Header][Inactive]
-BackgroundAlternate=29,28,25
-BackgroundNormal=24,22,22
+BackgroundAlternate=24,22,22
+BackgroundNormal=18,18,15
 DecorationFocus=139,164,176
 DecorationHover=139,164,176
 ForegroundActive=139,164,176
@@ -72,7 +72,7 @@ ForegroundInactive=114,113,105
 ForegroundLink=143,161,178
 ForegroundNegative=196,116,110
 ForegroundNeutral=196,178,138
-ForegroundNormal=220,215,186
+ForegroundNormal=200,192,147
 ForegroundPositive=135,169,135
 ForegroundVisited=137,146,167
 
@@ -141,12 +141,12 @@ TerminalService=com.mitchellh.ghostty.desktop
 UseSystemBell=true
 XftAntialias=true
 XftHintStyle=hintslight
-XftSubPixel=rgb
-fixed=JetBrainsMono Nerd Font,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
-font=SF Pro Text,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
-menuFont=SF Pro Text,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
-smallestReadableFont=SF Pro Text,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
-toolBarFont=SF Pro Text,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
+XftSubPixel=none
+fixed=JetBrainsMono Nerd Font,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+font=SF Pro Text,12,-1,0,400,0,0,0,0,0,0,0,0,0,0,1
+menuFont=SF Pro Text,12,-1,0,400,0,0,0,0,0,0,0,0,0,0,1
+smallestReadableFont=SF Pro Text,11,-1,0,400,0,0,0,0,0,0,0,0,0,0,1
+toolBarFont=SF Pro Text,12,-1,0,400,0,0,0,0,0,0,0,0,0,0,1
 
 [Icons]
 Theme=Qogir-Dark
@@ -181,7 +181,7 @@ XwaylandClientsScale=true
 [WM]
 activeBackground=13,12,12
 activeBlend=220,215,186
-activeFont=SF Pro Text,12,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
+activeFont=SF Pro Text,12,-1,0,400,0,0,0,0,0,0,0,0,0,0,1
 activeForeground=220,215,186
 inactiveBackground=18,18,15
 inactiveBlend=114,113,105

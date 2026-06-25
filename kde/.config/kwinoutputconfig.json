@@ -2,15 +2,9 @@
     {
         "data": [
             {
-                "abmLevel": 0,
                 "allowDdcCi": true,
                 "allowSdrSoftwareBrightness": false,
                 "autoBrightnessCurve": [
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
                     0,
                     0,
                     0,
@@ -20,23 +14,18 @@
                 ],
                 "autoRotation": "InTabletMode",
                 "automaticBrightness": false,
-                "brightness": 0.1,
+                "brightness": 0.2,
                 "colorPowerTradeoff": "PreferEfficiency",
                 "colorProfileSource": "EDID",
                 "connectorName": "HDMI-A-1",
-                "customModes": [
-                ],
                 "detectedDdcCi": true,
                 "edidHash": "263a4f42b4ec83145a521934d747f82b",
                 "edidIdentifier": "GSM 23689 263103 5 2025 0",
                 "edrPolicy": "always",
-                "hdrColorProfileSource": "EDID",
-                "hdrIccProfilePath": "",
                 "highDynamicRange": false,
                 "iccProfilePath": "",
                 "maxBitsPerColor": 0,
                 "mode": {
-                    "flags": 1,
                     "height": 1080,
                     "refreshRate": 179961,
                     "width": 1920
@@ -48,20 +37,14 @@
                 "sdrGamutWideness": 1,
                 "sharpness": 0,
                 "transform": "Normal",
-                "uuid": "c91c251a-da1a-411c-9ce1-a63094a62b9e",
+                "uuid": "4b8d87de-3f0a-46e4-abdb-090bdf26da62",
                 "vrrPolicy": "Never",
                 "wideColorGamut": false
             },
             {
-                "abmLevel": 0,
                 "allowDdcCi": true,
                 "allowSdrSoftwareBrightness": false,
                 "autoBrightnessCurve": [
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
                     0,
                     0,
                     0,
@@ -71,23 +54,18 @@
                 ],
                 "autoRotation": "InTabletMode",
                 "automaticBrightness": false,
-                "brightness": 1,
+                "brightness": 0.55,
                 "colorPowerTradeoff": "PreferEfficiency",
                 "colorProfileSource": "sRGB",
                 "connectorName": "eDP-1",
-                "customModes": [
-                ],
                 "detectedDdcCi": false,
                 "edidHash": "52036e7bf5f00ef980de0a9944c5c6f0",
                 "edidIdentifier": "CMN 5410 0 22 2020 0",
                 "edrPolicy": "always",
-                "hdrColorProfileSource": "EDID",
-                "hdrIccProfilePath": "",
                 "highDynamicRange": false,
                 "iccProfilePath": "",
                 "maxBitsPerColor": 0,
                 "mode": {
-                    "flags": 1,
                     "height": 1080,
                     "refreshRate": 120015,
                     "width": 1920
@@ -99,7 +77,7 @@
                 "sdrGamutWideness": 0,
                 "sharpness": 0,
                 "transform": "Normal",
-                "uuid": "1d2cf96b-4598-4d0b-b30a-95d854b35281",
+                "uuid": "0ace3faf-a170-4d48-8f2d-07c39c8bdf71",
                 "vrrPolicy": "Never",
                 "wideColorGamut": false
             }
@@ -125,7 +103,7 @@
                         "enabled": false,
                         "outputIndex": 1,
                         "position": {
-                            "x": -1536,
+                            "x": 1920,
                             "y": 0
                         },
                         "priority": 2,
@@ -143,7 +121,7 @@
                             "x": 0,
                             "y": 0
                         },
-                        "priority": 0,
+                        "priority": 1,
                         "replicationSource": ""
                     }
                 ]
