@@ -82,7 +82,8 @@ customDateFormat=ddd d MMM
 dateDisplayFormat=BesideTime
 dateFormat=custom
 fontFamily=SF Pro Text
-fontStyleName=Semibold
+fontSize=12
+fontStyleName=Bold
 fontWeight=600
 use24hFormat=2
 
