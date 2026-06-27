@@ -8,6 +8,11 @@ hl.monitor({
 })
 
 hl.monitor({
+	output = "eDP-2",
+	disabled = true,
+})
+
+hl.monitor({
 	output = "eDP-1",
 	disabled = true,
 })
