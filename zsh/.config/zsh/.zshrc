@@ -121,4 +121,4 @@ eval "$(atuin init zsh)"
 # =========================================================
 # Homebrew
 # =========================================================
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+#eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
