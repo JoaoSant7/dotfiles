@@ -2,6 +2,6 @@
 
 TERMINAL = "ghostty +new-window"
 FILE_MANAGER = "thunar"
-BROWSER = "firefox"
-EDITOR = "gnome-text-editor --new-window"
+BROWSER = "brave"
+EDITOR = "zed-editor"
 CALCULATOR = "gnome-calculator"
