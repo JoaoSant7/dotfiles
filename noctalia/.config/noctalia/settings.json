@@ -14,7 +14,7 @@
         "enableSessionSearch": true,
         "enableSettingsSearch": true,
         "enableWindowsSearch": true,
-        "iconMode": "native",
+        "iconMode": "tabler",
         "ignoreMouseInput": false,
         "overviewLayer": false,
         "pinnedApps": [
@@ -158,6 +158,16 @@
                     "showText": true,
                     "textColor": "none",
                     "useFixedWidth": false
+                },
+                {
+                    "colorizeSystemIcon": "none",
+                    "colorizeSystemText": "none",
+                    "customIconPath": "",
+                    "enableColorization": false,
+                    "icon": "rocket",
+                    "iconColor": "none",
+                    "id": "Launcher",
+                    "useDistroLogo": false
                 }
             ],
             "right": [
@@ -445,7 +455,7 @@
     "location": {
         "analogClockInCalendar": false,
         "autoLocate": false,
-        "firstDayOfWeek": -1,
+        "firstDayOfWeek": 0,
         "hideWeatherCityName": false,
         "hideWeatherTimezone": false,
         "name": "",
@@ -639,10 +649,6 @@
             },
             {
                 "enabled": true,
-                "id": "gtk"
-            },
-            {
-                "enabled": true,
                 "id": "qt"
             },
             {
@@ -656,6 +662,10 @@
             {
                 "enabled": true,
                 "id": "hyprland"
+            },
+            {
+                "enabled": true,
+                "id": "gtk"
             }
         ],
         "enableUserTheming": false
@@ -663,8 +673,8 @@
     "ui": {
         "boxBorderEnabled": false,
         "fontDefault": "SF Pro Text",
-        "fontDefaultScale": 1.11,
-        "fontFixed": "monospace",
+        "fontDefaultScale": 1.1,
+        "fontFixed": "JetBrainsMono Nerd Font",
         "fontFixedScale": 1,
         "panelBackgroundOpacity": 0.93,
         "panelsAttachedToBar": true,
