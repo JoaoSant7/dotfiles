@@ -12,3 +12,6 @@ require("config.misc")
 require("config.monitors")
 require("config.windowrules")
 require("config.workspaces")
+
+-- This loads Noctalia-generated Hyprland colors.
+dofile("/home/pedro/.config/hypr/noctalia/noctalia-colors.lua")
