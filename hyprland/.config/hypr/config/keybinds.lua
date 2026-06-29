@@ -1,5 +1,5 @@
 local mainMod = "SUPER"
-local noctCall = "qs -c noctalia-shell ipc call "
+local noctCall = "noctalia-shell ipc call "
 local launchPrefix = "uwsm app -- " -- if you are not using UWSM, make this empty (e.g. "")
 
 ---------------------------
@@ -46,7 +46,7 @@ hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(launchPrefix .. BROWSER))
 hl.bind("CONTROL + SHIFT + Escape", hl.dsp.exec_cmd(launchPrefix .. TERMINAL .. " -e btop"))
 hl.bind(mainMod .. " + Z", hl.dsp.exec_cmd(noctCall .. "settings toggle"))
 hl.bind(mainMod .. " + X", hl.dsp.exec_cmd(noctCall .. "controlCenter toggle"))
-hl.bind(mainMod .. " + D", hl.dsp.exec_cmd(noctCall .. "launcher toggle"))
+hl.bind(mainMod .. " + Space", hl.dsp.exec_cmd(noctCall .. "launcher toggle"))
 hl.bind(mainMod .. " + period", hl.dsp.exec_cmd(noctCall .. "launcher emoji"))
 
 ---------------------------
