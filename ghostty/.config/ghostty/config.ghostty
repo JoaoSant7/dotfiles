@@ -1,6 +1,4 @@
-command = /usr/bin/zsh
-
-theme = Kanagawa Dragon
+theme = noctalia
 font-family = JetBrainsMono Nerd Font
 font-size = 19
 mouse-hide-while-typing = true
