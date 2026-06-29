@@ -9,12 +9,12 @@
         "density": "default",
         "enableClipPreview": true,
         "enableClipboardChips": true,
-        "enableClipboardHistory": false,
+        "enableClipboardHistory": true,
         "enableClipboardSmartIcons": true,
         "enableSessionSearch": true,
         "enableSettingsSearch": true,
         "enableWindowsSearch": true,
-        "iconMode": "tabler",
+        "iconMode": "native",
         "ignoreMouseInput": false,
         "overviewLayer": false,
         "pinnedApps": [
@@ -155,7 +155,7 @@
                     "maxWidth": 145,
                     "scrollingMode": "hover",
                     "showIcon": true,
-                    "showText": true,
+                    "showText": false,
                     "textColor": "none",
                     "useFixedWidth": false
                 },
@@ -637,10 +637,6 @@
         "activeTemplates": [
             {
                 "enabled": true,
-                "id": "zenBrowser"
-            },
-            {
-                "enabled": true,
                 "id": "btop"
             },
             {
@@ -661,11 +657,11 @@
             },
             {
                 "enabled": true,
-                "id": "hyprland"
+                "id": "gtk"
             },
             {
                 "enabled": true,
-                "id": "gtk"
+                "id": "hyprland"
             }
         ],
         "enableUserTheming": false
