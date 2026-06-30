@@ -14,7 +14,7 @@
         "enableSessionSearch": true,
         "enableSettingsSearch": true,
         "enableWindowsSearch": true,
-        "iconMode": "native",
+        "iconMode": "tabler",
         "ignoreMouseInput": false,
         "overviewLayer": false,
         "pinnedApps": [
@@ -25,7 +25,7 @@
         "showIconBackground": false,
         "sortByMostUsed": true,
         "terminalCommand": "alacritty -e",
-        "viewMode": "list"
+        "viewMode": "grid"
     },
     "audio": {
         "mprisBlacklist": [
@@ -50,7 +50,7 @@
         "density": "comfortable",
         "displayMode": "always_visible",
         "enableExclusionZoneInset": true,
-        "fontScale": 1,
+        "fontScale": 1.05,
         "frameRadius": 12,
         "frameThickness": 8,
         "hideOnOverview": false,
@@ -80,7 +80,7 @@
             "center": [
                 {
                     "clockColor": "none",
-                    "customFont": "",
+                    "customFont": "SF Pro Text",
                     "formatHorizontal": "HH:mm ddd, MMM dd",
                     "formatVertical": "HH mm - dd MM",
                     "id": "Clock",
@@ -89,6 +89,16 @@
                 }
             ],
             "left": [
+                {
+                    "colorizeSystemIcon": "none",
+                    "colorizeSystemText": "none",
+                    "customIconPath": "",
+                    "enableColorization": true,
+                    "icon": "rocket",
+                    "iconColor": "none",
+                    "id": "Launcher",
+                    "useDistroLogo": true
+                },
                 {
                     "characterCount": 2,
                     "colorizeIcons": false,
@@ -105,7 +115,7 @@
                     "occupiedColor": "secondary",
                     "pillSize": 0.6,
                     "showApplications": false,
-                    "showApplicationsHover": false,
+                    "showApplicationsHover": true,
                     "showBadge": true,
                     "showLabelsOnlyWhenOccupied": true,
                     "unfocusedIconsOpacity": 1
@@ -124,7 +134,7 @@
                     "showDiskUsageAsPercent": false,
                     "showGpuTemp": false,
                     "showLoadAverage": false,
-                    "showMemoryAsPercent": false,
+                    "showMemoryAsPercent": true,
                     "showMemoryUsage": true,
                     "showNetworkStats": false,
                     "showSwapUsage": false,
@@ -158,16 +168,6 @@
                     "showText": false,
                     "textColor": "none",
                     "useFixedWidth": false
-                },
-                {
-                    "colorizeSystemIcon": "none",
-                    "colorizeSystemText": "none",
-                    "customIconPath": "",
-                    "enableColorization": false,
-                    "icon": "rocket",
-                    "iconColor": "none",
-                    "id": "Launcher",
-                    "useDistroLogo": false
                 }
             ],
             "right": [
@@ -175,8 +175,8 @@
                     "blacklist": [
                     ],
                     "chevronColor": "none",
-                    "colorizeIcons": false,
-                    "drawerEnabled": true,
+                    "colorizeIcons": true,
+                    "drawerEnabled": false,
                     "hidePassive": false,
                     "id": "Tray",
                     "pinned": [
@@ -414,7 +414,7 @@
         "passwordChars": false,
         "radiusRatio": 1,
         "reverseScroll": false,
-        "scaleRatio": 1,
+        "scaleRatio": 1.1,
         "screenRadiusRatio": 1,
         "shadowDirection": "bottom_right",
         "shadowOffsetX": 2,
@@ -662,6 +662,10 @@
             {
                 "enabled": true,
                 "id": "hyprland"
+            },
+            {
+                "enabled": true,
+                "id": "discord"
             }
         ],
         "enableUserTheming": false
@@ -669,10 +673,10 @@
     "ui": {
         "boxBorderEnabled": false,
         "fontDefault": "SF Pro Text",
-        "fontDefaultScale": 1.1,
+        "fontDefaultScale": 1,
         "fontFixed": "JetBrainsMono Nerd Font",
         "fontFixedScale": 1,
-        "panelBackgroundOpacity": 0.93,
+        "panelBackgroundOpacity": 1,
         "panelsAttachedToBar": true,
         "scrollbarAlwaysVisible": false,
         "settingsPanelMode": "centered",
