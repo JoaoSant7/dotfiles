@@ -6,6 +6,10 @@ hl.config({
 
 		repeat_delay = 200,
 		repeat_rate = 30,
+
+    kb_layout = "us",
+        kb_variant = "altgr-intl",    -- Enforces standard dead keys (', ~, ^, `, ")
+        kb_options = "compose:ralt",  -- Keeps your Right Alt working as a Compose key if needed
 	},
 })
 
