@@ -44,15 +44,22 @@ alias kvim='NVIM_APPNAME=sant-nvim nvim'
 alias gstatus="git status"
 alias gpush="git push"
 alias gpull="git pull"
+alias lgit="lazygit"
 
 # =========================================================
 # Fastfetch
 # =========================================================
 
-alias fastfetch='/usr/bin/fastfetch -c ~/.config/fastfetch/config.jsonc'
+#alias fastfetch='/usr/bin/fastfetch -c ~/.config/fastfetch/config.jsonc'
 
 # =========================================================
 # Distrobox
 # =========================================================
 
 alias dib="distrobox"
+
+# =========================================================
+# Nix
+# =========================================================
+
+alias sunr="sudo nixos-rebuild switch --flake .#hyprnix"
