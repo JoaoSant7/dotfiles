@@ -3,11 +3,11 @@
 
   "logo": {
     "type": "builtin",
-    "source": "fedora"
+    "source": "NixOS",
   },
 
   "display": {
-    "separator": " "
+    "separator": " ",
   },
 
   "modules": [
@@ -16,7 +16,7 @@
     {
       "type": "title",
       "keyWidth": 12,
-      "color": "blue"
+      "color": "blue",
     },
     "break",
     {
@@ -24,70 +24,70 @@
       "key": " ",
       "keyColor": "blue",
       "color": "blue",
-      "format": "Aurora"
+      "format": "Aurora",
     },
     {
       "type": "host",
       "key": "🖥 ",
       "keyColor": "blue",
       "color": "blue",
-      "format": "My PC"
+      "format": "My PC",
     },
     {
       "type": "shell",
       "format": "zsh",
       "key": ">_",
       "keyColor": "blue",
-      "color": "blue"
+      "color": "blue",
     },
     {
       "type": "terminal",
       "key": " ",
       "keyColor": "blue",
-      "color": "blue"
+      "color": "blue",
     },
     {
       "type": "terminalfont",
       "key": "",
       "keyColor": "blue",
-      "color": "blue"
+      "color": "blue",
     },
     {
       "type": "wm",
       "format": "{} (wayland)",
       "key": " ",
       "keyColor": "blue",
-      "color": "blue"
+      "color": "blue",
     },
     {
       "type": "cpu",
       "key": "󰍛 ",
       "keyColor": "blue",
       "color": "blue",
-      "format": ""
+      "format": "",
     },
     {
       "type": "gpu",
       "key": "󰢮 ",
       "keyColor": "blue",
       "color": "blue",
-      "format": ""
+      "format": "",
     },
     {
       "type": "memory",
       "key": "🎟 ",
       "keyColor": "blue",
       "color": "blue",
-      "format": "{} {}"
+      "format": "{} {}",
     },
     {
       "type": "uptime",
       "key": " ",
       "keyColor": "blue",
-      "color": "blue"
+      "color": "blue",
     },
     "break",
     "break",
-    "break"
-  ]
+    "break",
+  ],
 }
