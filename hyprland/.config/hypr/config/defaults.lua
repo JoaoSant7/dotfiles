@@ -3,5 +3,5 @@
 TERMINAL = "ghostty +new-window"
 FILE_MANAGER = "dolphin"
 BROWSER = "brave"
-EDITOR = "zed-editor"
+EDITOR = "zeditor"
 CALCULATOR = "gnome-calculator"
