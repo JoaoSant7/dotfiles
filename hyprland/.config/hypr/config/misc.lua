@@ -2,6 +2,15 @@ hl.config({
 	dwindle = {
 		preserve_split = true,
 	},
+	scrolling = {
+		column_width = 0.6,
+		fullscreen_on_one_column = true,
+		focus_fit_method = 0, -- 0 = center, 1 = fit
+		follow_focus = true,
+		follow_min_visible = 0.4,
+		explicit_column_widths = "0.333, 0.5, 0.667, 1.0",
+		direction = "right",
+	},
 	misc = {
 		col = {
 			splash = CACHYLGREEN,
