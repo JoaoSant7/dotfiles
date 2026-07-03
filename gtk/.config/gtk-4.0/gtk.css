@@ -1,8 +1,1 @@
-@import 'colors.css';
-@import 'kde_window_geometry.css';
-
-* {
-  * font-weight: 600;
-  * font-family: "SF Pro Text", sans-serif;
-  * font-size: 12pt; 
-  * }
+@import url("noctalia.css");
