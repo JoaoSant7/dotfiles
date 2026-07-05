@@ -1,5 +1,5 @@
 local mainMod = "SUPER"
-local noctCall = "noctalia-shell ipc call "
+local noctCall = "noctalia msg "
 local launchPrefix = "uwsm app -- " -- if you are not using UWSM, make this empty (e.g. "")
 
 ---------------------------
@@ -12,8 +12,8 @@ hl.bind(mainMod .. " + ALT + Space", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + D", hl.dsp.window.fullscreen({ mode = 1 }))
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))
-hl.bind(mainMod .. " + L", hl.dsp.exec_cmd(noctCall .. " lockScreen lock"))
-hl.bind(mainMod .. " + ALT + C", hl.dsp.exec_cmd(noctCall .. " sessionMenu toggle"))
+hl.bind(mainMod .. " + L", hl.dsp.exec_cmd(noctCall .. "session lock"))
+hl.bind(mainMod .. " + ALT + C", hl.dsp.exec_cmd(noctCall .. "panel-toggle session"))
 
 -- Change focus
 hl.bind(mainMod .. " + Left", hl.dsp.focus({ direction = "left" }))
@@ -44,46 +44,53 @@ hl.bind(mainMod .. " + T", hl.dsp.exec_cmd(launchPrefix .. EDITOR))
 -- hl.bind(mainMod .. " + C", hl.dsp.exec_cmd(launchPrefix .. CALCULATOR))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(launchPrefix .. BROWSER))
 hl.bind("CONTROL + SHIFT + Escape", hl.dsp.exec_cmd(launchPrefix .. TERMINAL .. " -e btop"))
-hl.bind(mainMod .. " + Z", hl.dsp.exec_cmd(noctCall .. "settings toggle"))
-hl.bind(mainMod .. " + X", hl.dsp.exec_cmd(noctCall .. "controlCenter toggle"))
-hl.bind(mainMod .. " + Space", hl.dsp.exec_cmd(noctCall .. "launcher toggle"))
-hl.bind(mainMod .. " + period", hl.dsp.exec_cmd(noctCall .. "launcher emoji"))
+hl.bind(mainMod .. " + Z", hl.dsp.exec_cmd(noctCall .. "settings-toggle"))
+hl.bind(mainMod .. " + X", hl.dsp.exec_cmd(noctCall .. "panel-toggle control-center"))
+hl.bind(mainMod .. " + Space", hl.dsp.exec_cmd(noctCall .. "panel-toggle launcher"))
+-- TODO verify: v5 IPC docs show no dedicated emoji sub-command/prefix like v4's "launcher emoji".
+-- Emoji picking now appears to be a launcher provider you type into rather than a distinct IPC target.
+-- Confirm the correct query/prefix on https://docs.noctalia.dev/v5/launcher/ before relying on this bind.
+hl.bind(mainMod .. " + period", hl.dsp.exec_cmd(noctCall .. "panel-toggle launcher")) -- TODO verify: emoji query/prefix unconfirmed
 
 ---------------------------
 ---- HARDWARE CONTROLS ----
 ---------------------------
 
 -- Audio
-hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd(noctCall .. "volume increase"), { locked = true, repeating = true })
-hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd(noctCall .. "volume decrease"), { locked = true, repeating = true })
-hl.bind("XF86AudioMute", hl.dsp.exec_cmd(noctCall .. "volume muteOutput"), { locked = true, repeating = true })
-hl.bind("XF86AudioMicMute", hl.dsp.exec_cmd(noctCall .. "volume muteInput"), { locked = true, repeating = true })
+hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd(noctCall .. "volume-up"), { locked = true, repeating = true })
+hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd(noctCall .. "volume-down"), { locked = true, repeating = true })
+hl.bind("XF86AudioMute", hl.dsp.exec_cmd(noctCall .. "volume-mute"), { locked = true, repeating = true })
+hl.bind("XF86AudioMicMute", hl.dsp.exec_cmd(noctCall .. "mic-mute"), { locked = true, repeating = true })
 
 -- Media
-hl.bind("XF86AudioPlay", hl.dsp.exec_cmd(noctCall .. "media playPause"), { locked = true })
-hl.bind("XF86AudioPause", hl.dsp.exec_cmd(noctCall .. "media playPause"), { locked = true })
+hl.bind("XF86AudioPlay", hl.dsp.exec_cmd(noctCall .. "media toggle"), { locked = true })
+hl.bind("XF86AudioPause", hl.dsp.exec_cmd(noctCall .. "media toggle"), { locked = true })
 hl.bind("XF86AudioNext", hl.dsp.exec_cmd(noctCall .. "media next"), { locked = true })
 hl.bind("XF86AudioPrev", hl.dsp.exec_cmd(noctCall .. "media previous"), { locked = true })
 
 -- Brightness
-hl.bind("XF86MonBrightnessUp", hl.dsp.exec_cmd(noctCall .. "brightness increase"), { repeating = true })
-hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd(noctCall .. "brightness decrease"), { repeating = true })
+hl.bind("XF86MonBrightnessUp", hl.dsp.exec_cmd(noctCall .. "brightness-up"), { repeating = true })
+hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd(noctCall .. "brightness-down"), { repeating = true })
 
 -------------------
 ---- UTILITIES ----
 -------------------
 
 -- Screen Capture
-hl.bind(mainMod .. " + P", hl.dsp.exec_cmd(noctCall .. "plugin:screen-toolkit colorPicker"))
-hl.bind("CTRL + SHIFT + S", hl.dsp.exec_cmd(noctCall .. "plugin:screen-toolkit annotate"))
-hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(noctCall .. "plugin:screen-toolkit annotateWindow"))
-hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(noctCall .. "plugin:screen-toolkit toggle"))
+-- TODO verify: "plugin:screen-toolkit" (colorPicker, annotate, annotateWindow) was a v4-only plugin.
+-- No equivalent color-picker/annotate IPC target was found in v5 core docs. v5 core only ships
+-- screenshot-region / screenshot-fullscreen. Check https://docs.noctalia.dev/v5/plugins/official-plugins/
+-- for a possible replacement plugin before assuming these are gone.
+hl.bind(mainMod .. " + P", hl.dsp.exec_cmd(noctCall .. "plugin:screen-toolkit colorPicker")) -- TODO verify: v4-only plugin, no confirmed v5 equivalent
+hl.bind("CTRL + SHIFT + S", hl.dsp.exec_cmd(noctCall .. "plugin:screen-toolkit annotate")) -- TODO verify: v4-only plugin, no confirmed v5 equivalent
+hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(noctCall .. "plugin:screen-toolkit annotateWindow")) -- TODO verify: v4-only plugin, no confirmed v5 equivalent
+hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(noctCall .. "screenshot-region")) -- migrated to core v5 IPC
 
 -- Theming and Wallpaper
-hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd(noctCall .. " wallpaper toggle"))
+hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd(noctCall .. "panel-toggle wallpaper"))
 
 -- Clipboard
-hl.bind(mainMod .. " + V", hl.dsp.exec_cmd(noctCall .. "launcher clipboard"))
+hl.bind(mainMod .. " + V", hl.dsp.exec_cmd(noctCall .. "panel-toggle clipboard"))
 
 --------------------
 ---- WORKSPACES ----
@@ -114,4 +121,8 @@ hl.bind(mainMod .. " + S", hl.dsp.workspace.toggle_special())
 ---- NOTIFICATIONS ----
 -----------------------
 
-hl.bind(mainMod .. " + A", hl.dsp.exec_cmd(noctCall .. "notifications toggleHistory"))
+-- TODO verify: v5 IPC docs list no standalone notification-history panel target (only
+-- notification-dnd-toggle / notification-clear-history). Guessed the control-center "notifications"
+-- tab id below — test with `noctalia msg panel-toggle control-center notifications` in a terminal
+-- before trusting this bind.
+hl.bind(mainMod .. " + A", hl.dsp.exec_cmd(noctCall .. "panel-toggle control-center notifications")) -- TODO verify: tab id unconfirmed
