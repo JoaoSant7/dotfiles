@@ -15,3 +15,6 @@ require("config.workspaces")
 
 -- This loads Noctalia-generated Hyprland colors.
 dofile("/home/pedro/.config/hypr/noctalia/noctalia-colors.lua")
+
+-- For Noctalia Color templates
+require("noctalia").apply_theme()
