@@ -1,3 +1,6 @@
+[audio]
+enable_overdrive = true
+
 [bar.default]
 capsule = true
 end = [
@@ -14,11 +17,54 @@ end = [
 ]
 font_family = "SF Pro Text"
 font_weight = 600
+scale = 1.1000000089406967
 shadow = false
-start = [ "launcher", "wallpaper", "workspaces", "media", "active_window" ]
+start = [ "wallpaper", "workspaces", "media", "active_window" ]
+
+[brightness]
+enable_ddcutil = true
+minimum_brightness = 0.14999999664723873
+
+[desktop_widgets]
+schema_version = 2
+widget_order = []
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget]
 
 [dock]
+auto_hide = true
+enabled = true
+pinned = [ "ghostty", "brave-browser", "thunar" ]
+reserve_space = false
 shadow = false
+show_dots = true
+
+[idle]
+behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
+
+    [idle.behavior.lock]
+    action = "lock"
+    enabled = false
+    timeout = 600.0
+
+    [idle.behavior.lock-and-suspend]
+    action = "lock_and_suspend"
+    enabled = false
+    resume_command = "noctalia:nightlight-enable"
+    timeout = 900.0
+
+    [idle.behavior.screen-off]
+    action = "screen_off"
+    enabled = false
+    timeout = 660.0
+
+[location]
+address = "Recife, Brazil"
 
 [lockscreen_widgets]
 enabled = false
@@ -57,28 +103,45 @@ temperature_day = 3700
 
 [shell]
 font_family = "SF Pro Text"
+launch_apps_as_systemd_services = true
+polkit_agent = true
 ui_scale = 1.4000000134110451
 
     [shell.panel]
     shadow = false
 
+    [shell.screenshot]
+    confirm_region = true
+    directory = "/home/pedro/Pictures/Screenshots"
+
 [theme]
 builtin = "Kanagawa"
-community_palette = "Kemuri"
+community_palette = "Kanagawa Dragon"
 source = "community"
 
     [theme.templates]
-    builtin_ids = [ "gtk3", "gtk4", "hyprland", "qt" ]
-    community_ids = [ "papirus-icons" ]
+    builtin_ids = [ "gtk3", "gtk4", "hyprland", "qt", "starship" ]
 
-[wallpaper.default]
-path = "/home/pedro/Pictures/Wallpapers/catholicon-holy-sepulchre.jpg"
+[wallpaper]
+transition = [ "fade" ]
 
-[wallpaper.last]
-path = "/home/pedro/Pictures/Wallpapers/catholicon-holy-sepulchre.jpg"
+    [wallpaper.default]
+    path = "/home/pedro/Pictures/Wallpapers/catholicon-holy-sepulchre.jpg"
 
-[wallpaper.monitors.HDMI-A-1]
-path = "/home/pedro/Pictures/Wallpapers/catholicon-holy-sepulchre.jpg"
+    [wallpaper.last]
+    path = "/home/pedro/Pictures/Wallpapers/catholicon-holy-sepulchre.jpg"
+
+    [wallpaper.monitors.HDMI-A-1]
+    path = "/home/pedro/Pictures/Wallpapers/catholicon-holy-sepulchre.jpg"
+
+    [[wallpaper.favorite]]
+    path = "/home/pedro/Pictures/Wallpapers/altar-basilica-sao-pedro.jpg"
+    theme_mode = "auto"
+
+[widget.active_window]
+display = "icon_only"
+icon_size = 18
+min_length = 0
 
 [widget.media]
 hide_when_no_media = true
