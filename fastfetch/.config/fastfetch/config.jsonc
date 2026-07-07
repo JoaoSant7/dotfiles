@@ -24,7 +24,7 @@
       "key": " ",
       "keyColor": "blue",
       "color": "blue",
-      "format": "Aurora",
+      "format": "HyprNix",
     },
     {
       "type": "host",
@@ -54,7 +54,7 @@
     },
     {
       "type": "wm",
-      "format": "{} (wayland)",
+      "format": "{}",
       "key": " ",
       "keyColor": "blue",
       "color": "blue",
