@@ -81,9 +81,12 @@ hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd(noctCall .. "brightness-down"),
 -- No equivalent color-picker/annotate IPC target was found in v5 core docs. v5 core only ships
 -- screenshot-region / screenshot-fullscreen. Check https://docs.noctalia.dev/v5/plugins/official-plugins/
 -- for a possible replacement plugin before assuming these are gone.
-hl.bind(mainMod .. " + P", hl.dsp.exec_cmd(noctCall .. "plugin:screen-toolkit colorPicker")) -- TODO verify: v4-only plugin, no confirmed v5 equivalent
-hl.bind("CTRL + SHIFT + S", hl.dsp.exec_cmd(noctCall .. "plugin:screen-toolkit annotate")) -- TODO verify: v4-only plugin, no confirmed v5 equivalent
-hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(noctCall .. "plugin:screen-toolkit annotateWindow")) -- TODO verify: v4-only plugin, no confirmed v5 equivalent
+-- annotate a region (replaces old plugin:screen-toolkit annotate)
+hl.bind("CTRL + SHIFT + S", hl.dsp.exec_cmd(noctCall .. "screenshot-region"))
+
+-- standalone color picker (replaces old plugin:screen-toolkit colorPicker)
+hl.bind(mainMod .. " + P", hl.dsp.exec_cmd("hyprpicker -a"))
+
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(noctCall .. "screenshot-region")) -- migrated to core v5 IPC
 
 -- Theming and Wallpaper
