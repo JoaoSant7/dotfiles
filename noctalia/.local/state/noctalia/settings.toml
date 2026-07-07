@@ -1,25 +1,32 @@
 [audio]
 enable_overdrive = true
+enable_sounds = true
 
 [bar.default]
 capsule = true
-end = [
-    "tray",
-    "notifications",
-    "clipboard",
-    "network",
-    "bluetooth",
-    "volume",
-    "brightness",
-    "battery",
-    "control-center",
-    "session"
-]
+center = [ "group:g2" ]
+end = [ "tray", "notifications", "clipboard", "network", "bluetooth", "volume", "battery", "control-center" ]
 font_family = "SF Pro Text"
 font_weight = 600
 scale = 1.1000000089406967
 shadow = false
-start = [ "wallpaper", "workspaces", "media", "active_window" ]
+start = [ "group:g1", "media" ]
+
+    [[bar.default.capsule_group]]
+    enabled = true
+    fill = "surface_variant"
+    id = "g1"
+    members = [ "workspaces", "active_window" ]
+    opacity = 1.0
+    padding = 6.0
+
+    [[bar.default.capsule_group]]
+    enabled = true
+    fill = "surface_variant"
+    id = "g2"
+    members = [ "clock", "date" ]
+    opacity = 1.0
+    padding = 6.0
 
 [brightness]
 enable_ddcutil = true
@@ -106,6 +113,9 @@ font_family = "SF Pro Text"
 launch_apps_as_systemd_services = true
 polkit_agent = true
 ui_scale = 1.4000000134110451
+
+    [shell.launcher]
+    session_search = true
 
     [shell.panel]
     shadow = false
