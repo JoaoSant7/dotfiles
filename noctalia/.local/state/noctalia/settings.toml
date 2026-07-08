@@ -1,6 +1,7 @@
 [audio]
 enable_overdrive = true
 enable_sounds = true
+notification_sound = ""
 
 [bar.default]
 capsule = true
@@ -153,6 +154,9 @@ transition = [ "fade" ]
 display = "icon_only"
 icon_size = 18
 min_length = 0
+
+[widget.battery]
+hide_when_plugged = true
 
 [widget.media]
 hide_when_no_media = true
