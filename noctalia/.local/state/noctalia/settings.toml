@@ -1,7 +1,6 @@
 [audio]
 enable_overdrive = true
 enable_sounds = true
-notification_sound = ""
 
 [bar.default]
 capsule = true
@@ -138,13 +137,13 @@ source = "community"
 transition = [ "fade" ]
 
     [wallpaper.default]
-    path = "/home/pedro/Pictures/Wallpapers/catholicon-holy-sepulchre.jpg"
+    path = "/home/pedro/Pictures/Wallpapers/mountain-above-clouds.jpg"
 
     [wallpaper.last]
-    path = "/home/pedro/Pictures/Wallpapers/catholicon-holy-sepulchre.jpg"
+    path = "/home/pedro/Pictures/Wallpapers/mountain-above-clouds.jpg"
 
     [wallpaper.monitors.HDMI-A-1]
-    path = "/home/pedro/Pictures/Wallpapers/catholicon-holy-sepulchre.jpg"
+    path = "/home/pedro/Pictures/Wallpapers/mountain-above-clouds.jpg"
 
     [[wallpaper.favorite]]
     path = "/home/pedro/Pictures/Wallpapers/altar-basilica-sao-pedro.jpg"
