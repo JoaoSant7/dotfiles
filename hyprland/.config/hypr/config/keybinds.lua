@@ -43,7 +43,7 @@ hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(launchPrefix .. FILE_MANAGER))
 hl.bind(mainMod .. " + T", hl.dsp.exec_cmd(launchPrefix .. EDITOR))
 -- hl.bind(mainMod .. " + C", hl.dsp.exec_cmd(launchPrefix .. CALCULATOR))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(launchPrefix .. BROWSER))
-hl.bind("CONTROL + SHIFT + Escape", hl.dsp.exec_cmd(launchPrefix .. TERMINAL .. " -e btop"))
+hl.bind("CONTROL + SHIFT + Escape", hl.dsp.exec_cmd(launchPrefix .. TERMINAL .. " -e htop"))
 hl.bind(mainMod .. " + Z", hl.dsp.exec_cmd(noctCall .. "settings-toggle"))
 hl.bind(mainMod .. " + X", hl.dsp.exec_cmd(noctCall .. "panel-toggle control-center"))
 hl.bind(mainMod .. " + Space", hl.dsp.exec_cmd(noctCall .. "panel-toggle launcher"))
@@ -100,14 +100,15 @@ hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd(noctCall .. "brightness-down"),
 -- screenshot-region / screenshot-fullscreen. Check https://docs.noctalia.dev/v5/plugins/official-plugins/
 -- for a possible replacement plugin before assuming these are gone.
 -- annotate a region (replaces old plugin:screen-toolkit annotate)
-hl.bind("CTRL + SHIFT + S", hl.dsp.exec_cmd(noctCall .. "screenshot-region"))
 
--- standalone color picker (replaces old plugin:screen-toolkit colorPicker)
+--hl.bind("CTRL + SHIFT + S", hl.dsp.exec_cmd(noctCall .. "screenshot-region"))
+
+hl.bind("CTRL + SHIFT + S", hl.dsp.exec_cmd(launchPrefix .. SCREENSHOT))
+
 hl.bind(mainMod .. " + P", hl.dsp.exec_cmd("hyprpicker -a"))
 
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(noctCall .. "screenshot-region")) -- migrated to core v5 IPC
 
--- Theming and Wallpaper
 hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd(noctCall .. "panel-toggle wallpaper"))
 
 -- Clipboard
