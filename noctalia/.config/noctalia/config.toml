@@ -1,3 +1,7 @@
 # ~/.config/noctalia/config.toml
 [shell.screenshot]
 pipe_command = "satty -f - --output-filename ~/Pictures/Screenshots/%Y%m%d_%H%M%S.png"
+
+#[audio]
+#volume_change_sound = "~/.local/share/sounds/volume-change.wav"
+#notification_sound = "~/.local/share/sounds/message.wav"
