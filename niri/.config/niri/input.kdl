@@ -1,0 +1,23 @@
+input {
+    keyboard {
+      repeat-delay 200
+      repeat-rate 30
+        xkb {
+            layout "us,pt"
+            variant "altgr-intl"
+            options "compose:ralt"
+        }
+    }
+
+    touchpad {
+        tap
+        natural-scroll
+    }
+
+    mouse {
+        accel-profile "flat"
+    }
+
+    trackpoint {
+    }
+}
