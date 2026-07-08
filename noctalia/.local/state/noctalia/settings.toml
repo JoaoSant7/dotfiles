@@ -111,6 +111,7 @@ temperature_day = 3700
 [shell]
 font_family = "SF Pro Text"
 launch_apps_as_systemd_services = true
+niri_overview_type_to_launch_enabled = true
 polkit_agent = true
 ui_scale = 1.4000000134110451
 
