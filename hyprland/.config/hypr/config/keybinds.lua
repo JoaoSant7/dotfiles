@@ -9,7 +9,7 @@ local launchPrefix = "uwsm app -- " -- if you are not using UWSM, make this empt
 hl.bind(mainMod .. " + Escape", hl.dsp.exec_cmd("hyprctl kill"))
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 hl.bind(mainMod .. " + ALT + Space", hl.dsp.window.float({ action = "toggle" }))
-hl.bind(mainMod .. " + D", hl.dsp.window.fullscreen({ mode = 1 }))
+--hl.bind(mainMod .. " + D", hl.dsp.window.fullscreen({ mode = 1 }))
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd(noctCall .. "session lock"))
@@ -51,6 +51,24 @@ hl.bind(mainMod .. " + Space", hl.dsp.exec_cmd(noctCall .. "panel-toggle launche
 -- Emoji picking now appears to be a launcher provider you type into rather than a distinct IPC target.
 -- Confirm the correct query/prefix on https://docs.noctalia.dev/v5/launcher/ before relying on this bind.
 hl.bind(mainMod .. " + period", hl.dsp.exec_cmd(noctCall .. "panel-toggle launcher")) -- TODO verify: emoji query/prefix unconfirmed
+
+---------------------------
+---- SCROLLING LAYOUT ----
+---------------------------
+hl.bind(mainMod .. " + period", hl.dsp.layout("move +col"))
+hl.bind(mainMod .. " + comma", hl.dsp.layout("move -col"))
+
+-- Manual two-value column width toggle (0.6 / 1.0), independent of explicit_column_widths
+local isWideColumn = false
+
+hl.bind(mainMod .. " + D", function()
+	isWideColumn = not isWideColumn
+	if isWideColumn then
+		hl.dispatch(hl.dsp.layout("colresize 1.0"))
+	else
+		hl.dispatch(hl.dsp.layout("colresize 0.6"))
+	end
+end)
 
 ---------------------------
 ---- HARDWARE CONTROLS ----
