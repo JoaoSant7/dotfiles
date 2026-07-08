@@ -2,6 +2,7 @@ local colors = require("config.colors")
 
 hl.config({
 	general = {
+		layout = "scrolling",
 		gaps_in = 3,
 		gaps_out = 8,
 		border_size = 2,
@@ -39,7 +40,7 @@ hl.config({
 		dim_special = 0.3,
 		rounding = 10,
 		active_opacity = 1,
-		inactive_opacity = 0.85,
+		inactive_opacity = 0.9,
 		fullscreen_opacity = 1,
 
 		blur = {
