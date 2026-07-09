@@ -8,8 +8,7 @@ map shift+left move_window left
 map shift+right move_window right
 
 # BEGIN_KITTY_THEME
-# Kanagawa_dragon
-include current-theme.conf
+#
 # END_KITTY_THEME
 
 #: Fonts {{{
