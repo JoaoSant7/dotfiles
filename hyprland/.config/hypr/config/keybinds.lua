@@ -58,17 +58,7 @@ hl.bind(mainMod .. " + period", hl.dsp.exec_cmd(noctCall .. "panel-toggle launch
 hl.bind(mainMod .. " + period", hl.dsp.layout("move +col"))
 hl.bind(mainMod .. " + comma", hl.dsp.layout("move -col"))
 
--- Manual two-value column width toggle (0.6 / 1.0), independent of explicit_column_widths
-local isWideColumn = false
-
-hl.bind(mainMod .. " + D", function()
-	isWideColumn = not isWideColumn
-	if isWideColumn then
-		hl.dispatch(hl.dsp.layout("colresize 1.0"))
-	else
-		hl.dispatch(hl.dsp.layout("colresize 0.6"))
-	end
-end)
+hl.bind(mainMod .. " + D", hl.dsp.layout("colresize +conf"))
 
 ---------------------------
 ---- HARDWARE CONTROLS ----
