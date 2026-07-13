@@ -104,6 +104,9 @@ hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd(noctCall .. "panel-toggle wal
 -- Clipboard
 hl.bind(mainMod .. " + V", hl.dsp.exec_cmd(noctCall .. "panel-toggle clipboard"))
 
+-- Night Light
+hl.bind(mainMod .. " + N", hl.dsp.exec_cmd(noctCall .. "nightlight-toggle"))
+
 --------------------
 ---- WORKSPACES ----
 --------------------
