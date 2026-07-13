@@ -1,3 +1,5 @@
+config_version = 1
+
 [audio]
 enable_overdrive = true
 enable_sounds = true
@@ -39,6 +41,24 @@ start = [ "group:g1", "media" ]
 [brightness]
 enable_ddcutil = true
 minimum_brightness = 0.14999999664723873
+
+[[control_center.shortcuts]]
+type = "nightlight"
+
+[[control_center.shortcuts]]
+type = "wifi"
+
+[[control_center.shortcuts]]
+type = "bluetooth"
+
+[[control_center.shortcuts]]
+type = "caffeine"
+
+[[control_center.shortcuts]]
+type = "notification"
+
+[[control_center.shortcuts]]
+type = "power_profile"
 
 [desktop_widgets]
 schema_version = 2
@@ -145,13 +165,13 @@ source = "community"
 transition = [ "fade" ]
 
     [wallpaper.default]
-    path = "/home/pedro/Pictures/Wallpapers/mountain-above-clouds.jpg"
+    path = "/home/pedro/Pictures/Wallpapers/white-mountain.jpg"
 
     [wallpaper.last]
-    path = "/home/pedro/Pictures/Wallpapers/mountain-above-clouds.jpg"
+    path = "/home/pedro/Pictures/Wallpapers/white-mountain.jpg"
 
     [wallpaper.monitors.HDMI-A-1]
-    path = "/home/pedro/Pictures/Wallpapers/mountain-above-clouds.jpg"
+    path = "/home/pedro/Pictures/Wallpapers/white-mountain.jpg"
 
     [[wallpaper.favorite]]
     path = "/home/pedro/Pictures/Wallpapers/altar-basilica-sao-pedro.jpg"
