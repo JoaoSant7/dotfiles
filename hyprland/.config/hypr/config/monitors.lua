@@ -10,13 +10,6 @@ hl.monitor({
 })
 
 hl.monitor({
-	output = "eDP-2",
-	disabled = true,
-	icc = "/home/pedro/.local/share/icc/edid-52036e7bf5f00ef980de0a9944c5c6f0.icc",
-})
-
-hl.monitor({
-	output = "eDP-1",
-	disabled = true,
+	output = "Chimei Innolux Corporation 0x1522",
 	icc = "/home/pedro/.local/share/icc/edid-52036e7bf5f00ef980de0a9944c5c6f0.icc",
 })
