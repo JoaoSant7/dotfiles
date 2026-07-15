@@ -10,7 +10,6 @@ center = [ "group:g2" ]
 end = [ "tray", "notifications", "clipboard", "group:g3", "volume", "battery", "control-center" ]
 font_family = "SF Pro Text"
 font_weight = 600
-scale = 1.1000000089406967
 shadow = false
 start = [ "group:g1", "media" ]
 
@@ -163,6 +162,9 @@ niri_overview_type_to_launch_enabled = true
 polkit_agent = true
 ui_scale = 1.4000000134110451
 
+    [shell.greeter_sync]
+    auto_sync = true
+
     [shell.launcher]
     session_search = true
 
@@ -185,13 +187,16 @@ source = "community"
 transition = [ "fade" ]
 
     [wallpaper.default]
-    path = "/home/pedro/Pictures/Wallpapers/white-mountain.jpg"
+    path = "/home/pedro/Pictures/Wallpapers/mountain-above-clouds.jpg"
 
     [wallpaper.last]
-    path = "/home/pedro/Pictures/Wallpapers/white-mountain.jpg"
+    path = "/home/pedro/Pictures/Wallpapers/mountain-above-clouds.jpg"
 
     [wallpaper.monitors.HDMI-A-1]
-    path = "/home/pedro/Pictures/Wallpapers/white-mountain.jpg"
+    path = "/home/pedro/Pictures/Wallpapers/mountain-above-clouds.jpg"
+
+    [wallpaper.monitors.eDP-1]
+    path = "/home/pedro/Pictures/Wallpapers/mountain-above-clouds.jpg"
 
     [[wallpaper.favorite]]
     path = "/home/pedro/Pictures/Wallpapers/altar-basilica-sao-pedro.jpg"
