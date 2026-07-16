@@ -75,6 +75,7 @@ key("D", hl.dsp.layout("colresize +conf"))
 hl.bind("CONTROL + SHIFT + S", hl.dsp.exec_cmd(launchPrefix .. SCREENSHOT))
 
 key("P", hl.dsp.exec_cmd("hyprpicker -a"))
+
 key("R", hl.dsp.exec_cmd(noct .. "screenshot-region"))
 
 shift("W", hl.dsp.exec_cmd(noct .. "panel-toggle wallpaper"))
