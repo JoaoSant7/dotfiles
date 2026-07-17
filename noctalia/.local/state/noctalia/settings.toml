@@ -1,7 +1,7 @@
 config_version = 2
 
 [accessibility]
-ui_scale = 1.2500000111758709
+ui_scale = 1.300000011920929
 
 [audio]
 enable_overdrive = true
@@ -9,13 +9,12 @@ enable_sounds = true
 
 [bar.default]
 capsule = true
-center = [ "group:g2" ]
+center = [ "group:g1" ]
 end = [ "tray", "notifications", "clipboard", "group:g3", "volume", "battery", "control-center" ]
 font_family = "SF Pro Text"
-font_weight = 600
 margin_edge = 5
 shadow = false
-start = [ "group:g1", "media" ]
+start = [ "group:g2", "date", "media" ]
 
     [[bar.default.capsule_group]]
     enabled = true
@@ -29,7 +28,7 @@ start = [ "group:g1", "media" ]
     enabled = true
     fill = "surface_variant"
     id = "g2"
-    members = [ "clock", "date" ]
+    members = [ "clock" ]
     opacity = 1.0
     padding = 6.0
 
@@ -103,6 +102,9 @@ behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
 
 [location]
 address = "Recife, Brazil"
+
+[lockscreen]
+wallpaper = "/home/pedro/Pictures/Wallpapers/mountain-above-clouds.jpg"
 
 [lockscreen_widgets]
 enabled = false
@@ -180,12 +182,15 @@ ui_scale = 1.4000000134110451
     shadow = false
 
     [shell.screenshot]
+    confirm_region = true
     directory = "/home/pedro/Pictures/Screenshots"
 
 [theme]
 builtin = "Kanagawa"
 community_palette = "Kanagawa Dragon"
+mode = "dark"
 source = "community"
+wallpaper_scheme = "m3-content"
 
     [theme.templates]
     builtin_ids = [ "gtk3", "gtk4", "hyprland", "qt", "starship" ]
@@ -209,6 +214,12 @@ transition = [ "fade" ]
     path = "/home/pedro/Pictures/Wallpapers/altar-basilica-sao-pedro.jpg"
     theme_mode = "auto"
 
+    [[wallpaper.favorite]]
+    builtin_palette = "Kanagawa"
+    palette_source = "builtin"
+    path = "/home/pedro/Pictures/Wallpapers/mountain-above-clouds.jpg"
+    theme_mode = "dark"
+
 [widget.active_window]
 display = "icon_only"
 icon_size = 18
@@ -223,6 +234,3 @@ hide_when_no_media = true
 
 [widget.network]
 show_label = false
-
-[widget.tray]
-drawer = true
