@@ -234,3 +234,6 @@ hide_when_no_media = true
 
 [widget.network]
 show_label = false
+
+[widget.workspaces]
+display = "none"

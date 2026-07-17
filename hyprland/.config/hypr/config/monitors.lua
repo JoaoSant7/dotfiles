@@ -5,6 +5,7 @@ hl.monitor({
 	mode = "preferred",
 	position = "0x0",
 	scale = 1,
+	cm = "srgb",
 	bitdepth = 8,
 })
 
