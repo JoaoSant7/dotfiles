@@ -18,6 +18,11 @@ hl.config({
 		},
 	},
 
+	scrolling = {
+		column_width = 0.5,
+		direction = "right",
+	},
+
 	group = {
 		col = {
 			border_active = colors.secondary,

@@ -5,7 +5,6 @@ hl.monitor({
 	mode = "preferred",
 	position = "0x0",
 	scale = 1,
-	icc = "/home/pedro/.local/share/icc/edid-263a4f42b4ec83145a521934d747f82b.icc",
 	bitdepth = 8,
 })
 
