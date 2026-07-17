@@ -2,6 +2,7 @@ clipboard
 community-palettes
 community-templates
 plugins
+plugin-cache
 notification_history.json
 recently_used.json
 usage_counts.json
