@@ -8,7 +8,6 @@ enable_overdrive = true
 enable_sounds = true
 
 [bar.default]
-capsule = true
 center = [ "group:g1" ]
 end = [ "tray", "notifications", "clipboard", "group:g3", "volume", "battery", "control-center" ]
 font_family = "SF Pro Text"
@@ -228,12 +227,18 @@ min_length = 0
 [widget.battery]
 hide_when_plugged = true
 
+[widget.clipboard]
+capsule = true
+
 [widget.media]
 album_art_only = true
 hide_when_no_media = true
 
 [widget.network]
 show_label = false
+
+[widget.notifications]
+capsule = true
 
 [widget.workspaces]
 display = "none"
