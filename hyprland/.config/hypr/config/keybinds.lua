@@ -42,6 +42,7 @@ shift("Left", hl.dsp.window.move({ direction = "l" }))
 shift("Up", hl.dsp.window.move({ direction = "u" }))
 shift("Down", hl.dsp.window.move({ direction = "d" }))
 
+-- Move windows to right and left workspaces
 ctrl("SHIFT + Right", hl.dsp.window.move({ workspace = "r+1" }))
 ctrl("SHIFT + Left", hl.dsp.window.move({ workspace = "r-1" }))
 
@@ -84,6 +85,17 @@ key("V", hl.dsp.exec_cmd(noct .. "panel-toggle clipboard"))
 
 key("N", hl.dsp.exec_cmd(noct .. "nightlight-toggle"))
 
+-----------------
+---- MEDIA ----
+-----------------
+
+hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd(noct .. "volume-up"))
+hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd(noct .. "volume-down"))
+hl.bind("XF86AudioMute", hl.dsp.exec_cmd(noct .. "volume-mute"))
+
+hl.bind("XF86MonBrightnessUp", hl.dsp.exec_cmd(noct .. "brightness-up"))
+hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd(noct .. "brightness-down"))
+
 --------------------
 ---- WORKSPACES ----
 --------------------
@@ -102,11 +114,8 @@ hl.bind("CONTROL + ALT + Right", hl.dsp.focus({ workspace = "r+1" }))
 
 hl.bind("CONTROL + ALT + Left", hl.dsp.focus({ workspace = "r-1" }))
 
+-- Go to an empty workspace
 ctrl("Down", hl.dsp.focus({ workspace = "empty" }))
-
-hl.bind("CONTROL + ALT + Right", hl.dsp.window.move({ workspace = "r+1" }))
-
-hl.bind("CONTROL + ALT + Left", hl.dsp.window.move({ workspace = "r-1" }))
 
 -----------------------
 ---- NOTIFICATIONS ----
