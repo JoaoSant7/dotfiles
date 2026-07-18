@@ -14,13 +14,13 @@ end = [ "tray", "notifications", "clipboard", "group:g3", "volume", "battery", "
 font_family = "SF Pro Text"
 margin_edge = 5
 shadow = false
-start = [ "group:g2", "date", "media" ]
+start = [ "group:g2", "active_window", "media" ]
 
     [[bar.default.capsule_group]]
     enabled = true
     fill = "surface_variant"
     id = "g1"
-    members = [ "workspaces", "active_window" ]
+    members = [ "workspaces" ]
     opacity = 1.0
     padding = 6.0
 
@@ -28,7 +28,7 @@ start = [ "group:g2", "date", "media" ]
     enabled = true
     fill = "surface_variant"
     id = "g2"
-    members = [ "clock" ]
+    members = [ "clock", "date" ]
     opacity = 1.0
     padding = 6.0
 
