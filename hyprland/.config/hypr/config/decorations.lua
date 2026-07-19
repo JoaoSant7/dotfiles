@@ -3,11 +3,11 @@ local colors = require("config.colors")
 hl.config({
 	general = {
 		layout = "scrolling",
-		gaps_in = 3,
-		gaps_out = 8,
-		border_size = 2,
-		extend_border_grab_area = 10,
-		resize_on_border = true,
+		gaps_in = 10,
+		gaps_out = 10,
+		border_size = 3,
+		--extend_border_grab_area = 10,
+		--resize_on_border = true,
 
 		col = {
 			active_border = {
@@ -42,16 +42,18 @@ hl.config({
 	},
 
 	decoration = {
-		dim_special = 0.3,
-		rounding = 10,
+		--dim_special = 0.3,
+		rounding = 5,
 		active_opacity = 1,
 		inactive_opacity = 0.9,
 		fullscreen_opacity = 1,
 
 		blur = {
-			size = 5,
-			passes = 4,
+			size = 20,
+			passes = 3,
+			xray = true,
 			special = true,
+			vibrancy = 0.2696,
 		},
 	},
 })
