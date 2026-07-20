@@ -15,14 +15,14 @@ hl.curve("rubber", { type = "spring", mass = 1, stiffness = 70, dampening = 10 }
 -- Animations
 
 -- Global
---hl.animation({ leaf = "global", enabled = true, speed = 3, bezier = "quick" })
+hl.animation({ leaf = "global", enabled = true, speed = 3, bezier = "quick" })
 
 -- Windows
 hl.animation({ leaf = "windows", enabled = true, speed = 3, bezier = "quick", style = "popin 80%" })
 
 -- Border
-hl.animation({ leaf = "border", enabled = true, speed = 10, bezier = "default" })
-hl.animation({ leaf = "borderangle", enabled = true, speed = 100, bezier = "default", style = "loop" })
+hl.animation({ leaf = "border", enabled = true, speed = 10, bezier = "quick" })
+hl.animation({ leaf = "borderangle", enabled = true, speed = 100, bezier = "quick", style = "loop" })
 
 -- Workspaces animations
 hl.animation({ leaf = "workspaces", enabled = true, speed = 2, bezier = "quick", style = "slidefade 20%" })
