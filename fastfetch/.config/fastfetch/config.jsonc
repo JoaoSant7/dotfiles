@@ -27,6 +27,13 @@
       "format": "HyprNix",
     },
     {
+      "type": "packages",
+      "key": "󰏖 ",
+      "keyColor": "blue",
+      "color": "blue",
+      "format": "{nix-all} ( {flatpak-all})",
+    },
+    {
       "type": "host",
       "key": "🖥 ",
       "keyColor": "blue",
