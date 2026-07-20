@@ -9,7 +9,7 @@ hl.config({
 
 		kb_layout = "us,br",
 		kb_variant = "altgr-intl", -- Enforces standard dead keys (', ~, ^, `, ")
-		kb_options = "grp:win_space_toggle,compose:ralt",
+		kb_options = "grp:alt_shift_toggle,compose:ralt",
 	},
 })
 
