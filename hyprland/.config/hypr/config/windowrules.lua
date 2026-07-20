@@ -8,6 +8,15 @@ hl.window_rule({
 	pin = true,
 })
 
+-- FileRoller
+hl.window_rule({
+	match = { class = "org.gnome.FileRoller" },
+	float = true,
+	center = true,
+	size = { 700, 450 },
+	decorate = false,
+})
+
 -- Gaming
 local gamingApps = "^(steam_app.*|gamescope)$"
 local gamingWorkspace = "name:gaming"
@@ -54,36 +63,19 @@ hl.window_rule({
 	center = true,
 	fullscreen_state = 0,
 })
+
 hl.window_rule({ match = { class = "^(vesktop|discord)$" }, primaryWorkspace })
+
 hl.window_rule({ match = { class = "^(.*[Cc]alculator.*)$" }, float = true, size = "380 616" })
-hl.window_rule({ match = { class = "^(org.kde.keditfiletype)$" }, float = true })
-hl.window_rule({ match = { class = "^(org.kde.ark)$" }, size = "(monitor_w*0.40) (monitor_h*0.40)" })
-hl.window_rule({
-	match = {
-		class = "^(org.kde.dolphin)$",
-		title = "negative:^(Moving.*|Create New.*|Extract.*|Compress.*|Copying.*|Progress.*|Configure.*|Properties.*|Choose\\sApplication.*)$",
-	},
-	float = true,
-	move = {
-		"max(0, min(cursor_x - 650, monitor_w - 1320))",
-		"max(0, min(cursor_y - 50, monitor_h - 820))",
-	},
-	size = "1300 800",
-})
 
 -- Opacity Overrides
-local terminals = "^(kitty|ghostty|[Kk]onsole|Alacritty|gnome-terminal|xfce[0-9]?-terminal)$"
+local terminals = "^(kitty|ghostty|Alacritty)$"
 
 hl.window_rule({ match = { class = "^(firefox|zen|brave)$" }, opacity = "1.0 override" })
 hl.window_rule({ match = { class = terminals }, opacity = "1.0 override" }) -- override opacity in favor of terminal settings for opacity
-hl.window_rule({
-	match = { class = "^(mpv|org.kde.haruna|.*plex.*|org\\.kde\\.gwenview|.*vlc.*)$" },
-	opacity = "1.0 override",
-})
 
 -- Float Utility Windows
 local floatApps = {
-	{ class = "^(kvantummanager|qt[56]ct|nwg-look)$" },
 	{ class = "^(org.pulseaudio.pavucontrol|blueman-manager|nm-applet|nm-connection-editor)$" },
 	{ title = "^(Winetricks.*|Protontricks.*)$" },
 }
