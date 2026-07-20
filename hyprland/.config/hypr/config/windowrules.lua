@@ -8,13 +8,15 @@ hl.window_rule({
 	pin = true,
 })
 
--- FileRoller
+-- Function apps
+
+local centeredApps = "^(org.gnome.FileRoller|nwg-look|qt6ct)$"
+
 hl.window_rule({
-	match = { class = "org.gnome.FileRoller" },
+	match = { class = centeredApps },
 	float = true,
 	center = true,
 	size = { 700, 450 },
-	decorate = false,
 })
 
 -- Gaming
