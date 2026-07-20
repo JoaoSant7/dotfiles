@@ -59,7 +59,7 @@ hl.bind("CONTROL + SHIFT + Escape", hl.dsp.exec_cmd(launchPrefix .. TERMINAL .. 
 
 key("Z", hl.dsp.exec_cmd(noct .. "settings-toggle"))
 key("X", hl.dsp.exec_cmd(noct .. "panel-toggle control-center"))
-key("Space", hl.dsp.exec_cmd(noct .. "panel-toggle launcher"))
+key("D", hl.dsp.exec_cmd(noct .. "panel-toggle launcher"))
 
 ---------------------------
 ---- SCROLLING LAYOUT ----
@@ -67,7 +67,7 @@ key("Space", hl.dsp.exec_cmd(noct .. "panel-toggle launcher"))
 
 key("period", hl.dsp.layout("move +col"))
 key("comma", hl.dsp.layout("move -col"))
-key("D", hl.dsp.layout("colresize +conf"))
+key("M", hl.dsp.layout("colresize +conf"))
 
 -------------------
 ---- UTILITIES ----
