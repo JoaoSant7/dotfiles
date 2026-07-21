@@ -16,7 +16,7 @@ margin_edge = 5
 radius = 25
 shadow = false
 start = [ "workspaces", "media", "active_window" ]
-thickness = 28
+thickness = 32
 widget_spacing = 15
 
 [brightness]
@@ -167,6 +167,7 @@ ui_scale = 1.4000000134110451
 [theme]
 builtin = "Kanagawa"
 community_palette = "Kanagawa Dragon"
+custom_palette = "Kurodo"
 mode = "dark"
 source = "community"
 wallpaper_scheme = "m3-content"
@@ -188,10 +189,6 @@ transition = [ "fade" ]
 
     [wallpaper.monitors.eDP-1]
     path = "/home/pedro/Pictures/Wallpapers/mountain-above-clouds.jpg"
-
-    [[wallpaper.favorite]]
-    path = "/home/pedro/Pictures/Wallpapers/altar-basilica-sao-pedro.jpg"
-    theme_mode = "auto"
 
     [[wallpaper.favorite]]
     builtin_palette = "Kanagawa"
