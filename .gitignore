@@ -1,7 +1,7 @@
 clipboard
 community-palettes
 community-templates
-plugins
+noctalia/.local/state/noctalia/plugins
 plugin-cache
 notification_history.json
 recently_used.json
