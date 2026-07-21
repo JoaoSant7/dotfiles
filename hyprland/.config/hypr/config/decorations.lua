@@ -3,7 +3,7 @@ local colors = require("config.colors")
 hl.config({
 	general = {
 		layout = "scrolling",
-		gaps_in = 10,
+		gaps_in = 5,
 		gaps_out = 10,
 		border_size = 3,
 		--extend_border_grab_area = 10,
