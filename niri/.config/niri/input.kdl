@@ -3,7 +3,7 @@ input {
       repeat-delay 200
       repeat-rate 30
         xkb {
-            layout "us,pt"
+            layout "us,br"
             variant "altgr-intl"
             options "compose:ralt"
         }
