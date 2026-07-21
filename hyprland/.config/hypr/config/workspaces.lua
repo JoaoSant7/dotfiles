@@ -5,3 +5,12 @@ for i = 1, 4 do
 		default = (i == 1),
 	})
 end
+
+hl.workspace_rule({
+	workspace = "special:term",
+	gaps_out = 100,
+	persistent = false,
+	on_created_empty = "ghostty",
+})
+
+hl.bind("SUPER + apostrophe", hl.dsp.workspace.toggle_special("term"))
