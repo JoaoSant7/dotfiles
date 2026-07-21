@@ -1,3 +1,4 @@
+-- Local calls
 local noct = "noctalia msg "
 local launchPrefix = "uwsm app -- "
 
@@ -23,24 +24,23 @@ end
 
 key("Escape", hl.dsp.exec_cmd("hyprctl kill"))
 key("Q", hl.dsp.window.close())
-alt("Space", hl.dsp.window.float({ action = "toggle" }))
+alt("T", hl.dsp.window.float({ action = "toggle" }))
 key("F", hl.dsp.window.fullscreen())
-key("J", hl.dsp.layout("togglesplit"))
 alt("C", hl.dsp.exec_cmd(noct .. "panel-toggle session"))
 
 -- Focus
-key("Left", hl.dsp.focus({ direction = "left" }))
-key("Right", hl.dsp.focus({ direction = "right" }))
-key("Up", hl.dsp.focus({ direction = "up" }))
-key("Down", hl.dsp.focus({ direction = "down" }))
+key("h", hl.dsp.focus({ direction = "left" }))
+key("l", hl.dsp.focus({ direction = "right" }))
+key("k", hl.dsp.focus({ direction = "up" }))
+key("j", hl.dsp.focus({ direction = "down" }))
 
 hl.bind("ALT + Tab", hl.dsp.window.cycle_next())
 
 -- Move windows
-shift("Right", hl.dsp.window.move({ direction = "r" }))
-shift("Left", hl.dsp.window.move({ direction = "l" }))
-shift("Up", hl.dsp.window.move({ direction = "u" }))
-shift("Down", hl.dsp.window.move({ direction = "d" }))
+key("SHIFT + h", hl.dsp.window.move({ direction = "l" }))
+key("SHIFT + l", hl.dsp.window.move({ direction = "r" }))
+key("SHIFT + j", hl.dsp.window.move({ direction = "u" }))
+key("SHIFT + k", hl.dsp.window.move({ direction = "d" }))
 
 -- Move windows to right and left workspaces
 ctrl("SHIFT + Right", hl.dsp.window.move({ workspace = "r+1" }))
@@ -54,8 +54,6 @@ key("Return", hl.dsp.exec_cmd(launchPrefix .. TERMINAL))
 key("E", hl.dsp.exec_cmd(launchPrefix .. FILE_MANAGER))
 key("T", hl.dsp.exec_cmd(launchPrefix .. EDITOR))
 key("B", hl.dsp.exec_cmd(launchPrefix .. BROWSER))
-
-hl.bind("CONTROL + SHIFT + Escape", hl.dsp.exec_cmd(launchPrefix .. TERMINAL .. " -e htop"))
 
 key("Z", hl.dsp.exec_cmd(noct .. "settings-toggle"))
 key("X", hl.dsp.exec_cmd(noct .. "panel-toggle control-center"))
