@@ -28,7 +28,7 @@ alt("T", hl.dsp.window.float({ action = "toggle" }))
 key("F", hl.dsp.window.fullscreen())
 alt("C", hl.dsp.exec_cmd(noct .. "panel-toggle session"))
 
--- Focus
+-- Focus movement (vim keys)
 key("h", hl.dsp.focus({ direction = "left" }))
 key("l", hl.dsp.focus({ direction = "right" }))
 key("k", hl.dsp.focus({ direction = "up" }))
@@ -37,14 +37,14 @@ key("j", hl.dsp.focus({ direction = "down" }))
 hl.bind("ALT + Tab", hl.dsp.window.cycle_next())
 
 -- Move windows
-key("SHIFT + h", hl.dsp.window.move({ direction = "l" }))
-key("SHIFT + l", hl.dsp.window.move({ direction = "r" }))
-key("SHIFT + j", hl.dsp.window.move({ direction = "u" }))
-key("SHIFT + k", hl.dsp.window.move({ direction = "d" }))
+shift("h", hl.dsp.window.move({ direction = "l" }))
+shift("l", hl.dsp.window.move({ direction = "r" }))
+shift("k", hl.dsp.window.move({ direction = "u" }))
+shift("j", hl.dsp.window.move({ direction = "d" }))
 
 -- Move windows to right and left workspaces
-ctrl("SHIFT + Right", hl.dsp.window.move({ workspace = "r+1" }))
-ctrl("SHIFT + Left", hl.dsp.window.move({ workspace = "r-1" }))
+ctrl("l", hl.dsp.window.move({ workspace = "r+1" }))
+ctrl("h", hl.dsp.window.move({ workspace = "r-1" }))
 
 ------------------
 ---- LAUNCHER ----
@@ -108,9 +108,9 @@ for i = 1, 10 do
 	alt(num, hl.dsp.window.move({ workspace = i, follow = false }))
 end
 
-hl.bind("CONTROL + ALT + Right", hl.dsp.focus({ workspace = "r+1" }))
-
-hl.bind("CONTROL + ALT + Left", hl.dsp.focus({ workspace = "r-1" }))
+-- Switch between workspaces (vim keys)
+hl.bind("CONTROL + ALT + l", hl.dsp.focus({ workspace = "r+1" }))
+hl.bind("CONTROL + ALT + h", hl.dsp.focus({ workspace = "r-1" }))
 
 -- Go to an empty workspace
 ctrl("Down", hl.dsp.focus({ workspace = "empty" }))
