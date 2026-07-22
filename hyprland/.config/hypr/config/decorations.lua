@@ -27,6 +27,14 @@ hl.config({
 		},
 
 		groupbar = {
+			enabled = true,
+			font_family = "JetBrainsMono Nerd Font",
+			font_size = 16,
+			gradients = true,
+			height = 18,
+			priority = 3,
+			render_titles = true,
+			scrolling = true,
 			col = {
 				active = colors.secondary,
 				inactive = colors.surface,
