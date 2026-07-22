@@ -12,6 +12,8 @@ hl.window_rule({
 
 local centeredApps = "^(org.gnome.FileRoller|nwg-look|qt6ct)$"
 
+hl.window_rule({ match = { float = true }, move = "50% 50%" })
+
 hl.window_rule({
 	match = { class = centeredApps },
 	float = true,
@@ -68,14 +70,6 @@ hl.window_rule({
 
 hl.window_rule({ match = { class = "^(vesktop|discord)$" }, primaryWorkspace })
 
-hl.window_rule({ match = { class = "^(.*[Cc]alculator.*)$" }, float = true, size = "380 616" })
-
--- Opacity Overrides
-local terminals = "^(kitty|ghostty|Alacritty)$"
-
-hl.window_rule({ match = { class = "^(firefox|zen|brave)$" }, opacity = "1.0 override" })
-hl.window_rule({ match = { class = terminals }, opacity = "1.0 override" }) -- override opacity in favor of terminal settings for opacity
-
 -- Float Utility Windows
 local floatApps = {
 	{ class = "^(org.pulseaudio.pavucontrol|blueman-manager|nm-applet|nm-connection-editor)$" },
@@ -84,8 +78,6 @@ local floatApps = {
 for _, m in ipairs(floatApps) do
 	hl.window_rule({ match = m, float = true })
 end
-
-hl.window_rule({ match = { float = true }, move = "50% 50%" })
 
 -- Float Common Modals
 local modalMatches = {
@@ -110,7 +102,7 @@ local suppressMaximizeRule = hl.window_rule({
 
 	suppress_event = "maximize",
 })
--- suppressMaximizeRule:set_enabled(false)
+suppressMaximizeRule:set_enabled(false)
 
 -- Fix some dragging issues with XWayland
 hl.window_rule({
