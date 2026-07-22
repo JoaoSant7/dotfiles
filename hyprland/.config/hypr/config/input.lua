@@ -5,7 +5,7 @@ hl.config({
 		accel_profile = "flat",
 
 		repeat_delay = 200,
-		repeat_rate = 30,
+		repeat_rate = 40,
 
 		kb_layout = "us,br",
 		kb_variant = "altgr-intl", -- Enforces standard dead keys (', ~, ^, `, ")
