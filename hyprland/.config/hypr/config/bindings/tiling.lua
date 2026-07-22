@@ -39,6 +39,12 @@ shift("l", hl.dsp.window.move({ direction = "r" }))
 shift("k", hl.dsp.window.move({ direction = "u" }))
 shift("j", hl.dsp.window.move({ direction = "d" }))
 
+-- Resize windows
+ctrl("h", hl.dsp.window.resize({ x = -20, y = 0, relative = true }), { repeating = true })
+ctrl("l", hl.dsp.window.resize({ x = 20, y = 0, relative = true }), { repeating = true })
+ctrl("j", hl.dsp.window.resize({ x = 0, y = -20, relative = true }), { repeating = true })
+ctrl("k", hl.dsp.window.resize({ x = 0, y = 20, relative = true }), { repeating = true })
+
 -- Workspaces
 for i = 1, 10 do
 	local num = i % 10
@@ -51,8 +57,8 @@ for i = 1, 10 do
 end
 
 -- Move windows to right and left workspaces
-ctrl("l", hl.dsp.window.move({ workspace = "r+1" }))
-ctrl("h", hl.dsp.window.move({ workspace = "r-1" }))
+--ctrl("l", hl.dsp.window.move({ workspace = "r+1" }))
+--ctrl("h", hl.dsp.window.move({ workspace = "r-1" }))
 
 -- Switch between workspaces (vim keys)
 hl.bind("CONTROL + ALT + l", hl.dsp.focus({ workspace = "r+1" }))
