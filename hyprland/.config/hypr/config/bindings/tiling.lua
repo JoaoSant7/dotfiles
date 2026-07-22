@@ -45,6 +45,11 @@ ctrl("l", hl.dsp.window.resize({ x = 20, y = 0, relative = true }), { repeating 
 ctrl("j", hl.dsp.window.resize({ x = 0, y = -20, relative = true }), { repeating = true })
 ctrl("k", hl.dsp.window.resize({ x = 0, y = 20, relative = true }), { repeating = true })
 
+-- Groups
+key("U", hl.dsp.group.toggle())
+alt("H", hl.dsp.group.prev())
+alt("L", hl.dsp.group.next())
+
 -- Workspaces
 for i = 1, 10 do
 	local num = i % 10
