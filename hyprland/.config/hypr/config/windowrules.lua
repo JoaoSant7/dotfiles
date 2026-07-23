@@ -22,7 +22,7 @@ hl.window_rule({
 })
 
 -- Gaming
-local gamingApps = "^(steam_app.*|gamescope)$"
+local gamingApps = "^(steam_app.*|gamescope|^Minecraft.*$)$"
 local gamingWorkspace = "name:gaming"
 
 hl.window_rule({ match = { content = "game" }, workspace = gamingWorkspace })
@@ -103,6 +103,19 @@ local suppressMaximizeRule = hl.window_rule({
 	suppress_event = "maximize",
 })
 suppressMaximizeRule:set_enabled(false)
+
+-- Minecraft (Prism Launcher)
+--hl.window_rule({
+--	name = "minecraft",
+--	match = {
+--		class = "^Minecraft.*$",
+--		xwayland = true,
+--	},
+--
+--	float = true,
+--	fullscreen = true,
+--	center = true,
+--})
 
 -- Fix some dragging issues with XWayland
 hl.window_rule({
