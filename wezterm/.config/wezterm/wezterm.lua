@@ -2,7 +2,7 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
 -- startup shell
-config.default_prog = { "/usr/bin/zsh", "-l" }
+--config.default_prog = { "/usr/bin/zsh", "-l" }
 
 -- font
 config.font = wezterm.font("JetBrainsMono Nerd Font")
