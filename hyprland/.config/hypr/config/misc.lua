@@ -20,3 +20,9 @@ hl.config({
 		no_donation_nag = true,
 	},
 })
+
+hl.config({
+	cursor = {
+		hide_on_key_press = true,
+	},
+})
