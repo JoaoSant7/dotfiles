@@ -15,7 +15,7 @@ font_weight = 600
 margin_edge = 5
 radius = 25
 shadow = false
-start = [ "workspaces", "media", "active_window", "audio_visualizer" ]
+start = [ "workspaces", "media", "active_window" ]
 thickness = 32
 widget_spacing = 15
 
