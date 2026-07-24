@@ -143,7 +143,7 @@ separator_style = { fg = "#727169" }
 mask = { bg = "#16161d" }
 rest = { fg = "#727169" }
 cand = { fg = "#7e9cd8" }
-desc = { fg = "#54546d" }
+desc = { fg = "#e6c384" }
 
 # : }}}
 

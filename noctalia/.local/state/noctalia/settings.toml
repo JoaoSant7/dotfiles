@@ -15,7 +15,7 @@ font_weight = 600
 margin_edge = 5
 radius = 25
 shadow = false
-start = [ "workspaces", "media", "active_window" ]
+start = [ "workspaces", "media", "active_window", "audio_visualizer" ]
 thickness = 32
 widget_spacing = 15
 
@@ -166,10 +166,9 @@ ui_scale = 1.4000000134110451
 
 [theme]
 builtin = "Kanagawa"
-community_palette = "Kanagawa Dragon"
+community_palette = "Cream"
 custom_palette = "Kurodo"
 mode = "dark"
-source = "community"
 wallpaper_scheme = "m3-content"
 
     [theme.templates]
@@ -201,6 +200,11 @@ transition = [ "fade" ]
 icon_size = 18
 min_length = 0
 
+[widget.audio_visualizer]
+centered = false
+mirrored = false
+width = 100
+
 [widget.battery]
 hide_when_plugged = true
 
@@ -225,6 +229,9 @@ show_label = false
 
 [widget.ram]
 display = "text"
+
+[widget.sysmon]
+stat = "gpu_temp"
 
 [widget.temp]
 display = "text"
