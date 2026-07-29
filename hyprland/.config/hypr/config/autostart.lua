@@ -7,8 +7,6 @@
 --	hl.exec_cmd("xhost +SI:localuser:root")
 --end)
 
-hl.on("hyprland.start", function()
-	hl.exec_cmd("fcitx5 -d")
-end)
-
---hl.exec_cmd("hyprctl setcursor Bibita-Modern-Ice 24")
+--hl.on("hyprland.start", function()
+--	hl.exec_cmd("fcitx5 -d")
+--end)

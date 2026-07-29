@@ -3,6 +3,7 @@ hl.config({
 		col = {
 			splash = "0xff95C561",
 		},
+		disable_hyprland_logo = true,
 		disable_splash_rendering = true,
 		middle_click_paste = false,
 		enable_swallow = true,

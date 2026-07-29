@@ -1,5 +1,5 @@
 -- Environmental variables
--- if you don't use UWSM, define your variables here (e.g. hl.env("QT_QPA_PLATFORM", "wayland"))
+-- Prefer UWSM
 
 --hl.env("HYPRCURSOR_THEME", "bibata-modern-ice")
 --hl.env("HYPRCURSOR_SIZE", "24")
