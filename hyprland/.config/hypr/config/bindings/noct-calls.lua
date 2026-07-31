@@ -13,6 +13,10 @@ local function alt(k, action, opts)
 	hl.bind("SUPER + ALT + " .. k, action, opts)
 end
 
+-- Window Switcher
+--
+hl.bind("ALT + TAB", hl.dsp.exec_cmd("noctalia msg window-switcher"))
+
 -- Settings and panel
 --
 key("A", hl.dsp.exec_cmd(noct .. "panel-toggle control-center notifications"))
