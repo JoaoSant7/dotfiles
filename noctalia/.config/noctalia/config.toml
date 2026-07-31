@@ -51,9 +51,17 @@ capsule_opacity    = 1.0
 
 # Widgets config
 
-start  = ["workspaces", "media"]
-center = ["power_profile"]
+start  = ["workspaces", "active_window", "media", ]
+center = ["cpu", "temp", "ram", "power_profile"]
 end    = ["tray", "notifications", "clipboard", "network", "bluetooth", "volume", "brightness", "battery", "clock", "control-center"]
+
+[widget.active_window]
+min_length = 80
+max_length = 200
+icon_size = 18
+title_scroll = "on_hover"
+display = "icon_and_text"
+show_empty_label = false
 
 [widget.battery]
 type = "battery"
@@ -78,6 +86,24 @@ show_label = false
 [widget.power_profile.actions]
 scroll_up = "none"
 scroll_down = "none"
+
+## sysmon
+[widget.cpu]
+type = "sysmon"
+stat = "cpu_usage"
+
+[widget.cpu-graph]
+type       = "sysmon"
+stat       = "cpu_usage"
+show_value    = false
+
+[widget.temp]
+type = "sysmon"
+stat = "cpu_temp"
+
+[widget.ram]
+type = "sysmon"
+stat = "ram_used"
 
 [widget.tray]
 hidden = ["nm-applet", "blueman", "org.kde.StatusNotifierItem-1-1"]
