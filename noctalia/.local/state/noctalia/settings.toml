@@ -163,6 +163,7 @@ ui_scale = 1.4000000134110451
     [shell.screenshot]
     confirm_region = true
     directory = "/home/pedro/Pictures/Screenshots"
+    pipe_to_command = true
 
 [theme]
 builtin = "Kanagawa"
