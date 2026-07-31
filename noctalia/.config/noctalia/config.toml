@@ -35,11 +35,11 @@ margin_ends        = 100         # inset from each end of the bar along its main
 margin_edge        = 5           # distance from the nearest screen edge (positive values float the bar)
 margin_opposite_edge = 0         # extra reserved space on the inward side of the bar (below for top, above for bottom)
 padding            = 14          # main-axis padding from bar edges to start/end widget sections
-widget_spacing     = 10           # gap between widgets within a section
+widget_spacing     = 15           # gap between widgets within a section
 hover_highlight    = true        # softly tint the widget under the mouse pointer with its foreground color
 scale              = 1.0         # content scale multiplier for icons and text
 font_weight        = 500         # CSS weight 100–1000 (e.g. 400 regular, 700 bold); primary label weight for bar widgets
-font_family        = ""          # typeface for this bar's widgets; empty inherits the global font
+font_family        = "SF Pro Text"          # typeface for this bar's widgets; empty inherits the global font
 
 # Default capsule style for all widgets on this bar (see Widget Capsule section)
 capsule            = false
@@ -52,11 +52,32 @@ capsule_opacity    = 1.0
 # Widgets config
 
 start  = ["workspaces", "media"]
-center = ["clock"]
-end    = ["tray", "notifications", "clipboard", "network", "bluetooth", "volume", "brightness", "battery", "control-center"]
+center = ["power_profile"]
+end    = ["tray", "notifications", "clipboard", "network", "bluetooth", "volume", "brightness", "battery", "clock", "control-center"]
+
+[widget.battery]
+type = "battery"
+display_mode = "glyph"
+show_label = true
+hide_when_plugged = true
+
+[widget.bluetooth]
+show_label = false
+hide_when_no_connected_device = true
+
+[widget.clock]
+format = "{:%H:%M} {:%a}, {:%d %b}"
+
+[widget.media]
+art_size = 24
+hide_when_no_media = true
 
 [widget.network]
 show_label = false
+
+[widget.power_profile.actions]
+scroll_up = "none"
+scroll_down = "none"
 
 [widget.tray]
 hidden = ["nm-applet", "blueman", "org.kde.StatusNotifierItem-1-1"]
@@ -66,10 +87,19 @@ drawer_columns = 3
 drawer_item_size = 15
 detached_panel = false
 
-[widget.battery]
-type = "battery"
-display_mode = "glyph"
-show_label = true
-hide_when_plugged = true
+[widget.volume]
+device = "output"
+glyph = ""
+mute_glyph = ""
+show_label = false
 
+[widget.workspaces]
+style = "regular"
+hide_when_empty = false
+pill_scale = 1.0
+active_pill_size = 2.2
+inactive_pill_size = 1.0
+focused_color = "primary"
+occupied_color = "secondary"
+urgent_color = "error"
 
