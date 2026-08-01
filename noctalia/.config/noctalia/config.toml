@@ -79,7 +79,7 @@ format = "{:%H:%M} {:%a}, {:%d %b}"
 [widget.media]
 art_size = 18
 hide_when_no_media = true
-album_art_only = true
+album_art_only = false
 
 [widget.network]
 show_label = false
