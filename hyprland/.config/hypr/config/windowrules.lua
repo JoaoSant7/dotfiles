@@ -8,6 +8,9 @@ hl.window_rule({
 	pin = true,
 })
 
+-- Opacity
+hl.window_rule({ match = { class = "^org.kde.kdeconnect.app$" }, opacity = 0.65 })
+
 -- Function apps
 
 local centeredApps = "^(org.gnome.FileRoller|nwg-look|qt6ct)$"
@@ -103,19 +106,6 @@ local suppressMaximizeRule = hl.window_rule({
 	suppress_event = "maximize",
 })
 suppressMaximizeRule:set_enabled(false)
-
--- Minecraft (Prism Launcher)
---hl.window_rule({
---	name = "minecraft",
---	match = {
---		class = "^Minecraft.*$",
---		xwayland = true,
---	},
---
---	float = true,
---	fullscreen = true,
---	center = true,
---})
 
 -- Fix some dragging issues with XWayland
 hl.window_rule({
