@@ -51,7 +51,7 @@ capsule_opacity    = 1.0
 
 # Widgets config
 
-start  = ["workspaces", "active_window", "media", ]
+start  = ["workspaces", "media", "active_window",]
 center = ["cpu", "temp", "ram", "power_profile"]
 end    = ["tray", "notifications", "clipboard", "network", "bluetooth", "volume", "brightness", "battery", "clock", "control-center"]
 
@@ -77,8 +77,9 @@ hide_when_no_connected_device = true
 format = "{:%H:%M} {:%a}, {:%d %b}"
 
 [widget.media]
-art_size = 24
+art_size = 18
 hide_when_no_media = true
+album_art_only = true
 
 [widget.network]
 show_label = false
