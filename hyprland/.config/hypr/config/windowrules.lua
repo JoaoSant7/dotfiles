@@ -12,11 +12,19 @@ hl.window_rule({
 hl.window_rule({ match = { class = "^org.kde.kdeconnect.app$" }, opacity = 0.65 })
 
 -- Function apps
+--hl.window_rule({
+--	name = "file-manager",
+--	match = { class = "^(Dolphin|thunar|org.gnome.Nautilus)$" },
+--	move = "25 200", -- TODO: apparently we can use relative screen widths and heights here
+--	size = "1000 750",
+--	float = true,
+--	pin = true,
+--})
 
+-- Centered apps
 local centeredApps = "^(org.gnome.FileRoller|nwg-look|qt6ct)$"
 
 hl.window_rule({ match = { float = true }, move = "50% 50%" })
-
 hl.window_rule({
 	match = { class = centeredApps },
 	float = true,
