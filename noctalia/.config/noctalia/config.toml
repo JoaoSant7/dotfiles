@@ -6,6 +6,7 @@ pipe_command = "satty -f - --output-filename ~/Pictures/Screenshots/%Y%m%d_%H%M%
 #volume_change_sound = "~/.local/share/sounds/volume-change.wav"
 #notification_sound = "~/.local/share/sounds/message.wav"
 
+## Bar
 [bar]
 order = ["main"]              # layer-shell creation order
 
@@ -129,4 +130,41 @@ inactive_pill_size = 1.0
 focused_color = "primary"
 occupied_color = "secondary"
 urgent_color = "error"
+
+## Wallpapers
+
+[wallpaper]
+enabled             = true
+fill_mode           = "crop"    # center | crop | fit | stretch | repeat | span
+fill_color          = "#111111" # optional fallback/fill color; image wallpapers take priority
+transition          = ["fade", "wipe", "disc", "stripes", "zoom", "honeycomb"]
+                                # array of effects picked at random each transition
+                                # omit to use all effects
+transition_duration = 1500      # milliseconds
+edge_smoothness     = 0.3       # 0.0 – 1.0
+transition_on_startup = false   # animate the first wallpaper at shell startup (v4-style)
+
+# Directory browsed by the wallpaper picker panel
+directory           = "~/Pictures/Wallpapers"
+
+[wallpaper.default]
+path = "~/Pictures/Wallpapers/catholicon-holy-sepulchre.jpg"
+
+[wallpaper.automation]
+enabled                      = false
+interval_seconds             = 1800
+order                        = "random" # random | alphabetical
+recursive                    = true     # scan subdirectories when selecting random wallpapers
+
+# Shell
+
+[shell.launcher]
+categories      = true   # show launcher category filters; Tab toggles them while open
+show_icons      = true   # show application icons in launcher results
+compact         = true  # smaller icons and tighter rows; hides subtitles
+app_grid        = false  # icon grid with labels underneath when results are apps only
+sort_by_usage   = true   # boost frequently used apps and show Recently Used filter
+fetch_exchange_rates = true  # refresh currency rates from third-party online sources
+provider_prefix = "/"    # common prefix character for provider trigger words (e.g. "/" or ".")
+auto_paste      = "auto" # off | auto | ctrl_v | ctrl_shift_v | shift_insert (after copy activations)
 
