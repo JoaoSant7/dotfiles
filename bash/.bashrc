@@ -26,7 +26,7 @@ unset rc
 
 eval "$(starship init bash)"
 
-. "$HOME/.local/share/../bin/env"
+#. "$HOME/.local/share/../bin/env"
 
 [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
 
