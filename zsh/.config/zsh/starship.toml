@@ -1,11 +1,42 @@
 # Get editor completions based on the config schema
 "$schema" = "https://starship.rs/config-schema.json"
+
 palette = "noctalia"
 
+format = """
+$os\
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_status\
+$nix_shell\
+$c\
+$cpp\
+$rust\
+$golang\
+$nodejs\
+$bun\
+$php\
+$java\
+$kotlin\
+$haskell\
+$python\
+$docker_context\
+$conda\
+$time\
+$line_break\
+$character\
+"""
 add_newline = true
 
 [line_break]
 disabled = false
+
+[os]
+disabled = false
+style = "bold blue"
+format = "[$symbol]($style) "
 
 [username]
 style_user = "blue bold"
@@ -64,13 +95,16 @@ symbol = "󰍛 "
 [nodejs]
 symbol = " "
 
-[os.symbols]
+[nix_shell]
+symbol = " "
 
+[os.symbols]
 Alpine = " "
 Arch = " "
 CentOS = " "
 Debian = " "
 Fedora = " "
+NixOS = " "
 Kali = " "
 
 [package]
@@ -82,22 +116,15 @@ symbol = " "
 [python]
 symbol = " "
 
-[rlang]
-symbol = "󰟔 "
-
 [ruby]
 symbol = " "
 
-[rust]
-symbol = "󱘗 "
-
-
-[custom.update]
-when = "/usr/bin/rpm-ostree status --json | /usr/bin/jq -e \".deployments[0].booted == false\" > /dev/null;"
-command = 'echo "New deployment staged"'
-symbol = ""
-format = " $symbol [($output)]($style) "
-style = "italic green"
+#[custom.update]
+#when = "/usr/bin/rpm-ostree status --json | /usr/bin/jq -e \".deployments[0].booted == false\" > /dev/null;"
+#command = 'echo "New deployment staged"'
+#symbol = ""
+#format = " $symbol [($output)]($style) "
+#style = "italic green"
 
 # >>> NOCTALIA STARSHIP PALETTE >>>
 # Noctalia Starship Palette
