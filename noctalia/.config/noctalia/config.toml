@@ -2,10 +2,6 @@
 [shell.screenshot]
 pipe_command = "satty -f - --output-filename ~/Pictures/Screenshots/%Y%m%d_%H%M%S.png"
 
-#[audio]
-#volume_change_sound = "~/.local/share/sounds/volume-change.wav"
-#notification_sound = "~/.local/share/sounds/message.wav"
-
 ## Bar
 [bar]
 order = ["main"]              # layer-shell creation order
@@ -168,3 +164,27 @@ fetch_exchange_rates = true  # refresh currency rates from third-party online so
 provider_prefix = "/"    # common prefix character for provider trigger words (e.g. "/" or ".")
 auto_paste      = "auto" # off | auto | ctrl_v | ctrl_shift_v | shift_insert (after copy activations)
 
+# Services
+[audio]
+enable_overdrive     = true  # allow volume sliders above 100% (up to 150%)
+enable_sounds        = false  # master toggle for UI sounds
+sound_volume         = 0.9    # global sound volume (0.0 - 1.0)
+volume_change_sound  = ""     # empty = bundled default sounds/volume-change.wav
+notification_sound   = ""     # empty = bundled default sounds/notification.wav
+
+[brightness]
+enable_ddcutil     = false
+ignore_mmids       = []     # e.g. ["ACI-ROG_PG279Q-10220"] - skip in all ddcutil commands
+minimum_brightness = 0.0    # never let brightness drop below this floor (0.0 to 1.0)
+sync_all_monitors = false   # if set to true, makes every display have the same brightness
+
+[location]
+auto_locate = false            # resolve coordinates from your IP address when true
+address     = "Recife, BR"    # geocoded when auto_locate = false and non-empty
+
+[nightlight]
+enabled              = true
+force                = true   # hold night temperature, ignoring the schedule
+
+temperature_day   = 3700       # Kelvin (must be > temperature_night by at least 100)
+temperature_night = 3600       # Kelvin
