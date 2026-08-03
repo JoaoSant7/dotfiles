@@ -153,6 +153,9 @@ order                        = "random" # random | alphabetical
 recursive                    = true     # scan subdirectories when selecting random wallpapers
 
 # Shell
+#
+[shell]
+launch_apps_as_systemd_services = true # launch apps as transient systemd services (needs Noctalia to be a user unit)
 
 [shell.launcher]
 categories      = true   # show launcher category filters; Tab toggles them while open
