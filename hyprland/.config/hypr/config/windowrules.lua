@@ -22,7 +22,7 @@ hl.window_rule({ match = { class = "^org.kde.kdeconnect.app$" }, opacity = 0.65 
 --})
 
 -- Centered apps
-local centeredApps = "^(org.gnome.FileRoller|nwg-look|qt6ct)$"
+local centeredApps = "^(org.gnome.FileRoller|nwg-look|qt6ct|xdg-desktop-portal-gtk)$"
 
 hl.window_rule({ match = { float = true }, move = "50% 50%" })
 hl.window_rule({
