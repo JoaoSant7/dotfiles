@@ -27,8 +27,14 @@ shift("W", hl.dsp.exec_cmd(noct .. "panel-toggle wallpaper"))
 key("V", hl.dsp.exec_cmd(noct .. "panel-toggle clipboard"))
 
 key("R", hl.dsp.exec_cmd(noct .. "screenshot-region"))
-key("N", hl.dsp.exec_cmd(noct .. "nightlight-enable"))
 
+-- Nightlight
+--
+key("N", hl.dsp.exec_cmd(noct .. "nightlight-enable"))
+alt("N", hl.dsp.exec_cmd(noct .. "nightlight-disable"))
+
+-- Session
+--
 alt("C", hl.dsp.exec_cmd(noct .. "panel-toggle session"))
 
 -- Sound and brightness
