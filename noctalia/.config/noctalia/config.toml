@@ -156,6 +156,13 @@ recursive                    = true     # scan subdirectories when selecting ran
 #
 [shell]
 launch_apps_as_systemd_services = true # launch apps as transient systemd services (needs Noctalia to be a user unit)
+telemetry_enabled = false
+clipboard_enabled = true
+clipboard_keep_from_closed_apps = true  # keep the live selection after its source application closes
+clipboard_history_max_entries = 100     # unpinned history cap (10–10000); pinned entries are exempt
+clipboard_confirm_clear_history = true
+clipboard_auto_paste  = "auto"          # off | auto | ctrl_v | ctrl_shift_v | shift_insert
+
 
 [shell.launcher]
 categories      = true   # show launcher category filters; Tab toggles them while open
