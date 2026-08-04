@@ -27,7 +27,7 @@ shift("W", hl.dsp.exec_cmd(noct .. "panel-toggle wallpaper"))
 key("V", hl.dsp.exec_cmd(noct .. "panel-toggle clipboard"))
 
 key("R", hl.dsp.exec_cmd(noct .. "screenshot-region"))
-key("N", hl.dsp.exec_cmd(noct .. "nightlight-toggle"))
+key("N", hl.dsp.exec_cmd(noct .. "nightlight-enable"))
 
 alt("C", hl.dsp.exec_cmd(noct .. "panel-toggle session"))
 
