@@ -1,6 +1,11 @@
 include "input.kdl"
 include "outputs.kdl"
 include "layout.kdl"
+include "bindings/apps.kdl"
+include "bindings/noct-calls.kdl"
+include "bindings/tiling.kdl"
+include "animations.kdl"
+include "window-rules.kdl"
 
 spawn-at-startup "fcitx5 -d"
 
@@ -12,14 +17,8 @@ prefer-no-csd
 
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
-include "animations.kdl"
-
-include "window-rules.kdl"
-
 debug {
   honor-xdg-activation-with-invalid-serial
 }
-
-include "binds.kdl"
 
 include "noctalia.kdl"
