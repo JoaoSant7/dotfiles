@@ -27,6 +27,7 @@ $conda\
 $time\
 $line_break\
 $character\
+$container\
 """
 add_newline = true
 
@@ -50,6 +51,11 @@ ssh_only = true
 ssh_symbol = " "
 format = "[$ssh_symbol](bold gray) at [$hostname](bold green) "
 disabled = false
+
+[container]
+symbol = " "
+style = "bold red dimmed"
+format = '[$symbol \[$name\]]($style) '
 
 [character]
 success_symbol = "[➜](bold green) "
