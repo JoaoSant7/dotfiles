@@ -1,7 +1,6 @@
 -- Hyprland default apps
 
---TERMINAL = "ghostty +new-window"
-TERMINAL = "kitty"
+TERMINAL = "ghostty +new-window"
 FILE_MANAGER = "thunar"
 BROWSER = "brave-origin"
 EDITOR = "zeditor"
