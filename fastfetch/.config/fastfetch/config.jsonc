@@ -37,7 +37,7 @@
     },
     {
       "type": "packages",
-      "format": "{} (system)",
+      "format": "{rpm} (rpm), {flatpak-all} (flatpak), {brew-all} (brew)",
       "key": " ",
       "keyColor": "34",
     },
