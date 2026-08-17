@@ -1,6 +1,6 @@
 command = /bin/zsh
 
-theme = Kanagawa Dragon
+theme = Kanagawa Wave
 font-size = 19
 mouse-hide-while-typing = true
 
