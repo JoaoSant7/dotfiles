@@ -122,12 +122,12 @@ symbol = " "
 [ruby]
 symbol = " "
 
-#[custom.update]
-#when = "/usr/bin/rpm-ostree status --json | /usr/bin/jq -e \".deployments[0].booted == false\" > /dev/null;"
-#command = 'echo "New deployment staged"'
-#symbol = ""
-#format = " $symbol [($output)]($style) "
-#style = "italic green"
+[custom.update]
+when = "/usr/bin/rpm-ostree status --json | /usr/bin/jq -e \".deployments[0].booted == false\" > /dev/null;"
+command = 'echo "New deployment staged"'
+symbol = ""
+format = " $symbol [($output)]($style) "
+style = "italic green"
 
 # >>> NOCTALIA STARSHIP PALETTE >>>
 # Noctalia Starship Palette
