@@ -64,4 +64,4 @@ alias dib="distrobox"
 
 alias sunr="sudo nixos-rebuild switch --flake .#hyprnix"
 
-alias fastfetch='/usr/bin/fastfetch --logo fedora -c ~/.config/fastfetch/config.jsonc'
+alias fastfetch='/usr/bin/fastfetch --logo Fedora_small -c ~/.config/fastfetch/config.jsonc'
