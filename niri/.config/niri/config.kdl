@@ -6,7 +6,9 @@ include "bindings/noct-calls.kdl"
 include "bindings/tiling.kdl"
 include "animations.kdl"
 include "window-rules.kdl"
+include "env.kdl"
 
+spawn-at-startup "noctalia"
 spawn-at-startup "fcitx5 -d"
 
 hotkey-overlay {
@@ -20,5 +22,6 @@ screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 debug {
   honor-xdg-activation-with-invalid-serial
 }
+
 
 include "noctalia.kdl"

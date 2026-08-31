@@ -6,7 +6,7 @@ Mod+E { spawn "thunar"; }
 Mod+T { spawn "zeditor"; }
 Mod+B { spawn "brave-origin"; }
 Mod+Return hotkey-overlay-title="Open a Terminal: ghostty" {
-    spawn "ghostty" "+new-window";
+    spawn "kitty";
 }
 
 Ctrl+Shift+S { spawn "flameshot" "gui"; }
