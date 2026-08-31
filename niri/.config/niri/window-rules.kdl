@@ -1,3 +1,13 @@
+// Set open-maximized to true for all windows.
+//window-rule {
+//    open-maximized true
+//}
+
+window-rule {
+    match app-id="kitty"
+    open-maximized true
+}
+
 window-rule {
     match app-id="brave-origin"
     open-maximized true
