@@ -8,6 +8,7 @@ include "animations.kdl"
 include "window-rules.kdl"
 include "env.kdl"
 
+spawn-at-startup "kanshi"
 spawn-at-startup "noctalia"
 spawn-at-startup "fcitx5 -d"
 

@@ -1,7 +1,7 @@
 layout {
     gaps 10
 
-    center-focused-column "never"
+    center-focused-column "on-overflow"
     always-center-single-column
 
     preset-column-widths {
@@ -15,13 +15,11 @@ layout {
     focus-ring {
         on
         width 3
-        active-color "#7fc8ff"
-        inactive-color "#505050"
     }
 
     border {
-        off
-        width 4
+        on
+        width 2
     }
 
     shadow {

@@ -1,13 +1,12 @@
-output "eDP-1" {
-    off
-    mode "1920x1080@120.030"
-    scale 2
-    transform "normal"
-    position x=1280 y=0
-}
-
-output "HDMI-A-1" {
-    mode "1920x1080@179.961"
-    transform "normal"
-    scale 1
-}
+//output "eDP-1" {
+//    mode "1920x1080@120.030"
+//    scale 1.5
+//    transform "normal"
+//    position x=1280 y=0
+//}
+//
+//output "HDMI-A-1" {
+//    mode "1920x1080@179.961"
+//    transform "normal"
+//    scale 1
+//}
