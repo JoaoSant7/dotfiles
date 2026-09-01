@@ -14,12 +14,12 @@ layout {
 
     focus-ring {
         on
-        width 3
+        width 1
     }
 
     border {
         on
-        width 2
+        width 4
     }
 
     shadow {
