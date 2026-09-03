@@ -174,11 +174,19 @@ fetch_exchange_rates = true  # refresh currency rates from third-party online so
 provider_prefix = "/"    # common prefix character for provider trigger words (e.g. "/" or ".")
 auto_paste      = "auto" # off | auto | ctrl_v | ctrl_shift_v | shift_insert (after copy activations)
 
+[osd]
+position = "bottom_center"
+position_vertical = "bottom_center"
+orientation = "horizontal"
+scale = 1.0              # OSD size multiplier on top of shell.ui_scale
+background_opacity = 0.97 # background opacity of OSD popups
+border = true
+
 # Services
 [audio]
 enable_overdrive     = true  # allow volume sliders above 100% (up to 150%)
 enable_sounds        = false  # master toggle for UI sounds
-sound_volume         = 0.9    # global sound volume (0.0 - 1.0)
+sound_volume         = 1    # global sound volume (0.0 - 1.0)
 volume_change_sound  = ""     # empty = bundled default sounds/volume-change.wav
 notification_sound   = ""     # empty = bundled default sounds/notification.wav
 
