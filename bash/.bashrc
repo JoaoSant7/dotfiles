@@ -24,6 +24,15 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
+# ensure linuxbrew's bin dir is on PATH regardless of how bash was invoked
+if [[ -d /home/linuxbrew/.linuxbrew/bin ]]; then
+  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+fi
+
+if command -v atuin &>/dev/null; then
+  eval "$(atuin init bash)"
+fi
+
 eval "$(starship init bash)"
 
 #. "$HOME/.local/share/../bin/env"
