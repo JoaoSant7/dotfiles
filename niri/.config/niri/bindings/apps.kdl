@@ -5,19 +5,16 @@ Mod+Shift+Slash { show-hotkey-overlay; }
 Mod+E { spawn "thunar"; }
 Mod+T { spawn "zeditor"; }
 Mod+B { spawn "brave-origin"; }
-Mod+Return hotkey-overlay-title="Open a Terminal: ghostty" {
+Mod+Return hotkey-overlay-title="Open a Terminal: kitty" {
     spawn "kitty";
 }
 
-Ctrl+Shift+S { spawn "flameshot" "gui"; }
-Mod+P { spawn "hyprpicker" "-a"; }
-
-Super+Alt+L hotkey-overlay-title="Lock the Screen: hyprlock" {
-    spawn "hyprlock";
-}
-
-Super+Alt+S allow-when-locked=true hotkey-overlay-title=null {
-    spawn-sh "pkill orca || exec orca";
-}
+//Ctrl+Shift+S { spawn "flameshot" "gui"; }
+//
+//Mod+P { spawn "hyprpicker" "-a"; }
+//
+//Super+Alt+L hotkey-overlay-title="Lock the Screen: hyprlock" {
+//    spawn "hyprlock";
+//}
 
 }
