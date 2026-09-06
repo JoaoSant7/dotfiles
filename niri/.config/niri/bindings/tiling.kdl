@@ -160,6 +160,7 @@ binds {
     // Hyprland muscle memory
     Mod+Alt+T { toggle-window-floating; }
 
+    // Overview
     Mod+W { toggle-column-tabbed-display; }
 
     //
