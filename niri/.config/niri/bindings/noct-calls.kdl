@@ -1,4 +1,7 @@
 binds {
+
+    Mod+Space { switch-layout "next"; }
+
     // Window switcher
     Alt+Tab { spawn "noctalia" "msg" "window-switcher"; }
 
