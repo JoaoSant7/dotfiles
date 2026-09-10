@@ -1,27 +1,27 @@
 binds {
 
-    Mod+Space { switch-layout "next"; }
+    Mod+Space hotkey-overlay-title="Switch Layout" { switch-layout "next"; }
 
     // Window switcher
-    Alt+Tab { spawn "noctalia" "msg" "window-switcher"; }
+    Alt+Tab hotkey-overlay-title="Window Switcher" { spawn "noctalia" "msg" "window-switcher"; }
 
     // Panels and settings
-    Mod+A { spawn "noctalia" "msg" "panel-toggle" "control-center" "notifications"; }
-    Mod+Z { spawn "noctalia" "msg" "settings-toggle"; }
-    Mod+X { spawn "noctalia" "msg" "panel-toggle" "control-center"; }
-    Mod+D { spawn "noctalia" "msg" "panel-toggle" "launcher"; }
-    Mod+Shift+W { spawn "noctalia" "msg" "panel-toggle" "wallpaper"; }
-    Mod+V { spawn "noctalia" "msg" "panel-toggle" "clipboard"; }
+    Mod+A hotkey-overlay-title="Open Notifications" { spawn "noctalia" "msg" "panel-toggle" "control-center" "notifications"; }
+    Mod+Z hotkey-overlay-title="Open Noctalia Settings" { spawn "noctalia" "msg" "settings-toggle"; }
+    Mod+X hotkey-overlay-title="Open Control Center" { spawn "noctalia" "msg" "panel-toggle" "control-center"; }
+    Mod+D hotkey-overlay-title="Open Launcher" { spawn "noctalia" "msg" "panel-toggle" "launcher"; }
+    Mod+Shift+W hotkey-overlay-title="Open Wallpaper Selector" { spawn "noctalia" "msg" "panel-toggle" "wallpaper"; }
+    Mod+V hotkey-overlay-title="Open Clipboard" { spawn "noctalia" "msg" "panel-toggle" "clipboard"; }
 
     // Screenshot
-    Mod+R { spawn "noctalia" "msg" "screenshot-region"; }
+    Mod+R hotkey-overlay-title="Noctalia Screenshot" { spawn "noctalia" "msg" "screenshot-region"; }
 
     // Night light
-    Mod+N { spawn "noctalia" "msg" "nightlight-enable"; }
-    Mod+Alt+N { spawn "noctalia" "msg" "nightlight-disable"; }
+    Mod+N hotkey-overlay-title="Enable Night Light" { spawn "noctalia" "msg" "nightlight-enable"; }
+    Mod+Alt+N hotkey-overlay-title="Disable Night Light" { spawn "noctalia" "msg" "nightlight-disable"; }
 
     // Session
-    Mod+Alt+C { spawn "noctalia" "msg" "panel-toggle" "session"; }
+    Mod+Alt+C hotkey-overlay-title="Open Session Manager" { spawn "noctalia" "msg" "panel-toggle" "session"; }
 
     // Sound
     XF86AudioRaiseVolume { spawn "noctalia" "msg" "volume-up"; }
