@@ -1,5 +1,5 @@
 binds {
-
+    // Layout switcher
     Mod+Space hotkey-overlay-title="Switch Layout" { switch-layout "next"; }
 
     // Window switcher
