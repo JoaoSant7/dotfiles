@@ -1,6 +1,4 @@
 # ~/.config/noctalia/config.toml
-[shell.screenshot]
-pipe_command = "satty -f - --output-filename ~/Pictures/Screenshots/%Y%m%d_%H%M%S.png"
 
 ## Bar
 [bar]
@@ -141,7 +139,7 @@ edge_smoothness     = 0.3       # 0.0 – 1.0
 transition_on_startup = false   # animate the first wallpaper at shell startup (v4-style)
 
 # Directory browsed by the wallpaper picker panel
-directory           = "~/Pictures/Wallpapers"
+directory = "~/dotfiles/backgrounds/"
 
 [wallpaper.default]
 path = "~/Pictures/Wallpapers/catholicon-holy-sepulchre.jpg"
@@ -163,6 +161,14 @@ clipboard_history_max_entries = 100     # unpinned history cap (10–10000); pin
 clipboard_confirm_clear_history = true
 clipboard_auto_paste  = "auto"          # off | auto | ctrl_v | ctrl_shift_v | shift_insert
 
+[shell.screenshot]
+annotate = true
+directory = "~/Pictures/Screenshots/"
+close_on_copy = true
+close_on_save = true
+copy_to_clipboard = true
+show_cursor = true
+#pipe_command = "satty -f - --output-filename ~/Pictures/Screenshots/%Y%m%d_%H%M%S.png"
 
 [shell.launcher]
 categories      = true   # show launcher category filters; Tab toggles them while open
