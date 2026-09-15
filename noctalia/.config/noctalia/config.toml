@@ -5,83 +5,86 @@
 order = ["main"]              # layer-shell creation order
 
 [bar.default]
-position           = "top"       # top | bottom | left | right
-enabled            = true
 auto_hide          = false       # slide out after pointer leaves; reveal from edge trigger strip
-smart_auto_hide    = false       # show when the active workspace is empty; hide when it has windows
-show_on_workspace_switch = true  # with auto_hide: briefly reveal when the active workspace changes
-reserve_space      = true        # reserve compositor exclusive zone / push windows away
-layer              = "top"       # top | overlay; overlay appears above fullscreen apps
-
-thickness          = 32          # bar cross-axis size in pixels (height for horizontal, width for vertical)
 background_opacity = 1.0         # 0.0 (transparent) to 1.0 (opaque)
 border             = "outline"   # color role or #RRGGBB for the bar outline
 border_width       = 0.0         # inside outline width in pixels; 0 disables it
-shadow             = false        # cast the global [shell.shadow]
-contact_shadow     = false       # dark gradient between an attached panel and the bar (depth at the seam)
-panel_overlap      = 1           # logical px an attached panel overlaps the bar edge to hide the seam
-radius             = 25          # global corner radius fallback
-radius_top_left    = 25
-radius_top_right   = 25
-radius_bottom_left = 25
-radius_bottom_right = 12
-concave_edge_corners = true      # carve the screen-edge corners inward; requires margin_edge = 0
-margin_ends        = 100         # inset from each end of the bar along its main axis
-margin_edge        = 5           # distance from the nearest screen edge (positive values float the bar)
-margin_opposite_edge = 0         # extra reserved space on the inward side of the bar (below for top, above for bottom)
-padding            = 14          # main-axis padding from bar edges to start/end widget sections
-widget_spacing     = 15           # gap between widgets within a section
-hover_highlight    = true        # softly tint the widget under the mouse pointer with its foreground color
-scale              = 1.0         # content scale multiplier for icons and text
-font_weight        = 700         # CSS weight 100–1000 (e.g. 400 regular, 700 bold); primary label weight for bar widgets
-font_family        = "SF Pro Text"          # typeface for this bar's widgets; empty inherits the global font
 
 # Default capsule style for all widgets on this bar (see Widget Capsule section)
 capsule            = false
-capsule_fill       = "surface_variant"
-capsule_thickness  = 0.76          # capsule size across the bar as a fraction of bar thickness (1.0 fills the bar)
-capsule_radius     = 8.0            # omit for automatic pill radius
-capsule_opacity    = 1.0
 # capsule_border   = "outline"   # omit this key for no border by default
+capsule_fill       = "surface_variant"
+capsule_opacity    = 1.0
+capsule_radius     = 8.0            # omit for automatic pill radius
+capsule_thickness  = 0.76          # capsule size across the bar as a fraction of bar thickness (1.0 fills the bar)
 
 # Widgets config
-
-start  = ["workspaces", "media", "active_window",]
 center = ["cpu", "temp", "ram", "power_profile"]
+
+concave_edge_corners = true      # carve the screen-edge corners inward; requires margin_edge = 0
+contact_shadow     = false       # dark gradient between an attached panel and the bar (depth at the seam)
+enabled            = true
+
 end    = ["tray", "notifications", "clipboard", "network", "bluetooth", "volume", "brightness", "battery", "clock", "control-center"]
 
+font_family        = "SF Pro Text"          # typeface for this bar's widgets; empty inherits the global font
+font_weight        = 700         # CSS weight 100–1000 (e.g. 400 regular, 700 bold); primary label weight for bar widgets
+hover_highlight    = true        # softly tint the widget under the mouse pointer with its foreground color
+layer              = "top"       # top | overlay; overlay appears above fullscreen apps
+margin_edge        = 5           # distance from the nearest screen edge (positive values float the bar)
+margin_ends        = 100         # inset from each end of the bar along its main axis
+margin_opposite_edge = 0         # extra reserved space on the inward side of the bar (below for top, above for bottom)
+padding            = 14          # main-axis padding from bar edges to start/end widget sections
+panel_overlap      = 1           # logical px an attached panel overlaps the bar edge to hide the seam
+position           = "top"       # top | bottom | left | right
+radius             = 25          # global corner radius fallback
+radius_bottom_left = 25
+radius_bottom_right = 12
+radius_top_left    = 25
+radius_top_right   = 25
+reserve_space      = true        # reserve compositor exclusive zone / push windows away
+scale              = 1.0         # content scale multiplier for icons and text
+shadow             = false        # cast the global [shell.shadow]
+show_on_workspace_switch = true  # with auto_hide: briefly reveal when the active workspace changes
+smart_auto_hide    = false       # show when the active workspace is empty; hide when it has windows
+
+start  = ["workspaces", "media", "active_window",]
+
+thickness          = 32          # bar cross-axis size in pixels (height for horizontal, width for vertical)
+widget_spacing     = 15           # gap between widgets within a section
+
 [widget.active_window]
-min_length = 80
-max_length = 200
-icon_size = 18
-title_scroll = "on_hover"
 display = "icon_and_text"
+icon_size = 18
+max_length = 200
+min_length = 80
 show_empty_label = false
+title_scroll = "on_hover"
 
 [widget.battery]
 type = "battery"
 display_mode = "glyph"
-show_label = true
 hide_when_plugged = true
+show_label = true
 
 [widget.bluetooth]
-show_label = false
 hide_when_no_connected_device = true
+show_label = false
 
 [widget.clock]
 format = "{:%H:%M} {:%a}, {:%d %b}"
 
 [widget.media]
+album_art_only = false
 art_size = 18
 hide_when_no_media = true
-album_art_only = false
 
 [widget.network]
 show_label = false
 
 [widget.power_profile.actions]
-scroll_up = "none"
 scroll_down = "none"
+scroll_up = "none"
 
 ## sysmon
 [widget.cpu]
@@ -89,25 +92,25 @@ type = "sysmon"
 stat = "cpu_usage"
 
 [widget.cpu-graph]
-type       = "sysmon"
-stat       = "cpu_usage"
 show_value    = false
+stat       = "cpu_usage"
+type       = "sysmon"
 
 [widget.temp]
-type = "sysmon"
 stat = "cpu_temp"
+type = "sysmon"
 
 [widget.ram]
-type = "sysmon"
 stat = "ram_used"
+type = "sysmon"
 
 [widget.tray]
-hidden = ["nm-applet", "blueman", "org.kde.StatusNotifierItem-1-1"]
-pinned = ["nm-applet"]
+detached_panel = false
 drawer = true
 drawer_columns = 3
 drawer_item_size = 15
-detached_panel = false
+hidden = ["nm-applet", "blueman", "org.kde.StatusNotifierItem-1-1"]
+pinned = ["nm-applet"]
 
 [widget.volume]
 device = "output"
@@ -116,30 +119,29 @@ mute_glyph = ""
 show_label = false
 
 [widget.workspaces]
-style = "regular"
-hide_when_empty = false
-pill_scale = 1.0
 active_pill_size = 2.2
-inactive_pill_size = 1.0
 focused_color = "primary"
+hide_when_empty = false
+inactive_pill_size = 1.0
 occupied_color = "secondary"
+pill_scale = 1.0
+style = "regular"
 urgent_color = "error"
 
 ## Wallpapers
 
 [wallpaper]
+# Directory browsed by the wallpaper picker panel
+directory = "~/dotfiles/backgrounds/"
+edge_smoothness     = 0.3       # 0.0 – 1.0
 enabled             = true
-fill_mode           = "crop"    # center | crop | fit | stretch | repeat | span
 fill_color          = "#111111" # optional fallback/fill color; image wallpapers take priority
+fill_mode           = "crop"    # center | crop | fit | stretch | repeat | span
 transition          = ["fade", "wipe", "disc", "stripes", "zoom", "honeycomb"]
                                 # array of effects picked at random each transition
                                 # omit to use all effects
 transition_duration = 1500      # milliseconds
-edge_smoothness     = 0.3       # 0.0 – 1.0
 transition_on_startup = false   # animate the first wallpaper at shell startup (v4-style)
-
-# Directory browsed by the wallpaper picker panel
-directory = "~/dotfiles/backgrounds/"
 
 [wallpaper.default]
 path = "~/Pictures/Wallpapers/catholicon-holy-sepulchre.jpg"
@@ -153,48 +155,49 @@ recursive                    = true     # scan subdirectories when selecting ran
 # Shell
 #
 [shell]
+clipboard_auto_paste  = "auto"          # off | auto | ctrl_v | ctrl_shift_v | shift_insert
+clipboard_confirm_clear_history = true
+clipboard_enabled = true
+clipboard_history_max_entries = 100     # unpinned history cap (10–10000); pinned entries are exempt
+clipboard_keep_from_closed_apps = true  # keep the live selection after its source application closes
 launch_apps_as_systemd_services = true # launch apps as transient systemd services (needs Noctalia to be a user unit)
 telemetry_enabled = false
-clipboard_enabled = true
-clipboard_keep_from_closed_apps = true  # keep the live selection after its source application closes
-clipboard_history_max_entries = 100     # unpinned history cap (10–10000); pinned entries are exempt
-clipboard_confirm_clear_history = true
-clipboard_auto_paste  = "auto"          # off | auto | ctrl_v | ctrl_shift_v | shift_insert
 
 [shell.screenshot]
 annotate = true
-directory = "~/Pictures/Screenshots/"
 close_on_copy = true
 close_on_save = true
+confirm_region = false
 copy_to_clipboard = true
-show_cursor = true
+directory = "~/Pictures/Screenshots/"
 #pipe_command = "satty -f - --output-filename ~/Pictures/Screenshots/%Y%m%d_%H%M%S.png"
+show_cursor = true
 
 [shell.launcher]
-categories      = true   # show launcher category filters; Tab toggles them while open
-show_icons      = true   # show application icons in launcher results
-compact         = true  # smaller icons and tighter rows; hides subtitles
 app_grid        = false  # icon grid with labels underneath when results are apps only
-sort_by_usage   = false   # boost frequently used apps and show Recently Used filter
+auto_paste      = "auto" # off | auto | ctrl_v | ctrl_shift_v | shift_insert (after copy activations)
+categories      = true   # show launcher category filters; Tab toggles them while open
+compact         = true  # smaller icons and tighter rows; hides subtitles
 fetch_exchange_rates = true  # refresh currency rates from third-party online sources
 provider_prefix = "/"    # common prefix character for provider trigger words (e.g. "/" or ".")
-auto_paste      = "auto" # off | auto | ctrl_v | ctrl_shift_v | shift_insert (after copy activations)
+show_icons      = true   # show application icons in launcher results
+sort_by_usage   = false   # boost frequently used apps and show Recently Used filter
 
 [osd]
-position = "bottom_center"
-position_vertical = "bottom_center"
-orientation = "horizontal"
-scale = 1.0              # OSD size multiplier on top of shell.ui_scale
 background_opacity = 0.97 # background opacity of OSD popups
 border = true
+orientation = "horizontal"
+position = "bottom_center"
+position_vertical = "bottom_center"
+scale = 1.0              # OSD size multiplier on top of shell.ui_scale
 
 # Services
 [audio]
 enable_overdrive     = true  # allow volume sliders above 100% (up to 150%)
 enable_sounds        = false  # master toggle for UI sounds
+notification_sound   = ""     # empty = bundled default sounds/notification.wav
 sound_volume         = 1    # global sound volume (0.0 - 1.0)
 volume_change_sound  = ""     # empty = bundled default sounds/volume-change.wav
-notification_sound   = ""     # empty = bundled default sounds/notification.wav
 
 [brightness]
 enable_ddcutil     = false
@@ -203,8 +206,8 @@ minimum_brightness = 0.0    # never let brightness drop below this floor (0.0 to
 sync_all_monitors = false   # if set to true, makes every display have the same brightness
 
 [location]
-auto_locate = false            # resolve coordinates from your IP address when true
 address     = "Recife, BR"    # geocoded when auto_locate = false and non-empty
+auto_locate = false            # resolve coordinates from your IP address when true
 
 [nightlight]
 enabled              = true
