@@ -188,7 +188,7 @@ show_cursor = true
 [shell.launcher]
 app_grid = false            # icon grid with labels underneath when results are apps only
 auto_paste = "auto"         # off | auto | ctrl_v | ctrl_shift_v | shift_insert (after copy activations)
-categories = true           # show launcher category filters; Tab toggles them while open
+categories = false          # show launcher category filters; Tab toggles them while open
 compact = true              # smaller icons and tighter rows; hides subtitles
 fetch_exchange_rates = true # refresh currency rates from third-party online sources
 provider_prefix = "/"       # common prefix character for provider trigger words (e.g. "/" or ".")
