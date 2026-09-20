@@ -14,13 +14,16 @@ window-rule {
 }
 
 window-rule {
-    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+    match app-id=r#"^dfr\.floating\.thunar$"#
+
     open-floating true
+    default-column-width { proportion 0.33; }
+    default-window-height { proportion 0.5; }
 }
 
 window-rule {
   // 16 for rounded corners for a modern look.
-  geometry-corner-radius 16
+  geometry-corner-radius 8
 
   // Clips window contents to the rounded corner boundaries.
   clip-to-geometry true
@@ -36,6 +39,16 @@ window-rule {
   open-floating true
   default-column-width { fixed 1080; }
   default-window-height { fixed 920; }
+}
+
+window-rule {
+    match app-id=r#"^Pinentry-gtk$"#
+    match app-id=r#"^mpv$"#
+    match app-id=r#"^thunar$"# title=r#"^Rename "#
+    match app-id=r#"^org\.gnome\.FileRoller$"# title="^Extract"
+    match app-id=r#"firefox$"# title=r#"^(Picture-in-Picture|Library|About Mozilla Firefox|Firefox - Choose a profile)$"#
+
+    open-floating true
 }
 
 debug {
