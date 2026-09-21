@@ -1,6 +1,6 @@
 binds {
     // Layout switcher
-    Mod+Space hotkey-overlay-title="Switch Layout" { switch-layout "next"; }
+    Mod+L hotkey-overlay-title="Switch Layout" { switch-layout "next"; }
 
     // Window switcher
     Alt+Tab hotkey-overlay-title="Window Switcher" { spawn "noctalia" "msg" "window-switcher"; }
@@ -9,7 +9,7 @@ binds {
     Mod+A hotkey-overlay-title="Open Notifications" { spawn "noctalia" "msg" "panel-toggle" "control-center" "notifications"; }
     Mod+Z hotkey-overlay-title="Open Noctalia Settings" { spawn "noctalia" "msg" "settings-toggle"; }
     Mod+X hotkey-overlay-title="Open Control Center" { spawn "noctalia" "msg" "panel-toggle" "control-center"; }
-    Mod+D hotkey-overlay-title="Open Launcher" { spawn "noctalia" "msg" "panel-toggle" "launcher"; }
+    Mod+Space hotkey-overlay-title="Open Launcher" { spawn "noctalia" "msg" "panel-toggle" "launcher"; }
     Mod+Shift+W hotkey-overlay-title="Open Wallpaper Selector" { spawn "noctalia" "msg" "panel-toggle" "wallpaper"; }
     Mod+V hotkey-overlay-title="Open Clipboard" { spawn "noctalia" "msg" "panel-toggle" "clipboard"; }
 
