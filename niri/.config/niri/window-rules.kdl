@@ -50,6 +50,7 @@ window-rule {
 // Open KDE Connect as a small floating windows.
 window-rule {
 	match app-id="org.kde.kdeconnect.app"
+  match app-id="org.localsend.localsend_app"
 
 	open-floating true
 	default-column-width { proportion 0.3; }
