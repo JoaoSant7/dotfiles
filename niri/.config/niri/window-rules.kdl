@@ -1,15 +1,22 @@
-// Set open-maximized to true for all windows.
-//window-rule {
-//    open-maximized true
-//}
-
-window-rule {
-    match app-id="kitty"
-    open-maximized true
+// Debug
+debug {
+  honor-xdg-activation-with-invalid-serial
+  wait-for-frame-completion-before-queueing
 }
 
+// Corners
+window-rule {
+  geometry-corner-radius 10
+
+  // Clips window contents to the rounded corner boundaries.
+  clip-to-geometry true
+  draw-border-with-background false
+}
+
+// Maximized windows
 window-rule {
     match app-id="brave-origin"
+    match app-id="kitty"
     open-maximized true
 }
 
@@ -21,17 +28,6 @@ window-rule {
     default-window-height { proportion 0.5; }
 }
 
-window-rule {
-  // 16 for rounded corners for a modern look.
-  geometry-corner-radius 8
-
-  // Clips window contents to the rounded corner boundaries.
-  clip-to-geometry true
-}
-
-window-rule {
-    draw-border-with-background false
-}
 
 // Floating Noctalia settings window.
 window-rule {
@@ -51,7 +47,11 @@ window-rule {
     open-floating true
 }
 
-debug {
-  honor-xdg-activation-with-invalid-serial
-  wait-for-frame-completion-before-queueing
+// Open KDE Connect as a small floating windows.
+window-rule {
+	match app-id="org.kde.kdeconnect.app"
+
+	open-floating true
+	default-column-width { proportion 0.3; }
+	default-window-height { proportion 0.7; }
 }
