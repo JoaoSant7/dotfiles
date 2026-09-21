@@ -1,6 +1,6 @@
 binds {
     // Layout switcher
-    Mod+L hotkey-overlay-title="Switch Layout" { switch-layout "next"; }
+    Mod+S hotkey-overlay-title="Switch Layout" { switch-layout "next"; }
 
     // Window switcher
     Alt+Tab hotkey-overlay-title="Window Switcher" { spawn "noctalia" "msg" "window-switcher"; }
