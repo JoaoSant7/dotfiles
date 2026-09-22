@@ -1,14 +1,12 @@
 // Debug
 debug {
   honor-xdg-activation-with-invalid-serial
-  wait-for-frame-completion-before-queueing
+  //wait-for-frame-completion-before-queueing
 }
 
 // Corners
 window-rule {
   geometry-corner-radius 10
-
-  // Clips window contents to the rounded corner boundaries.
   clip-to-geometry true
   draw-border-with-background false
 }
