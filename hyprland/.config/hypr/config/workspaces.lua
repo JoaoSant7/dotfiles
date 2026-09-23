@@ -10,7 +10,7 @@ hl.workspace_rule({
 	workspace = "special:term",
 	gaps_out = 100,
 	persistent = false,
-	on_created_empty = "ghostty",
+	on_created_empty = "kitty",
 })
 
 hl.bind("SUPER + apostrophe", hl.dsp.workspace.toggle_special("term"))
