@@ -12,4 +12,4 @@ key("B", hl.dsp.exec_cmd(launchPrefix .. BROWSER))
 hl.bind("CONTROL + SHIFT + S", hl.dsp.exec_cmd(launchPrefix .. SCREENSHOT))
 
 -- Picker
-key("P", hl.dsp.exec_cmd("hyprpicker -a"))
+--key("P", hl.dsp.exec_cmd("hyprpicker -a"))
