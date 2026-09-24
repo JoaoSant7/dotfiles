@@ -9,7 +9,6 @@ hl.config({
 		enable_swallow = true,
 		swallow_regex = "(kitty|ghostty|[Kk]onsole|Alacritty|gnome-terminal|xfce[0-9]?-terminal)",
 		vrr = 3,
-
 		-- Startup wallpaper
 		force_default_wallpaper = 0,
 	},
@@ -22,9 +21,3 @@ hl.config({
 	},
 })
 
-hl.config({
-	cursor = {
-		hide_on_key_press = true,
-		no_hardware_cursors = true,
-	},
-})
