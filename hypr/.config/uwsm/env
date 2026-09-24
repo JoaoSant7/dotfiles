@@ -16,5 +16,5 @@ export GTK_IM_MODULE=fcitx
 # hyprland-qt-support
 QT_QUICK_CONTROLS_STYLE = "Fusion";
 # xcursor
-export XCURSOR_THEME=Adwaita
+export XCURSOR_THEME=Bibata-Modern-Ice
 export XCURSOR_SIZE=24
