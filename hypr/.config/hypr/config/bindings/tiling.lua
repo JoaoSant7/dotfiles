@@ -40,16 +40,22 @@ hl.bind("ALT + Tab", hl.dsp.window.cycle_next())
 key("period", hl.dsp.layout("move +col"))
 key("comma", hl.dsp.layout("move -col"))
 key("M", hl.dsp.layout("colresize +conf"))
+shift("M", hl.dsp.layout("colresize -conf"))
+
+-- Stack / unstack (new)
+key("I",  hl.dsp.layout("consume_or_expel prev"))
+key("O", hl.dsp.layout("consume_or_expel next"))
+key("P", hl.dsp.layout("promote"))
 
 -- Move windows
-shift("h", hl.dsp.window.move({ direction = "l" }))
-shift("l", hl.dsp.window.move({ direction = "r" }))
+shift("h", hl.dsp.layout("swapcol l"))   -- reorder columns
+shift("l", hl.dsp.layout("swapcol r"))
 shift("k", hl.dsp.window.move({ direction = "u" }))
 shift("j", hl.dsp.window.move({ direction = "d" }))
 
 -- Resize windows
-ctrl("h", hl.dsp.window.resize({ x = -20, y = 0, relative = true }), { repeating = true })
-ctrl("l", hl.dsp.window.resize({ x = 20, y = 0, relative = true }), { repeating = true })
+ctrl("h", hl.dsp.layout("colresize -0.05"), { repeating = true })
+ctrl("l", hl.dsp.layout("colresize +0.05"), { repeating = true })
 ctrl("j", hl.dsp.window.resize({ x = 0, y = -20, relative = true }), { repeating = true })
 ctrl("k", hl.dsp.window.resize({ x = 0, y = 20, relative = true }), { repeating = true })
 
@@ -59,8 +65,8 @@ alt("H", hl.dsp.group.prev())
 alt("L", hl.dsp.group.next())
 
 -- Workspaces
-for i = 1, 10 do
-	local num = i % 10
+for i = 1, 4 do
+	local num = i % 4
 
 	key(num, hl.dsp.focus({ workspace = i }))
 
@@ -70,8 +76,8 @@ for i = 1, 10 do
 end
 
 -- Move windows to right and left workspaces
-ctrl("l", hl.dsp.window.move({ workspace = "r+1" }))
-ctrl("h", hl.dsp.window.move({ workspace = "r-1" }))
+hl.bind("SUPER + CONTROL + SHIFT + h", hl.dsp.window.move({ workspace = "r-1" }))
+hl.bind("SUPER + CONTROL + SHIFT + l", hl.dsp.window.move({ workspace = "r+1" }))
 
 -- Switch between workspaces (vim keys)
 hl.bind("CONTROL + ALT + l", hl.dsp.focus({ workspace = "r+1" }))
