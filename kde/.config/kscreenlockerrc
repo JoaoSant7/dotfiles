@@ -1,6 +1,0 @@
-[Daemon]
-Timeout=10
-
-[Greeter][Wallpaper][org.kde.image][General]
-Image=/home/petrvs/dotfiles/backgrounds/mountains/white-mountain.jpg
-PreviewImage=/home/petrvs/dotfiles/backgrounds/mountains/white-mountain.jpg
