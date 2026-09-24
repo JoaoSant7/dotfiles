@@ -20,10 +20,10 @@ alt("T", hl.dsp.window.float({ action = "toggle" }))
 key("F", hl.dsp.window.fullscreen())
 
 -- Focus movement (vim keys)
-key("h", hl.dsp.focus({ direction = "left" }))
-key("l", hl.dsp.focus({ direction = "right" }))
+key("h", hl.dsp.layout("focus l"))
 key("k", hl.dsp.focus({ direction = "up" }))
 key("j", hl.dsp.focus({ direction = "down" }))
+key("l", hl.dsp.layout("focus r"))
 
 -- Cycle
 hl.bind("ALT + Tab", hl.dsp.window.cycle_next())
