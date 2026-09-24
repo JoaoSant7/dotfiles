@@ -1,10 +1,3 @@
--- Maximized Windows
-hl.window_rule({
-  name = "maximized-apps",
-  match = { initial_class = "^(brave-origin|kitty)$" },
-  maximize = true,
-})
-
 -- Centered apps
 local centeredApps = "^(org.gnome.FileRoller|nwg-look|qt6ct|xdg-desktop-portal-gtk)$"
 
