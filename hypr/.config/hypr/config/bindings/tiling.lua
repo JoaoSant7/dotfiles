@@ -66,13 +66,9 @@ alt("L", hl.dsp.group.next())
 
 -- Workspaces
 for i = 1, 4 do
-	local num = i % 4
-
-	key(num, hl.dsp.focus({ workspace = i }))
-
-	shift(num, hl.dsp.window.move({ workspace = i, follow = true }))
-
-	alt(num, hl.dsp.window.move({ workspace = i, follow = false }))
+	key(i, hl.dsp.focus({ workspace = i }))
+	shift(i, hl.dsp.window.move({ workspace = i, follow = true }))
+	alt(i, hl.dsp.window.move({ workspace = i, follow = false }))
 end
 
 -- Move windows to right and left workspaces
