@@ -1,3 +1,4 @@
+-- Key functions
 local function key(k, action, opts)
 	hl.bind("SUPER + " .. k, action, opts)
 end
@@ -14,9 +15,16 @@ local function alt(k, action, opts)
 	hl.bind("SUPER + ALT + " .. k, action, opts)
 end
 
+-- hypctl kill
 key("Escape", hl.dsp.exec_cmd("hyprctl kill"))
+
+-- Close window
 key("Q", hl.dsp.window.close())
+
+-- Toggle floating window
 alt("T", hl.dsp.window.float({ action = "toggle" }))
+
+-- Toggle fullscreen
 key("F", hl.dsp.window.fullscreen())
 
 -- Focus movement (vim keys)
@@ -62,8 +70,8 @@ for i = 1, 10 do
 end
 
 -- Move windows to right and left workspaces
---ctrl("l", hl.dsp.window.move({ workspace = "r+1" }))
---ctrl("h", hl.dsp.window.move({ workspace = "r-1" }))
+ctrl("l", hl.dsp.window.move({ workspace = "r+1" }))
+ctrl("h", hl.dsp.window.move({ workspace = "r-1" }))
 
 -- Switch between workspaces (vim keys)
 hl.bind("CONTROL + ALT + l", hl.dsp.focus({ workspace = "r+1" }))
