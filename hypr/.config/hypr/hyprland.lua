@@ -1,16 +1,26 @@
+local home = os.getenv("HOME")
+
+package.path = package.path
+  .. ";" .. home .. "/.config/hypr/?.lua"
+  .. ";" .. home .. "/.config/hypr/?/init.lua"
+
 -- Hyprland Configuration
 
+-- Bindings
+require("./config/bindings/*")
+
+-- Rules
+require("./config/rules/*")
+
+-- General
 require("config.animations")
 require("config.autostart")
 require("config.colors")
 require("config.decorations")
-require("config.defaults")
-require("config.environment")
+require("config.env")
 require("config.input")
-require("config.binds")
 require("config.misc")
 require("config.scrolling")
-require("config.windowrules")
 require("config.workspaces")
 
 -- This loads Noctalia-generated Hyprland colors.
