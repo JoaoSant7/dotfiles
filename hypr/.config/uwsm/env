@@ -3,6 +3,7 @@ export GBM_BACKEND=nvidia_drm
 export LIBVA_DRIVER_NAME=nvidia
 export __GLX_VENDOR_LIBRARY_NAME=nvidia
 export GDK_BACKEND=wayland
+export __GL_GSYNC_ALLOWED=1
 # electron
 export ELECTRON_OZONE_PLATFORM_HINT=auto
 # xdg
