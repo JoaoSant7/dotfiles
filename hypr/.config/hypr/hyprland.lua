@@ -16,7 +16,7 @@ require("./modules/bindings/*")
 require("./modules/rules/*")
 
 -- Animations
-require("modules.animations.zen")
+require("modules.animations.balanced")
 
 -- General
 require("modules.autostart")
