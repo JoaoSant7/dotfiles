@@ -11,10 +11,6 @@ hl.config({
 		kb_variant = "altgr-intl", -- Enforces standard dead keys (', ~, ^, `, ")
 		kb_options = "grp:win_space_toggle,compose:ralt",
 	},
-  cursor = {
-		hide_on_key_press = true,
-		no_hardware_cursors = true,
-	},
 })
 
 
