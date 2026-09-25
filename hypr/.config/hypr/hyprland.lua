@@ -6,21 +6,25 @@ package.path = package.path
 
 -- Hyprland Configuration
 
+-- Layout
+require("config.scrolling")
+
 -- Bindings
 require("./config/bindings/*")
 
 -- Rules
 require("./config/rules/*")
 
+-- Animations
+require("config.animations.relaxed")
+
 -- General
-require("config.animations")
 require("config.autostart")
 require("config.colors")
 require("config.decorations")
 require("config.env")
 require("config.input")
 require("config.misc")
-require("config.scrolling")
 require("config.workspaces")
 
 -- This loads Noctalia-generated Hyprland colors.
