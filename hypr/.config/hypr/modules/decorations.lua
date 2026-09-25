@@ -18,6 +18,12 @@ hl.config({
 		},
 	},
 
+  cursor = {
+    hide_on_key_press = true,
+    warp_on_change_workspace = 1,
+    no_hardware_cursors = true,
+  },
+
 	group = {
 		col = {
 			border_active = colors.secondary,
@@ -47,16 +53,19 @@ hl.config({
 	decoration = {
 		--dim_special = 0.3,
 		rounding = 0,
+
+  shadow = {
+    enabled = false,
+  },
+
+    -- opacity
 		active_opacity = 1,
 		inactive_opacity = 1,
 		fullscreen_opacity = 1,
 
+    -- blur
 		blur = {
-			size = 20,
-			passes = 3,
-			xray = true,
-			special = true,
-			vibrancy = 0.2696,
+      enabled = false
 		},
 	},
 })
