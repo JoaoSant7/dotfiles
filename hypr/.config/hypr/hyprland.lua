@@ -7,25 +7,25 @@ package.path = package.path
 -- Hyprland Configuration
 
 -- Layout
-require("config.scrolling")
+require("modules.scrolling")
 
 -- Bindings
-require("./config/bindings/*")
+require("./modules/bindings/*")
 
 -- Rules
-require("./config/rules/*")
+require("./modules/rules/*")
 
 -- Animations
-require("config.animations.relaxed")
+require("modules.animations.zen")
 
 -- General
-require("config.autostart")
-require("config.colors")
-require("config.decorations")
-require("config.env")
-require("config.input")
-require("config.misc")
-require("config.workspaces")
+require("modules.autostart")
+require("modules.colors")
+require("modules.decorations")
+require("modules.env")
+require("modules.input")
+require("modules.misc")
+require("modules.workspaces")
 
 -- This loads Noctalia-generated Hyprland colors.
 dofile("/home/pedro/.config/hypr/noctalia/noctalia-colors.lua")
