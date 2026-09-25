@@ -18,11 +18,11 @@ hl.config({
 		},
 	},
 
-  cursor = {
-    hide_on_key_press = true,
-    warp_on_change_workspace = 1,
-    no_hardware_cursors = true,
-  },
+	cursor = {
+		hide_on_key_press = true,
+		warp_on_change_workspace = 1,
+		no_hardware_cursors = true,
+	},
 
 	group = {
 		col = {
@@ -36,8 +36,12 @@ hl.config({
 			enabled = true,
 			font_family = "JetBrainsMono Nerd Font",
 			font_size = 16,
+			font_weight_active = "ultraheavy",
+			font_weight_inactive = "normal",
+			indicator_height = 1,
+			indicator_gap = 0,
 			gradients = true,
-			height = 18,
+			height = 22,
 			priority = 3,
 			render_titles = true,
 			scrolling = true,
@@ -54,18 +58,18 @@ hl.config({
 		--dim_special = 0.3,
 		rounding = 0,
 
-  shadow = {
-    enabled = false,
-  },
+		shadow = {
+			enabled = false,
+		},
 
-    -- opacity
+		-- opacity
 		active_opacity = 1,
 		inactive_opacity = 1,
 		fullscreen_opacity = 1,
 
-    -- blur
+		-- blur
 		blur = {
-      enabled = false
+			enabled = false,
 		},
 	},
 })
