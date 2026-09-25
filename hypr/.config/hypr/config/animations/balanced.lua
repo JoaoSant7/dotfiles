@@ -7,23 +7,17 @@ hl.curve("linear", { type = "bezier", points = { { 0, 0 }, { 1, 1 } } })
 hl.curve("almostLinear", { type = "bezier", points = { { 0.5, 0.5 }, { 0.75, 1 } } })
 hl.curve("quick", { type = "bezier", points = { { 0.15, 0 }, { 0.1, 1 } } })
 hl.curve("overshoot", { type = "bezier", points = { { 0.5, 0.9 }, { 0.1, 1.1 } } })
-
 -- Default springs
 hl.curve("easy", { type = "spring", mass = 1, stiffness = 71.2633, dampening = 15.8273644 })
 hl.curve("rubber", { type = "spring", mass = 1, stiffness = 70, dampening = 10 })
-
 -- Animations
-
 -- Global
 hl.animation({ leaf = "global", enabled = true, speed = 3, bezier = "quick" })
-
 -- Windows
 hl.animation({ leaf = "windows", enabled = true, speed = 3, bezier = "quick", style = "popin 80%" })
-
 -- Border
 hl.animation({ leaf = "border", enabled = true, speed = 10, bezier = "quick" })
 hl.animation({ leaf = "borderangle", enabled = true, speed = 100, bezier = "quick", style = "loop" })
-
 -- Workspaces animations
 hl.animation({ leaf = "workspaces", enabled = true, speed = 2, bezier = "quick", style = "slidefade 20%" })
 hl.animation({ leaf = "specialWorkspaceIn", enabled = true, speed = 2, bezier = "quick", style = "slide top" })
