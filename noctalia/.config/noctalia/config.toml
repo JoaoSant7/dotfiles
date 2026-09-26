@@ -61,7 +61,7 @@ smart_auto_hide = false         # show when the active workspace is empty; hide 
 
 start = ["workspaces", "media", "active_window"]
 
-thickness = 32      # bar cross-axis size in pixels (height for horizontal, width for vertical)
+thickness = 28      # bar cross-axis size in pixels (height for horizontal, width for vertical)
 widget_spacing = 15 # gap between widgets within a section
 
 [widget.active_window]
