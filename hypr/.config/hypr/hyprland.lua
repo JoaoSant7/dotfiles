@@ -1,8 +1,6 @@
 local home = os.getenv("HOME")
 
-package.path = package.path
-  .. ";" .. home .. "/.config/hypr/?.lua"
-  .. ";" .. home .. "/.config/hypr/?/init.lua"
+package.path = package.path .. ";" .. home .. "/.config/hypr/?.lua" .. ";" .. home .. "/.config/hypr/?/init.lua"
 
 -- Hyprland Configuration
 
@@ -16,7 +14,7 @@ require("./modules/bindings/*")
 require("./modules/rules/*")
 
 -- Animations
-require("modules.animations.balanced")
+require("modules.animations.pro")
 
 -- General
 require("modules.autostart")
