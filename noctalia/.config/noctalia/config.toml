@@ -136,7 +136,7 @@ hide_when_empty = false
 inactive_pill_size = 1.0
 occupied_color = "secondary"
 pill_scale = 1.0
-style = "regular"
+style = "minimal"
 urgent_color = "error"
 
 ## Wallpapers
