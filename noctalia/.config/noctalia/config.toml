@@ -38,21 +38,21 @@ end = [
   "control-center",
 ]
 
-font_family = "SF Pro Text"     # typeface for this bar's widgets; empty inherits the global font
+font_family = ""                # typeface for this bar's widgets; empty inherits the global font
 font_weight = 700               # CSS weight 100–1000 (e.g. 400 regular, 700 bold); primary label weight for bar widgets
 hover_highlight = true          # softly tint the widget under the mouse pointer with its foreground color
 layer = "top"                   # top | overlay; overlay appears above fullscreen apps
-margin_edge = 5                 # distance from the nearest screen edge (positive values float the bar)
-margin_ends = 100               # inset from each end of the bar along its main axis
+margin_edge = 0                 # distance from the nearest screen edge (positive values float the bar)
+margin_ends = 0                 # inset from each end of the bar along its main axis
 margin_opposite_edge = 0        # extra reserved space on the inward side of the bar (below for top, above for bottom)
 padding = 14                    # main-axis padding from bar edges to start/end widget sections
 panel_overlap = 1               # logical px an attached panel overlaps the bar edge to hide the seam
 position = "top"                # top | bottom | left | right
-radius = 16                     # global corner radius fallback
-radius_bottom_left = 16
-radius_bottom_right = 16
-radius_top_left = 16
-radius_top_right = 16
+radius = 0                      # global corner radius fallback
+radius_bottom_left = 0
+radius_bottom_right = 0
+radius_top_left = 0
+radius_top_right = 0
 reserve_space = true            # reserve compositor exclusive zone / push windows away
 scale = 1.0                     # content scale multiplier for icons and text
 shadow = false                  # cast the global [shell.shadow]
