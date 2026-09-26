@@ -1,74 +1,57 @@
--- Key functions
-local function key(k, action, opts)
-	hl.bind("SUPER + " .. k, action, opts)
-end
-
-local function shift(k, action, opts)
-	hl.bind("SUPER + SHIFT + " .. k, action, opts)
-end
-
-local function ctrl(k, action, opts)
-	hl.bind("SUPER + CONTROL + " .. k, action, opts)
-end
-
-local function alt(k, action, opts)
-	hl.bind("SUPER + ALT + " .. k, action, opts)
-end
-
 -- hypctl kill
-key("Escape", hl.dsp.exec_cmd("hyprctl kill"))
+hl.bind("SUPER + Escape", hl.dsp.exec_cmd("hyprctl kill"))
 
 -- Close window
-key("Q", hl.dsp.window.close())
+hl.bind("SUPER + Q", hl.dsp.window.close())
 
 -- Toggle floating window
-alt("T", hl.dsp.window.float({ action = "toggle" }))
+hl.bind("SUPER + ALT + T", hl.dsp.window.float({ action = "toggle" }))
 
 -- Toggle fullscreen
-key("F", hl.dsp.window.fullscreen())
+hl.bind("SUPER + F", hl.dsp.window.fullscreen())
 
 -- Focus movement (vim keys)
-key("h", hl.dsp.layout("focus l"))
-key("k", hl.dsp.focus({ direction = "up" }))
-key("j", hl.dsp.focus({ direction = "down" }))
-key("l", hl.dsp.layout("focus r"))
+hl.bind("SUPER + h", hl.dsp.layout("focus l"))
+hl.bind("SUPER + k", hl.dsp.focus({ direction = "up" }))
+hl.bind("SUPER + j", hl.dsp.focus({ direction = "down" }))
+hl.bind("SUPER + l", hl.dsp.layout("focus r"))
 
 -- Cycle
 hl.bind("ALT + Tab", hl.dsp.window.cycle_next())
 
 -- Columns
-key("period", hl.dsp.layout("move +col"))
-key("comma", hl.dsp.layout("move -col"))
-key("M", hl.dsp.layout("colresize +conf"))
-shift("M", hl.dsp.layout("colresize -conf"))
+hl.bind("SUPER + period", hl.dsp.layout("move +col"))
+hl.bind("SUPER + comma", hl.dsp.layout("move -col"))
+hl.bind("SUPER + M", hl.dsp.layout("colresize +conf"))
+hl.bind("SUPER + SHIFT + M", hl.dsp.layout("colresize -conf"))
 
 -- Stack / unstack (new)
-key("I",  hl.dsp.layout("consume_or_expel prev"))
-key("O", hl.dsp.layout("consume_or_expel next"))
-key("P", hl.dsp.layout("promote"))
+hl.bind("SUPER + I", hl.dsp.layout("consume_or_expel prev"))
+hl.bind("SUPER + O", hl.dsp.layout("consume_or_expel next"))
+hl.bind("SUPER + P", hl.dsp.layout("promote"))
 
 -- Move windows
-shift("h", hl.dsp.layout("swapcol l"))   -- reorder columns
-shift("l", hl.dsp.layout("swapcol r"))
-shift("k", hl.dsp.window.move({ direction = "u" }))
-shift("j", hl.dsp.window.move({ direction = "d" }))
+hl.bind("SUPER + SHIFT + h", hl.dsp.layout("swapcol l")) -- reorder columns
+hl.bind("SUPER + SHIFT + l", hl.dsp.layout("swapcol r"))
+hl.bind("SUPER + SHIFT + k", hl.dsp.window.move({ direction = "u" }))
+hl.bind("SUPER + SHIFT + j", hl.dsp.window.move({ direction = "d" }))
 
 -- Resize windows
-ctrl("h", hl.dsp.layout("colresize -0.05"), { repeating = true })
-ctrl("l", hl.dsp.layout("colresize +0.05"), { repeating = true })
-ctrl("j", hl.dsp.window.resize({ x = 0, y = -20, relative = true }), { repeating = true })
-ctrl("k", hl.dsp.window.resize({ x = 0, y = 20, relative = true }), { repeating = true })
+hl.bind("SUPER + CONTROL + h", hl.dsp.layout("colresize -0.05"), { repeating = true })
+hl.bind("SUPER + CONTROL + l", hl.dsp.layout("colresize +0.05"), { repeating = true })
+hl.bind("SUPER + CONTROL + j", hl.dsp.window.resize({ x = 0, y = -20, relative = true }), { repeating = true })
+hl.bind("SUPER + CONTROL + k", hl.dsp.window.resize({ x = 0, y = 20, relative = true }), { repeating = true })
 
 -- Groups
-key("U", hl.dsp.group.toggle())
-alt("H", hl.dsp.group.prev())
-alt("L", hl.dsp.group.next())
+hl.bind("SUPER + U", hl.dsp.group.toggle())
+hl.bind("SUPER + ALT + H", hl.dsp.group.prev())
+hl.bind("SUPER + ALT + L", hl.dsp.group.next())
 
 -- Workspaces
 for i = 1, 4 do
-	key(i, hl.dsp.focus({ workspace = i }))
-	shift(i, hl.dsp.window.move({ workspace = i, follow = true }))
-	alt(i, hl.dsp.window.move({ workspace = i, follow = false }))
+	hl.bind("SUPER + " .. i, hl.dsp.focus({ workspace = i }))
+	hl.bind("SUPER + SHIFT + " .. i, hl.dsp.window.move({ workspace = i, follow = true }))
+	hl.bind("SUPER + ALT + " .. i, hl.dsp.window.move({ workspace = i, follow = false }))
 end
 
 -- Move windows to right and left workspaces

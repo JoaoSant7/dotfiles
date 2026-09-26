@@ -1,34 +1,22 @@
 -- Local calls
 local noct = "noctalia msg "
 
-local function key(k, action, opts)
-	hl.bind("SUPER + " .. k, action, opts)
-end
-
-local function shift(k, action, opts)
-	hl.bind("SUPER + SHIFT + " .. k, action, opts)
-end
-
-local function alt(k, action, opts)
-	hl.bind("SUPER + ALT + " .. k, action, opts)
-end
-
 -- Window Switcher
 hl.bind("ALT + TAB", hl.dsp.exec_cmd("noctalia msg window-switcher"))
 
 -- Settings and panel
-key("A", hl.dsp.exec_cmd(noct .. "panel-toggle control-center notifications"))
-key("Z", hl.dsp.exec_cmd(noct .. "settings-toggle"))
-key("X", hl.dsp.exec_cmd(noct .. "panel-toggle control-center"))
-key("D", hl.dsp.exec_cmd(noct .. "panel-toggle launcher"))
-shift("W", hl.dsp.exec_cmd(noct .. "panel-toggle wallpaper"))
-key("V", hl.dsp.exec_cmd(noct .. "panel-toggle clipboard"))
+hl.bind("SUPER + A", hl.dsp.exec_cmd(noct .. "panel-toggle control-center notifications"))
+hl.bind("SUPER + Z", hl.dsp.exec_cmd(noct .. "settings-toggle"))
+hl.bind("SUPER + X", hl.dsp.exec_cmd(noct .. "panel-toggle control-center"))
+hl.bind("SUPER + D", hl.dsp.exec_cmd(noct .. "panel-toggle launcher"))
+hl.bind("SUPER + SHIFT + W", hl.dsp.exec_cmd(noct .. "panel-toggle wallpaper"))
+hl.bind("SUPER + V", hl.dsp.exec_cmd(noct .. "panel-toggle clipboard"))
 
-key("R", hl.dsp.exec_cmd(noct .. "screenshot-region"))
+hl.bind("SUPER + R", hl.dsp.exec_cmd(noct .. "screenshot-region"))
 
 -- Nightlight
-key("N", hl.dsp.exec_cmd(noct .. "nightlight-enable"))
-alt("N", hl.dsp.exec_cmd(noct .. "nightlight-disable"))
+hl.bind("SUPER + N", hl.dsp.exec_cmd(noct .. "nightlight-enable"))
+hl.bind("SUPER + ALT + N", hl.dsp.exec_cmd(noct .. "nightlight-disable"))
 
 -- Session
-alt("C", hl.dsp.exec_cmd(noct .. "panel-toggle session"))
+hl.bind("SUPER + ALT + C", hl.dsp.exec_cmd(noct .. "panel-toggle session"))
