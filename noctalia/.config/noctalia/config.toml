@@ -19,7 +19,7 @@ capsule_radius = 8.0             # omit for automatic pill radius
 capsule_thickness = 0.76         # capsule size across the bar as a fraction of bar thickness (1.0 fills the bar)
 
 # Widgets config
-center = ["cpu", "temp", "ram", "power_profile"]
+center = ["clock", "power_profile"] # ["cpu", "temp", "ram", "power_profile"]
 
 concave_edge_corners = true # carve the screen-edge corners inward; requires margin_edge = 0
 contact_shadow = false      # dark gradient between an attached panel and the bar (depth at the seam)
@@ -83,7 +83,7 @@ hide_when_no_connected_device = true
 show_label = false
 
 [widget.clock]
-format = "{:%H:%M} {:%a}, {:%d %b}"
+format = "{:%A} {:%H:%M}" #"{:%H:%M} {:%a}, {:%d %b}"
 
 [widget.media]
 album_art_only = false
