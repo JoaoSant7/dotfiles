@@ -11,29 +11,29 @@ hl.window_rule({
 
 -- Noctalia Settings
 hl.window_rule({
-  name = "floating-noctalia-settings",
-  match = { initial_class = [[^dev\.noctalia\.Noctalia$]] },
-  float = true,
-  center = true,
-  size = { "monitor_w * 0.5", "monitor_h * 0.9" },
+	name = "floating-noctalia-settings",
+	match = { initial_class = [[^dev\.noctalia\.Noctalia$]] },
+	float = true,
+	center = true,
+	size = { "monitor_w * 0.9", "monitor_h * 0.9" },
 })
 
 -- Pinentry and mpv
 hl.window_rule({
-  name = "floating-simple",
-  match = { initial_class = "^(Pinentry-gtk|mpv)$" },
-  float = true,
+	name = "floating-simple",
+	match = { initial_class = "^(Pinentry-gtk|mpv)$" },
+	float = true,
 })
 
 -- KDE Connect and Localsend
 hl.window_rule({ match = { class = "^org.kde.kdeconnect.app$" }, opacity = 0.65 })
 
 hl.window_rule({
-  name = "floating-kdeconnect-localsend",
-  match = { initial_class = [[^(org\.kde\.kdeconnect\.app|org\.localsend\.localsend_app)$]] },
-  float = true,
-  center = true,
-  size = { "monitor_w * 0.3", "monitor_h * 0.7" },
+	name = "floating-kdeconnect-localsend",
+	match = { initial_class = [[^(org\.kde\.kdeconnect\.app|org\.localsend\.localsend_app)$]] },
+	float = true,
+	center = true,
+	size = { "monitor_w * 0.3", "monitor_h * 0.7" },
 })
 
 -- Picture-in-Picture
