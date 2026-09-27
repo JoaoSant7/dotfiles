@@ -15,7 +15,7 @@ capsule_fill = "surface_variant"
 capsule_opacity = 1.0
 capsule_radius = 8.0             # omit for automatic pill radius
 capsule_thickness = 0.76         # capsule size across the bar as a fraction of bar thickness (1.0 fills the bar)
-concave_edge_corners = true      # carve the screen-edge corners inward; requires margin_edge = 0
+concave_edge_corners = false     # carve the screen-edge corners inward; requires margin_edge = 0
 contact_shadow = false           # dark gradient between an attached panel and the bar (depth at the seam)
 enabled = true
 
