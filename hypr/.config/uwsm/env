@@ -1,21 +1,23 @@
-# nvidia
-export GBM_BACKEND=nvidia_drm
-export LIBVA_DRIVER_NAME=nvidia
-export __GLX_VENDOR_LIBRARY_NAME=nvidia
+#nvidia
+export GBM_BACKEND=nvidia-drm # force GBM as a backend
+export __GLX_VENDOR_LIBRARY_NAME=nvidia # force GBM as a backend
+export LIBVA_DRIVER_NAME=nvidia # Hardware acceleration on NVIDIA GPUs
+export __GL_GSYNC_ALLOWED=1 # Controls if G-Sync capable monitors should use Variable Refresh Rate (VRR)
 export GDK_BACKEND=wayland
-export __GL_GSYNC_ALLOWED=1
 # electron
 export ELECTRON_OZONE_PLATFORM_HINT=auto
 # xdg
 export XDG_SESSION_TYPE=wayland
 # qt
 export QT_AUTO_SCREEN_SCALE_FACTOR=1
-export QT_QPA_PLATFORMTHEME=gtk3
-export QT_QPA_PLATFORM=wayland
+export QT_QPA_PLATFORM="wayland;xcb"
+export QT_QPA_PLATFORMTHEME="qt6ct"
 # fix to ghostty
-export GTK_IM_MODULE=fcitx
+#export GTK_IM_MODULE=fcitx
 # hyprland-qt-support
 QT_QUICK_CONTROLS_STYLE = "Fusion";
-# xcursor
+# cursor
+export HYPRCURSOR_THEME=Bibata-Modern-Ice
+export HYPRCURSOR_SIZE=24
 export XCURSOR_THEME=Bibata-Modern-Ice
 export XCURSOR_SIZE=24
