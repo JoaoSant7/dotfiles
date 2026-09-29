@@ -10,6 +10,11 @@ hl.config({
 		kb_layout = "us,br",
 		kb_variant = "altgr-intl", -- Enforces standard dead keys (', ~, ^, `, ")
 		kb_options = "compose:ralt",
+
+		touchpad = {
+			disable_while_typing = true,
+		},
+
 		hl.bind("SUPER + S", hl.dsp.exec_cmd("hyprctl switchxkblayout current next")),
 	},
 })
