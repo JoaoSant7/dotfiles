@@ -9,10 +9,10 @@ hl.config({
 
 		kb_layout = "us,br",
 		kb_variant = "altgr-intl", -- Enforces standard dead keys (', ~, ^, `, ")
-		kb_options = "grp:win_space_toggle,compose:ralt",
+		kb_options = "compose:ralt",
+		hl.bind("SUPER + S", hl.dsp.exec_cmd("hyprctl switchxkblayout current next")),
 	},
 })
-
 
 -- Touchpad gestures
 hl.gesture({ fingers = 3, direction = "horizontal", action = "workspace" })
