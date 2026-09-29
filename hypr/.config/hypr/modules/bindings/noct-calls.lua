@@ -8,7 +8,7 @@ hl.bind("ALT + TAB", hl.dsp.exec_cmd("noctalia msg window-switcher"))
 hl.bind("SUPER + A", hl.dsp.exec_cmd(noct .. "panel-toggle control-center notifications"))
 hl.bind("SUPER + Z", hl.dsp.exec_cmd(noct .. "settings-toggle"))
 hl.bind("SUPER + X", hl.dsp.exec_cmd(noct .. "panel-toggle control-center"))
-hl.bind("SUPER + D", hl.dsp.exec_cmd(noct .. "panel-toggle launcher"))
+hl.bind("SUPER + Space", hl.dsp.exec_cmd(noct .. "panel-toggle launcher"))
 hl.bind("SUPER + SHIFT + W", hl.dsp.exec_cmd(noct .. "panel-toggle wallpaper"))
 hl.bind("SUPER + V", hl.dsp.exec_cmd(noct .. "panel-toggle clipboard"))
 
