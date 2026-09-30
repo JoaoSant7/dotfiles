@@ -1,8 +1,8 @@
 profile docked {
     output HDMI-A-1 enable mode 1920x1080@179.961 position 1280,0
-    output eDP-1 disable
+    output "Chimei Innolux Corporation 0x1522 Unknown" disable
 }
 
 profile undocked {
-    output eDP-1 enable mode 1920x1080@120.015 scale 1.25
+    output "Chimei Innolux Corporation 0x1522 Unknown" enable mode 1920x1080@120.015 scale 1.25
 }
