@@ -51,6 +51,7 @@ alias lgit="lazygit"
 # =========================================================
 
 #alias fastfetch='/usr/bin/fastfetch -c ~/.config/fastfetch/config.jsonc'
+#alias fastfetch='/usr/bin/fastfetch --logo fedora_small -c ~/.config/fastfetch/config.jsonc'
 
 # =========================================================
 # Distrobox
@@ -63,5 +64,3 @@ alias dib="distrobox"
 # =========================================================
 
 alias sunr="sudo nixos-rebuild switch --flake .#hyprnix"
-
-alias fastfetch='/usr/bin/fastfetch --logo fedora_small -c ~/.config/fastfetch/config.jsonc'
