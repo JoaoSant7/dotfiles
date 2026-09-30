@@ -11,7 +11,7 @@ require("modules.scrolling")
 require("./modules/bindings/*")
 
 -- Rules
-require("./modules/rules/*")
+require("./modules/windowrules/*")
 
 -- Animations
 require("modules.animations.pro")
@@ -27,7 +27,6 @@ require("modules.workspaces")
 
 -- This loads Noctalia-generated Hyprland colors.
 dofile("/home/pedro/.config/hypr/noctalia/noctalia-colors.lua")
-
 
 -- For Noctalia Color templates
 require("noctalia").apply_theme()
