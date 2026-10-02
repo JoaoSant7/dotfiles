@@ -15,6 +15,27 @@
 "Mod+Escape" = "session-quit"
 "Mod+Shift+Escape" = { action = "shortcuts-inhibit-toggle", allow_when_inhibited = true, repeat = false }
 
+# Noctalia panels
+"Alt+Tab" = { action = "spawn:noctalia msg window-switcher", repeat = false }
+"Mod+A" = { action = "spawn:noctalia msg panel-toggle control-center notifications", repeat = false }
+"Mod+X" = { action = "spawn:noctalia msg panel-toggle control-center", repeat = false }
+"Mod+Z" = { action = "spawn:noctalia msg settings-toggle", repeat = false }
+"Mod+V" = { action = "spawn:noctalia msg panel-toggle clipboard", repeat = false }
+"Mod+Shift+W" = { action = "spawn:noctalia msg panel-toggle wallpaper", repeat = false }
+"Mod+Alt+C" = { action = "spawn:noctalia msg panel-toggle session", repeat = false }
+"Mod+Shift+S" = { action = "spawn:noctalia msg screenshot-region", repeat = false } # was SUPER+R in Hyprland
+
+# Nightlight
+"Mod+N" = { action = "spawn:noctalia msg nightlight-enable", repeat = false }
+"Mod+Alt+N" = { action = "spawn:noctalia msg nightlight-disable", repeat = false }
+
+# Media and brightness (Noctalia)
+"XF86AudioRaiseVolume" = "spawn:noctalia msg volume-up"
+"XF86AudioLowerVolume" = "spawn:noctalia msg volume-down"
+"XF86AudioMute" = { action = "spawn:noctalia msg volume-mute", repeat = false }
+"XF86MonBrightnessUp" = "spawn:noctalia msg brightness-up"
+"XF86MonBrightnessDown" = "spawn:noctalia msg brightness-down"
+
 # Focus and movement
 "Mod+Left" = "window-focus-left"
 "Mod+Down" = "window-focus-down"
@@ -29,6 +50,10 @@
 "Mod+Shift+Down" = "window-move-down"
 "Mod+Shift+Up" = "window-move-up"
 "Mod+Shift+Right" = "column-move-right"
+"Mod+Shift+H" = "column-move-left"
+"Mod+Shift+L" = "column-move-right"
+"Mod+Shift+K" = "window-move-up"
+"Mod+Shift+J" = "window-move-down"
 
 # Window state and layout
 "Mod+T" = { action = "window-toggle-floating", repeat = false }
@@ -41,9 +66,19 @@
 "Mod+Shift+R" = "window-cycle-primary-extent-back"
 "Mod+Comma" = "window-consume-left"
 "Mod+Period" = "window-consume-right"
+"Mod+Shift+Comma" = "layout-scroll-left"
+"Mod+Shift+Period" = "layout-scroll-right"
+"Mod+I" = "window-consume-or-expel-left"
+"Mod+Shift+O" = "window-consume-or-expel-right"
 "Mod+WheelUp" = "window-focus-left"
 "Mod+WheelDown" = "window-focus-right"
 "Mod+O" = { action = "overview-toggle", repeat = false }
+
+# Resize (repeats while held)
+"Mod+Ctrl+H" = "window-modify-primary-extent:-0.05"
+"Mod+Ctrl+L" = "window-modify-primary-extent:0.05"
+"Mod+Ctrl+J" = "window-modify-height-down:-0.05"
+"Mod+Ctrl+K" = "window-modify-height-down:0.05"
 
 # Workspaces
 "Ctrl+Alt+L" = "workspace-next"
