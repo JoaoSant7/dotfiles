@@ -11,8 +11,6 @@ window-height = 40
 window-decoration = none
 window-show-tab-bar = auto
 
-custom-shader = shaders/cursor_warp.glsl
-
 quit-after-last-window-closed = false
 quit-after-last-window-closed-delay = 5m
 
