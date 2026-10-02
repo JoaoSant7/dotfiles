@@ -18,6 +18,14 @@ hl.window_rule({
 	size = { "monitor_w * 0.9", "monitor_h * 0.9" },
 })
 
+hl.window_rule({
+	name = "floating-noctalia-settings",
+	match = { initial_class = "org.gnome.Loupe" },
+	float = true,
+	center = true,
+	size = { "monitor_w * 0.9", "monitor_h * 0.9" },
+})
+
 -- Pinentry and mpv
 hl.window_rule({
 	name = "floating-simple",
