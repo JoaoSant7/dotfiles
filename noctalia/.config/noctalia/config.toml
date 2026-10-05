@@ -157,7 +157,7 @@ path = "~/Pictures/Wallpapers/catholicon-holy-sepulchre.jpg"
 
 ## Widgets
 [widget.active_window]
-display = "icon_and_text"
+display = "icon"
 icon_size = 18
 max_length = 200
 min_length = 80
@@ -188,7 +188,7 @@ show_value = false
 stat = "cpu_usage"
 
 [widget.media]
-album_art_only = false
+album_art_only = true
 art_size = 18
 hide_when_no_media = true
 
