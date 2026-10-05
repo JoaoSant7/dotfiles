@@ -6,7 +6,8 @@ theme = "kanagawa"
 j = { j = "normal_mode" }
 
 [editor]
-clipboard-provider = "x-clip"
+#clipboard-provider = "x-clip"
+clipboard-provider = "wayland"
 line-number = "absolute"
 cursorline = true
 mouse = true
