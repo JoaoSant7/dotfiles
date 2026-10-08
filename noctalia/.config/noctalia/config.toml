@@ -20,7 +20,7 @@ contact_shadow = false           # dark gradient between an attached panel and t
 enabled = true
 
 # Widget position
-start = ["workspaces"]
+start = ["workspaces", "active_window"]
 center = ["clock", "power_profile"] # ["cpu", "temp", "ram", "power_profile"]
 end = [
   "tray",
