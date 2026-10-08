@@ -1,8 +1,8 @@
 // Debug
 debug {
   honor-xdg-activation-with-invalid-serial
-  //render-drm-device "/dev/dri/renderD129"
   wait-for-frame-completion-before-queueing
+  //render-drm-device "/dev/dri/renderD129"
 }
 
 // Corners
