@@ -19,27 +19,29 @@ window-rule {
     open-maximized true
 }
 
-window-rule {
-    match app-id="thunar"
-
-    open-floating true
-    default-column-width { proportion 0.7; }
-    default-window-height { proportion 0.8; }
-}
-
-
 // Floating Noctalia settings window.
 window-rule {
   match app-id="dev.noctalia.Noctalia"
-  open-floating true
+
   default-column-width { proportion 0.5; }
   default-window-height { proportion 0.9; }
+
+  open-floating true
+}
+
+window-rule {
+  match app-id="xdg-desktop-portal-gtk"
+
+  default-column-width { proportion 0.5; }
+  default-window-height { proportion 0.5; }
+
+  open-floating true
 }
 
 window-rule {
     match app-id=r#"^Pinentry-gtk$"#
     match app-id=r#"^mpv$"#
-    match app-id=r#"^thunar$"# title=r#"^Rename "#
+    match app-id=r#"^Thunar$"# title=r#"^Rename "#
     match app-id=r#"^org\.gnome\.FileRoller$"# title="^Extract"
     match app-id=r#"firefox$"# title=r#"^(Picture-in-Picture|Library|About Mozilla Firefox|Firefox - Choose a profile)$"#
 
